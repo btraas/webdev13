@@ -61,6 +61,15 @@ body{
 	clear:all;
 }
 
+#main{
+	width: 1050px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #000000;
+	border-top: none;
+	border-bottom: none;
+}
+
 #mainbody {
 	width: 1000px;
 	height: 800px;
@@ -68,10 +77,8 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #A8130B;
-	border: 1px solid #000000;
-	border-top: none;
-	border-bottom: none;
 }
+
 #banner {
 	margin-left: 101px;
 }
@@ -86,6 +93,26 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	
+}
+
+#heading1{
+	width: 200px;
+	border: 1px solid #000000;
+	position: relative;
+	margin-left: 0px;
+	border-left: none;
+}
+
+#left_text{
+	width: 500px;
+	float: left;
+	padding: 20px 20px 20px 40px;
+
+}
+
+#right_image{
+	margin-left: 50%;
+	padding-top: 100px;
 }
 
 #footer {

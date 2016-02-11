@@ -98,9 +98,9 @@ body{
 #heading1{
 	width: 200px;
 	border: 1px solid #000000;
-	position: relative;
 	margin-left: 0px;
 	border-left: none;
+    position:  relative ;
 }
 
 #left_text{

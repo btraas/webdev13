@@ -22,12 +22,6 @@ body {
 	overflow-x: hidden;
 }
 
-#wrapper {
-	min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -105px;	/* Negative of footer height! */
-}
 
 #header {
 	background-color: #000000;
@@ -46,6 +40,12 @@ body {
 body a {
 	color: #FFFFFF;	
 	text-decoration: none;
+}
+
+li, ul {
+	list-style-type: none;
+	padding: 0px;
+	
 }
 
 #logo {
@@ -130,7 +130,7 @@ body a {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #A8130B;
+	background-color: darkRed;
 	padding: 10px;
 }
 

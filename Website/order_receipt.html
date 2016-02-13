@@ -4,20 +4,6 @@
 	<meta charset="utf-8">
 	<title>Tokyo Thyme</title>
 	<link href="style.css" rel="stylesheet">
-	<style>
-		#receiptTable {
-			width: 500px; 
-			margin: 0 auto;
-			background: white;
-			color: black;
-		}
-		#receiptTable tr {
-			border-bottom: 2px solid darkGray;
-		}
-		#receiptTable td {
-			padding: 20px;
-		}
-	</style>
 </head>
 
 <body>
@@ -44,9 +30,9 @@
 				</ul>
 			</div>
 	</div>
-	<div id="main" style>
+	<div id="main">
 		<div id="mainbody">
-		<div style='width: 500px; margin: 0 auto;'>
+		<div class='centerCol'>
 			<h1>Receipt</h1>
 			<p>Thank-you for your order. Details are provided below.</p>
 		</div>
@@ -59,15 +45,17 @@
 			<tr><td>House Special Salad</td><td>1</td><td>$6.75</td></tr>
 			
 			<tr><td>Tax</td><td></td><td>$1.31</td>
-			<tr style='font-weight: bold;'><td>Grand Total</td><td></td><td>$27.46</td>
+			<tr class=totalText><td>Grand Total</td><td></td><td>$27.46</td>
 
 
 
 			</tr>
 		</table>
-		<div style='width: 500px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px;'>
-			<input type=button class='ui-button' style='width: 50px;' value=Home onClick="location.href='index.html';"/>
-			<input type=button class='ui-button' style='width: 50px;' value='Print' />
+		<div class='centerCol'>
+			<br /><br />
+			<input type=button class='ui-button medium' value=Home onClick="location.href='index.html';"/>
+			<input type=button class='ui-button medium' value='Print' />
+			<br /><br />
 		</div>
 
 		</div>

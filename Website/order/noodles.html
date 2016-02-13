@@ -30,10 +30,10 @@
 				</ul>
 			</div>
 	</div>
-	<div id="main" style>
+	<div id="main">
 		<div id="mainbody">
-		<table style='width: 100%;'><tr>
-		<td><div id='orderGroups' class='blackList' style='display: inline-block; margin-bottom: 50px; margin-right: 30px;'>
+		<table class='fullWidth'><tr>
+		<td id='cat_nav'><div id='orderGroups' class='blackList'>
 			<ul>
 				<li><a href='appetizers.html'>Appetizers</a></li>
 				<li><a href='sashimi.html'>Sashimi</a></li>
@@ -48,57 +48,61 @@
 				<li><a href='combo.html'>Combo</a></li>
 				<li><a href='party_tray.html'>Party Tray</a></li>
 				<li><a href='specials.html'>Specials</a></li>
-				<li><a href='omakase.html'>Omakase</a></li>
 			</ul>
 		</div></td>
 
-		<td style='vertical-align: top; text-align: left;'><div>
+		<td><div>
 			<h1>Noodles</h1>
-			<table id='selection_table' style='width: 500px;'>
+			<table id='selection_table'>
 				<tr>
 					<td><div class='itemBlock'>
-						<h3>Edamame</h3>
-						<p class='description'>green soybeans</p>
-						<div class='itemBlock_footer'><div class='addItem ui-button'>Add to Order</div><div class='price'>$3.95</div></div>
+						<h3>Chicken Udon</h3>
+						<p class='description'></p>
+						<div class='itemBlock_footer'><div class='addItem ui-button'>Add to Order</div><div class='price'>$7.95</div></div>
 					</div></td>
 					<td><div class='itemBlock'>
-						<h3>Yam Temp Fried</h3>
-						<p class='description'>served with special dipping sauce</p>
-						<div class='itemBlock_footer'><div class='addItem ui-button '>Add to Order</div><div class='price'>$5.50</div></div>
-
-					<tr></tr>
-
+						<h3>Beef Udon</h3>
+						<p class='description'></p>
+						<div class='itemBlock_footer'><div class='addItem ui-button '>Add to Order</div><div class='price'>$7.95</div></div>
+					</div></td>
+				</tr>
+				<tr>
 					<td><div class='itemBlock'>
-                        <h3>Nasudengaku</h3>
-                        <p class='description'>glazed eggplant w/ special miso</p>
-                        <div class='itemBlock_footer'><div class='addItem ui-button'>Add to Order</div><div class='price'>$5.50</div></div>
+                        <h3>Kitsune Udon</h3>
+                        <p class='description'>sweet thin fried bean curd, seaweed</p>
+                        <div class='itemBlock_footer'><div class='addItem ui-button'>Add to Order</div><div class='price'>$7.95</div></div>
                     </div></td>
                     <td><div class='itemBlock'>
-                        <h3>Soft Shell Crab</h3>
-                        <p class='description'>deep fried and served w/ spicy ponzu</p>
-                        <div class='itemBlock_footer'><div class='addItem ui-button '>Add to Order</div><div class='price'>$6.95</div></div>
-
-
+                        <h3>Kaklage Udon</h3>
+                        <p class='description'>mixed seaweed, vegetable seaweed</p>
+                        <div class='itemBlock_footer'><div class='addItem ui-button '>Add to Order</div><div class='price'>$9.50</div></div>
 					</div></td>
+				</tr>
+				<tr>
+                    <td><div class='itemBlock'>
+                        <h3>Nabeyaki Udon</h3>
+                        <p class='description'>prawn tempura, chicken, egg, veggies in hotspot</p>
+                        <div class='itemBlock_footer'><div class='addItem ui-button'>Add to Order</div><div class='price'>$12.50</div></div>
+                    </div></td>
 				</tr>
 			</table>
 		</div></td>
-		<td style='vertical-align: top;'>
-			<div style='border-bottom: 1px solid; padding-bottom: 3px;'><h2>Order Summary</h2>
+		<td class=top>
+			<div class=underline><h2>Order Summary</h2>
 			</div>
-			<div id='orderSummary' class='blackList' style='width: 225px; margin-top: 15px;'>
-				<table id='orderItems' style='height: 300px; width: 100%;'>
+			<div id='orderSummary' class='blackList'>
+				<table id='orderItems'>
 					<tr class='total'><td colspan=2></td></tr>
-					<tr style='height: 10px;'><td>Tax (5%)</td><td class='price'>$0.00</td></tr>
-					<tr style='height: 10px;'><td>Total</td><td class='price'>$0.00</td></tr>
+					<tr class='min_height'><td>Tax (5%)</td><td class='price'>$0.00</td></tr>
+					<tr class='min_height'><td>Total</td><td class='price'>$0.00</td></tr>
 				</table>
 			</div>
-			<div id='orderDetails' style='width: 225px;'><table>
-                <tr><td>Pick-up Date:</td><td><input type=text style='width: 120px;'></td></tr>
-                <tr><td>Pick-up Time:</td><td><input type=text style='width: 120px;'></td></tr>
+			<div id='orderDetails'><table>
+                <tr><td>Pick-up Date:</td><td><input type=text class='order_datetime'></td></tr>
+                <tr><td>Pick-up Time:</td><td><input type=text class='order_datetime'></td></tr>
                 <tr><td colspan=2>
-                <input type=button class=ui-button value=Clear style='width: 48%;'/>
-                <input type=button class=ui-button value=Submit style='width: 48%;'/>
+                <input type=button class='ui-button halfWidth' value=Clear />
+                <input type=button class='ui-button halfWidth' value=Submit onClick="location.href='../order_receipt.html'" />
                 </td></tr></table>
             </div>
 

@@ -124,6 +124,10 @@ table, tr, td, tbody {
 	margin-bottom: 5px;
 }
 
+.totalText {
+	font-weight: bold;
+}
+
 .blackList {
 	border: 1px solid white;
 	background: black;
@@ -141,8 +145,82 @@ table, tr, td, tbody {
 	padding: 4px;
 }
 
+.fullWidth {
+	width: 100%;
+}
+
+.top {
+	vertical-align: top;
+}
+
+.center {
+	text-align: center;
+}
+
+.centerCol {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.underline {
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+
+.min_height {
+	height: 1px;
+}
+
+.order_datetime {
+	width: 120px;
+}
+
+.halfWidth {
+	width: 48%;
+}
+
+.medium {
+	width: 50px;
+}
+
+#receiptTable {
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    color: black;
+}
+#receiptTable tr {
+    border-bottom: 2px solid darkGray;
+}
+#receiptTable td {
+    padding: 20px;
+}
+
+
+#cat_nav {
+	vertical-align: top;
+}
+
+#orderGroups {
+	display: inline-block; 
+	margin-bottom: 50px; 
+	margin-right: 30px;
+}
+
+#orderSummary, #orderDetails {
+	width: 225px; 
+	margin-top: 15px;
+}
+
+#orderItems {
+	height: 300px;
+	width: 100%;
+}
+
 #selection_table {
 	border-top: 1px solid white;
+	margin-bottom: 30px;
+	width: 500px;
 }
 #selection_table td {
 	border-bottom: 1px solid white;
@@ -213,7 +291,7 @@ table, tr, td, tbody {
     background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e6e6e6));
     background: -webkit-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: -o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
     background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
     background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e6e6e6',GradientType=0 );

@@ -4,6 +4,20 @@
 	<meta charset="utf-8">
 	<title>Tokyo Thyme</title>
 	<link href="style.css" rel="stylesheet">
+	<style>
+		#receiptTable {
+			width: 500px; 
+			margin: 0 auto;
+			background: white;
+			color: black;
+		}
+		#receiptTable tr {
+			border-bottom: 2px solid darkGray;
+		}
+		#receiptTable td {
+			padding: 20px;
+		}
+	</style>
 </head>
 
 <body>
@@ -32,53 +46,29 @@
 	</div>
 	<div id="main" style>
 		<div id="mainbody">
-		<table style='width: 100%;'><tr>
-		<td><div id='orderGroups' class='blackList' style='display: inline-block; margin-bottom: 50px; margin-right: 30px;'>
-			<ul>
-				<li><a href='order/appetizers.html'>Appetizers</a></li>
-				<li><a href='order/sashimi.html'>Sashimi</a></li>
-				<li><a href='order/salads.html'>Salads</a></li>
-				<li><a href='order/hosomaki.html'>Hosomaki</a></li>
-				<li><a href='order/nigiri.html'>Nigiri</a></li>
-				<li><a href='order/inside_out_roll.html'>Inside-Out Roll</a></li>
-				<li><a href='order/veggie_roll.html'>Veggie Roll</a></li>
-				<li><a href='order/creative_roll.html'>Creative Roll</a></li>
-				<li><a href='order/noodles.html'>Noodles</a></li>
-				<li><a href='order/donburi.html'>Donburi</a></li>
-				<li><a href='order/combo.html'>Combo</a></li>
-				<li><a href='order/party_tray.html'>Party Tray</a></li>
-				<li><a href='order/specials.html'>Specials</a></li>
-				<li><a href='order/omakase.html'>Omakase</a></li>
-			</ul>
-		</div></td>
+		<div style='width: 500px; margin: 0 auto;'>
+			<h1>Receipt</h1>
+			<p>Thank-you for your order. Details are provided below.</p>
+		</div>
+		<table id='receiptTable'>
+			<tr><td colspan=2>Time of Order<br />Time of Pickup</td>
+				<td>12:02 am Feb 12, 2016<br />12:00 pm Feb 12, 2016</td>
+			</tr>
+			<tr><td>California Roll</td><td>2</td><td>$7.90</td></tr>
+			<tr><td>Lunch Special B</td><td>1</td><td>$11.50</td></tr>
+			<tr><td>House Special Salad</td><td>1</td><td>$6.75</td></tr>
+			
+			<tr><td>Tax</td><td></td><td>$1.31</td>
+			<tr style='font-weight: bold;'><td>Grand Total</td><td></td><td>$27.46</td>
 
-		<td style='vertical-align: top; text-align: center;'><div>
-			<h1>Place an Order</h1>
-			<h3 style='margin-top: 40px; text-align: center;'>Choose a category to get started!</h3>
-			<table id='selection_table' style='width: 500px;'></table>
-		</div></td>
-		<td style='vertical-align: top;'>
-			<div style='border-bottom: 1px solid; padding-bottom: 3px;'><h2>Order Summary</h2>
-			</div>
-			<div id='orderSummary' class='blackList' style='width: 225px; margin-top: 15px;'>
-				<table id='orderItems' style='height: 300px; width: 100%;'>
-					<tr class='total'><td colspan=2></td></tr>
-					<tr style='height: 10px;'><td>Tax (5%)</td><td class='price'>$0.00</td></tr>
-					<tr style='height: 10px;'><td>Total</td><td class='price'>$0.00</td></tr>
-				</table>
-			</div>
-			<div id='orderDetails' style='width: 225px;'><table>
-                <tr><td>Pick-up Date:</td><td><input type=text style='width: 120px;'></td></tr>
-                <tr><td>Pick-up Time:</td><td><input type=text style='width: 120px;'></td></tr>
-                <tr><td colspan=2>
-                <input type=button class=ui-button value=Clear style='width: 48%;'/>
-                <input type=button class=ui-button value=Submit style='width: 48%;'/>
-                </td></tr></table>
-            </div>
 
-			</div>
-		</td>
-	</tr></table>
+
+			</tr>
+		</table>
+		<div style='width: 500px; margin: 0 auto; padding-top: 20px; padding-bottom: 20px;'>
+			<input type=button class='ui-button' style='width: 50px;' value=Home onClick="location.href='index.html';"/>
+			<input type=button class='ui-button' style='width: 50px;' value='Print' />
+		</div>
 
 		</div>
 	</div>

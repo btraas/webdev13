@@ -3,11 +3,11 @@ html {
 	font-family: "Tahoma", Arial, sans-serif;
 	background: #AAEA99; /* Old browsers */
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bde6a4+0,6dc46d+100 */
-background: #bde6a4; /* Old browsers */
-background: -moz-linear-gradient(top,  #bde6a4 0%, #6dc46d 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #bde6a4 0%,#6dc46d 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #bde6a4 0%,#6dc46d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bde6a4', endColorstr='#6dc46d',GradientType=0 ); /* IE6-9 */
+	background: #bde6a4; /* Old browsers */
+	background: -moz-linear-gradient(top,  #bde6a4 0%, #6dc46d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #bde6a4 0%,#6dc46d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #bde6a4 0%,#6dc46d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bde6a4', endColorstr='#6dc46d',GradientType=0 ); /* IE6-9 */
 
 }
 html, body{
@@ -33,8 +33,8 @@ body {
 	padding: 10px; 
 	padding-bottom: 3px;
 	position: relative;
-	box-shadow: 0px 0px 20px #000000;
-
+	box-shadow: 0px 0px 10px #000000;
+	z-index: 5;
 }
 
 body a {
@@ -46,6 +46,14 @@ li, ul {
 	list-style-type: none;
 	padding: 0px;
 	
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0px;
+}
+
+table, tr, td, tbody {
+	border-collapse: collapse;
 }
 
 #logo {
@@ -110,12 +118,138 @@ li, ul {
 	border-radius: 3px;
 }
 
+.total td {
+	border-bottom: 1px solid;
+	min-height: 7px;
+	margin-bottom: 5px;
+}
+
+.blackList {
+	border: 1px solid white;
+	background: black;
+	color: white;
+	border-radius: 5px;
+	padding: 3px;
+	display: table;
+	list-style-type: none;
+	font-weight: bold;
+}
+.blackList ul {
+	margin: 0px;
+}
+.blackList li {
+	padding: 4px;
+}
+
+#selection_table {
+	border-top: 1px solid white;
+}
+#selection_table td {
+	border-bottom: 1px solid white;
+	width: 300px;
+	height: 150px;
+	position: relative;
+	padding: 0px;
+	border-collapse: collapse;
+	
+}
+#selection_table tr td:first-child { /* First of each row */
+	border-right: 1px solid white;
+}
+#selection_table tr:last-child td {	/* Last row */
+	border-bottom: 0px;
+}
+
+.itemBlock {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.itemBlock > h3, .itemBlock > p, .itemBlock > div {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.itemBlock_footer {
+	position: absolute;
+	bottom: 0;
+	width: 232px;
+}
+
+.itemBlock_footer div {
+	display: inline-block;
+}
+
+.itemBlock_footer .price {
+	float: right;
+	padding-top: 5px;
+	font-style: italic;
+}
+
+.description {
+	font-style: italic;
+	margin-top: 0px;
+	color: #BBBBBB;
+}
+
+.ui-button {		/* style diverged from jQuery UI */
+    display: inline-block;
+    position: relative;
+    padding: 3px;
+    line-height: normal;
+    margin-right: .1em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-align: center;
+	border-radius: 3px;
+
+	border: 1px solid #d3d3d3; /* style from ui-state-default */
+    font-weight: normal;
+    color: #373737;
+    background: #f7f7f7;
+    background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e6e6e6));
+    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e6e6e6',GradientType=0 );
+
+	
+}
+
+.ui-highlight {	/* diverged from jQuery UI ui-state-highlight */
+    color: #fa9405;
+    border: 1px solid #fa9405;
+    background: #ffffea;
+    background: -moz-linear-gradient(top, #ffffea 0%, #ffffb5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffea), color-stop(100%,#ffffb5));
+    background: -webkit-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
+    background: -o-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
+    background: -ms-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
+    background: linear-gradient(to bottom, #ffffea 0%,#ffffb5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffea', endColorstr='#ffffb5',GradientType=0 );
+}
+
+.cart-white {
+	background-image: url("./images/shopping.png");
+	background-size: 64px 64px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#orderDetails td {
+	padding-top: 20px;
+}
 
 #main{
 	width: 1050px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid #000000;
+	/* border: 1px solid #000000; */
 	border-top: none;
 	border-bottom: none;
 	height: auto;
@@ -130,7 +264,7 @@ li, ul {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: darkRed;
+	background-color: #5D0201;
 	padding: 10px;
 }
 
@@ -180,11 +314,11 @@ li, ul {
 	/* height: 140px; */
 	padding: 10px;
 	padding-top: 0px;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	/* margin: 0 auto; */
-	box-shadow: 0px 0px 20px #000000;
-	
+	box-shadow: 0px 0px 10px #000000;
+	z-index: 4;	
 }
 #footertext {
 	/* width:1000px; Not responsive to small screens */ 
@@ -206,6 +340,9 @@ li, ul {
 	text-align: left;
 	width: 135px;
 	margin-top: 20px;
+}
+.footercolumn li a {
+	color: #BBBBBB;
 }
 
 .footercolumn a:hover {

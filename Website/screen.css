@@ -1,0 +1,1124 @@
+@media screen
+{
+	.print-only, .print_only { display			: none !important; }
+}
+
+html, body {
+	background: #fff;
+	margin: 0; 
+	padding: 0; 
+	font: 85%/2.0em MyriadPro, Verdana, Arial, Helvetica, sans-serif; 
+	text-align: center;
+	color: #111;
+	line-height: 20px;
+	overflow: hidden;
+	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	background-color: transparent;
+	font-weight: bold;
+	margin: 0px;
+}
+h1 { font-size: 170%; }
+h2 { font-size: 165%; }
+h3 { font-size: 150%; }
+h4 { font-size: 140%; }
+h5 { font-size: 120%; }
+h6 { font-size: 100%; }
+
+table { 
+	border-collapse:collapse; 
+	border-spacing:0; 
+	/*font: 85%/2.0em Verdana, Arial, Helvetica, sans-serif; */
+}
+th {
+	text-align: center;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+img { 
+	border:0; 
+}
+
+p {
+	margin-top: 0px;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Make these the same as A above */
+.link { text-decoration:none; cursor:pointer; }
+.link:hover { text-decoration: underline; }
+
+.hover:hover {
+
+	cursor: pointer;
+
+	-webkit-transition-property             : background-color;
+	-webkit-transition-duration             : 0.2s;
+	-webkit-transition-timing-function      : linear;
+
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: rgb(0, 0, 0) transparent !important;
+	/* RGBa */
+	background-color: rgba(0, 0, 0, 0.2) !important;
+	/* For IE 5.5-7 */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000);
+	/* For IE 8+ */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000, endColorstr=#33000000)";
+	/* First two digits are the opacity:  Calculate via JS using:  console.log( Math.floor(0.2 * 255).toString(16) );   See bottom of functions.js */
+
+	/* If element has a background image, it'll hide the background-color, so... remove it... */
+	background-image: url('/images/spacer.gif') !important;
+}
+
+
+/* These are used for odd/even table rows:  Use with Smarty using:   <tr class="{cycle values='odd,even'}"> */
+.odd { }
+.even {
+	background			: rgb( 0, 0, 0 ) transparent;
+	background-color	: rgba( 0, 0, 0, 0.1 );																					/* WebKit, FF */
+	filter				: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000, endColorstr=#19000000);			/* IE 5-7 */
+	-ms-filter			: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000, endColorstr=#19000000)";			/* IE 8-9 */
+							/* First two digits are the opacity:  Calculate via JS using:  console.log( Math.floor(0.1 * 255).toString(16) ); */
+}
+
+.top { vertical-align: top !important; }
+.middle { vertical-align: middle !important; }
+.bottom { vertical-align: bottom !important; }
+.left { text-align: left !important; }
+.center { text-align: center !important; }
+.right { text-align: right !important; }
+.nowrap { white-space: nowrap !important; }
+
+.bold { font-weight: bold !important; }
+.underline { text-decoration: underline !important; }
+.italic { font-style: italic !important; }
+.italics { font-style: italic !important; }
+
+.smallcaps { font-variant: small-caps !important; }
+.small-caps { font-variant: small-caps !important; }
+
+.bl, .ba { border-left: 1px solid #666; }
+.bt, .ba { border-top: 1px solid #666; }
+.br, .ba { border-right: 1px solid #666; }
+.bb, .ba { border-bottom: 1px solid #666; }
+
+
+/* Scrollable Listbox {{{ */
+/* These are the left-side lists on the Staff, Groups, & Pages page, Sources page, Customer Alerts page, etc..... */
+.scrollable_listbox {
+	overflow-y		: scroll; 
+	overflow-x		: hidden;
+	min-height		: 102px; 
+	max-height		: 552px;
+	margin-bottom	: 5px; 
+	border			: 1px solid #777; 
+	width			: 250px;
+}
+.scrollable_listbox-items {
+	list-style-type	: none;
+	margin			: 0px;
+	padding			: 0px;
+}
+.scrollable_listbox-items li {
+	margin			: 2px 2px;
+	padding-left	: 20px;
+	width			: 205px;		/* listbox width - padding-left - space for scrollbar */
+	white-space		: nowrap;
+	overflow-x		: hidden;
+	cursor			: pointer;
+}
+.scrollable_listbox-items li span {
+	display			: inline-block;
+	margin-left		: -1.3em;
+	margin-top		: 2px;
+	margin-bottom	: -3px;
+	cursor			: move;
+}
+/* }}} */
+
+
+.glyphicon {
+	opacity			: 0.7;
+	filter			: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	cursor			: pointer;
+}
+
+.product_thumbnail {
+	border                  : 1px solid #aaa;
+	padding                 : 0px;
+	cursor                  : pointer;
+	height                  : 128px;
+	border-radius           : 3px;
+	-moz-border-radius      : 3px; 
+	-webkit-border-radius   : 3px;
+	-khtml-border-radius    : 3px;
+	box-shadow              : 4px 4px 5px #666;
+	-moz-box-shadow         : 4px 4px 5px #666;
+	-webkit-box-shadow      : 4px 4px 5px #666;
+}
+
+/* Over-ride this, specific jQuery-UI style setting */
+.ui-widget-content a { color: #4e6ca3; }
+
+.ui-state-error .link { color:#bbb !important; }
+.ui-state-error .link:hover { color:#777 !important; }
+
+.ui-autocomplete { z-index: 4000; }			/* Fix for bug introduced after upgrading jQuery-UI from 1.10.0 to 1.10.2 */
+
+
+
+
+/* Brayden  -  Dec. 27 / 2014  {{{ */
+
+.ui-3d-limegreen {
+
+    /* CSS gradient */
+    background: rgb(38,242,52) !important; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(38,242,52,1) 1%, rgba(101,239,55,1) 50%, rgba(57,229,0,1) 51%, rgba(58,255,58,1) 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(38,242,52,1)), color-stop(50%,rgba(101,239,55,1)), color-stop(51%,rgba(57,229,0,1)), color-stop(100%,rgba(58,255,58,1))) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(38,242,52,1) 1%,rgba(101,239,55,1) 50%,rgba(57,229,0,1) 51%,rgba(58,255,58,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(38,242,52,1) 1%,rgba(101,239,55,1) 50%,rgba(57,229,0,1) 51%,rgba(58,255,58,1) 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(38,242,52,1) 1%,rgba(101,239,55,1) 50%,rgba(57,229,0,1) 51%,rgba(58,255,58,1) 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(38,242,52,1) 1%,rgba(101,239,55,1) 50%,rgba(57,229,0,1) 51%,rgba(58,255,58,1) 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#26f234', endColorstr='#3aff3a',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.ui-3d-red {
+    background: rgb(255,48,25) !important; /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,48,25,1) 0%, rgba(207,4,4,1) 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,48,25,1)), color-stop(100%,rgba(207,4,4,1))) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,48,25,1) 0%,rgba(207,4,4,1) 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 ) !important; /* IE6-9 */
+}
+.ui-3d-blackglass {
+	background: rgb(174,188,191) !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(174,188,191,1) 0%, rgba(110,119,116,1) 50%, rgba(10,14,10,1) 51%, rgba(10,8,9,1) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,188,191,1)), color-stop(50%,rgba(110,119,116,1)), color-stop(51%,rgba(10,14,10,1)), color-stop(100%,rgba(10,8,9,1))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(174,188,191,1) 0%,rgba(110,119,116,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=0 ) !important; /* IE6-9 */}
+
+.ui-3d-neon {
+	background: rgb(210,255,82) !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(210,255,82,1)), color-stop(100%,rgba(145,232,66,1))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ) !important; /* IE6-9 */
+
+}
+
+.ui-3d-skyblue {
+	
+  background: -webkit-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* W3C */
+        
+}
+
+.ui-3d-sunset {
+  background: -webkit-linear-gradient(0deg, #c21500 10%, #ffc500 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(0deg, #c21500 10%, #ffc500 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(0deg, #c21500 10%, #ffc500 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(0deg, #c21500 10%, #ffc500 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(0deg, #c21500 10%, #ffc500 90%) !important; /* W3C */
+}
+        
+.ui-3d-darksky {
+  background: -webkit-linear-gradient(180deg, #4b6cb7 10%, #182848 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #4b6cb7 10%, #182848 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #4b6cb7 10%, #182848 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #4b6cb7 10%, #182848 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #4b6cb7 10%, #182848 90%) !important; /* W3C */
+}
+.ui-3d-purple {
+  background: -webkit-linear-gradient(180deg, #6441A5 10%, #2a0845 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #6441A5 10%, #2a0845 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #6441A5 10%, #2a0845 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #6441A5 10%, #2a0845 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #6441A5 10%, #2a0845 90%) !important; /* W3C */
+}
+
+.ui-3d-reef {
+	
+  background: -webkit-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #00d2ff 10%, #3a7bd5 90%) !important; /* W3C */
+        
+}        
+
+.ui-3d-ios7-green {
+  background: -webkit-linear-gradient(180deg, #87FC70 10%, #0BD318 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #87FC70 10%, #0BD318 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #87FC70 10%, #0BD318 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #87FC70 10%, #0BD318 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #87FC70 10%, #0BD318 90%) !important; /* W3C */
+}
+
+.ui-3d-ios7-blue {
+  background: -webkit-linear-gradient(180deg, #1AD6FD 10%, #1D62F0 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #1AD6FD 10%, #1D62F0 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #1AD6FD 10%, #1D62F0 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #1AD6FD 10%, #1D62F0 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #1AD6FD 10%, #1D62F0 90%) !important; /* W3C */
+}
+
+.ui-3d-ios7-yellow {
+  background: -webkit-linear-gradient(180deg, #FEE906 10%, #FFCD02 90%) !important; /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(180deg, #FEE906 10%, #FFCD02 90%) !important; /* FF3.6+ */
+  background:     -ms-linear-gradient(180deg, #FEE906 10%, #FFCD02 90%) !important; /* IE10 */
+  background:      -o-linear-gradient(180deg, #FEE906 10%, #FFCD02 90%) !important; /* Opera 11.10+ */
+  background:         linear-gradient(180deg, #FEE906 10%, #FFCD02 90%) !important; /* W3C */
+}
+/* }}} */
+
+/* Brayden - Input range styling and rotation support  {{{ */
+input[type=range] {
+    -webkit-appearance: none;
+    border: 0px;
+    width: 150px;
+    height: 7px;
+    -webkit-appearance: none;
+    border-radius: 1px;
+}
+
+input[type=range]:focus {
+    outline: 0;
+}
+input[type=range][orient=vertical] {
+	-webkit-appearance: none;
+    -webkit-transform: rotate(270deg);
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance:none !important;
+    width:25px;
+    height:25px;
+    -webkit-appearance: none;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 0px 6px gray;
+    background:  #F4F4F4;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+    -webkit-appearance:none !important;
+
+    box-shadow: 0px 0px 12px gray;
+}
+/* }}} */
+
+
+.background1 {
+	background: #fff9e5;
+}
+.background2 {
+	background: #feeebd;
+}
+
+
+.dataTable { 
+	background: #fff;
+	/*
+	font-size: 90%;
+	line-height: 32px;
+	*/
+	padding: 0px 2px 0px 2px;
+}
+
+.dataTable th { 
+	font-size: 110%;
+	padding: 3px 10px 3px 10px;
+}
+
+.dataTable td { 
+	padding: 2px 3px 1px 3px;
+}
+
+.tableBody tr:nth-child(2n+2) {
+	/* background: #feeebd; */
+}
+
+.border-a {
+	border: 1px solid #4c3000;
+}
+.border-t {
+	border-top: 1px solid #4c3000;
+}
+.border-l {
+	border-left: 1px solid #4c3000;
+}
+.border-r {
+	border-right: 1px solid #4c3000;
+}
+
+.border-br {
+	border-right: 1px solid #4c3000;
+	border-bottom: 1px solid #4c3000;
+}
+.border-b {
+	border-bottom: 1px solid #4c3000;
+}
+
+.numbercell {
+	text-align: right;
+	padding: 0px 10px 0px 5px;
+}
+.textcell {
+	text-align: left;
+	padding: 0px 5px 0px 10px;
+}
+.normalCell {
+	border: 0px solid #4c3000;
+}
+.goodCell {
+	background: lightgreen;
+	border: 1px solid #4c3000;
+}
+.infoCell {
+	background: lightblue;
+	border: 1px solid #4c3000;
+}
+.noticeCell {
+	background: pink;
+	border: 1px solid #4c3000;
+}
+.warnCell {
+	background: orange;
+	border: 1px solid #4c3000;
+}
+.errorCell {
+	background: red;
+	color: #eee;
+	border: 1px solid #4c3000;
+}
+.optCell {
+	color: #777;
+}
+
+.box { 
+	background: transparent;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+}
+.highlight2 {
+
+	color: #fff;
+	background: #32735b;
+}
+.highlight {
+	color: #000;
+	background: #d66655;
+	/* background: #cad7cd; */
+}
+input.button {
+	height: 40px;
+}
+input {
+	background: #eee; 
+	border: 1px solid #aaa;
+	padding: 3px;
+}
+
+.small_button {
+	height		: 21px !important;
+	font-size	: 0.9em !important;
+	padding		: 0px 6px !important;
+	margin		: 0px 4px !important;
+}
+
+
+select {
+	background: #eee; 
+	border: 1px solid #aaa;
+}
+
+#topbar {
+	text-align: left;
+	height: 36px;				/* This gets overridden in common.js::ready(); */
+	padding-left: 5px;
+	padding-top: 3px;
+	color: #666;
+	background: black;
+}
+
+#middlebar {
+	/* The "body" of the page */
+	width: 100%;
+	height: 100%;				/* This gets overridden in common.js::ready(); */
+	text-align: center;
+	padding-bottom: 30px:		/* same as bottombar.height */
+	overflow-x:	auto;
+	overflow-y:scroll;
+}
+
+#contentarea {
+	text-align		: left;
+	display			: inline-block;
+	padding			: 0px;
+	margin			: 15px;
+	min-width		: 700px;
+	border-width	: 0px;
+}
+
+#contentarea_title {
+	padding					: 10px;
+	margin					: 0px;
+	font-variant			: small-caps;
+	font-size				: 170%;
+	border-top-left-radius	: 6px;
+	border-top-right-radius	: 6px;
+}
+#contentarea_title:hover {
+	cursor					: pointer;
+}
+
+#bottombar {
+	text-align: left;
+	position: relative;
+	margin-top: -0px;
+	height: 30px;
+	clear: both;
+	padding-left: 5px;
+	padding-top: 2px;
+	color: #666;
+	background: black;
+}
+#bottombar a {
+	color: #999;
+}
+#bottombar a:hover {
+	color: #ccc;
+}
+
+.mainmenu_container {
+	position:   absolute;
+	padding:    5px;
+	top:        35px;
+	left:       7px;
+	width:      160px;
+	z-index:    1024;
+	text-align: left;
+}
+
+.mainmenu_item {
+	padding: 2px 2px 2px 6px;
+	border: 1px solid transparent;
+}
+.mainmenu_item_label {
+	display		: inline-block;
+
+/* A fix for IE7+ to display inline-block properly....  8(  */
+	zoom        : 1;
+	*display    : inline;
+
+}
+.mainmenu_submenu_caret {
+	display		: inline-block;
+	float		: right;
+	font-size	: 20px;
+	margin-top	: -4px;
+
+/* A fix for IE7+ to display inline-block properly....  8(  */
+	zoom        : 1;
+	*display    : inline;
+
+}
+
+#mainmenu_underlay {
+	position:   absolute;
+	display:    none;
+	margin:     0px;
+	top:        0px;
+	left:       0px;
+	z-index:    1023;
+	background-color:   #999;
+	opacity:    0.0;
+	filter:     progid:DXImageTransform.Microsoft.Alpha(opacity=00);
+}
+
+
+#printed_page_title {
+	/* Used as a page heading if printed. */
+	display: none;
+}
+
+.under-construction {
+/*
+	color:				yellow; 
+	background:			red;
+*/
+	padding:			5px 10px 8px 10px;
+	margin-right:		20px;
+	font-variant:		small-caps;
+	text-align:			center;
+}
+
+.kiosk-titlebar {
+	background			: black;
+	padding				: 5px;
+	width				: 100%;
+}
+.kiosk-title {
+	color				: white; 
+	font-variant		: small-caps;
+	font-size			: 3.0em;
+	font-weight			: bold;
+	text-align			: center;
+	padding				: 5px 0px 10px 0px;
+}
+.kiosk-timer {
+	color				: #333; 
+	font-style			: italic;
+	font-weight			: bold;
+	text-align			: right;
+	position			: absolute;
+	top					: 5px;
+	width				: 100px;
+}
+
+
+.dropshadow {
+	-moz-box-shadow:        7px 7px 15px #444;
+	-webkit-box-shadow:     7px 7px 15px #444;
+	box-shadow:             7px 7px 15px #444;
+}
+.drop-shadow {
+	-moz-box-shadow:        7px 7px 15px #444;
+	-webkit-box-shadow:     7px 7px 15px #444;
+	box-shadow:             7px 7px 15px #444;
+}
+.dropshadow-small {
+	-moz-box-shadow:        4px 4px 8px #666;
+	-webkit-box-shadow:     4px 4px 8px #666;
+	box-shadow:             4px 4px 8px #666;
+}
+.drop-shadow-small {
+	-moz-box-shadow:        4px 4px 8px #666;
+	-webkit-box-shadow:     4px 4px 8px #666;
+	box-shadow:             4px 4px 8px #666;
+}
+
+#loginDetails {
+	float:				left;
+	margin:				5px 10px 0px 10px;
+	font-size:			1.1em;
+	color:				#ccc;
+}
+
+/* Override jQuery-UI's desire to make icons a block-level element. */
+.ui-icon
+{
+	/*display:	inline-block !important; */
+	display:	inline-block;
+}
+
+/* Image manipulation  - used to "rotate" an icon - i.e. make an arrow point a different direction {{{ */
+.flip-horizontal {
+	transform				: scaleX(-1);
+	-moz-transform			: scaleX(-1);
+	-webkit-transform		: scaleX(-1);
+	-o-transform			: scaleX(-1);
+	-ms-filter				: flipH; /*IE*/
+	filter					: flipH; /*IE*/
+	image-rendering			: -moz-crisp-edges;
+}
+.flip-vertical {
+	transform				: scaleY(-1);
+	-moz-transform			: scaleY(-1);
+	-webkit-transform		: scaleY(-1);
+	-o-transform			: scaleY(-1);
+	filter					: flipV; /*IE*/
+	-ms-filter				: flipV; /*IE*/
+	image-rendering			: -moz-crisp-edges;
+}
+
+.rotate-90 {
+	transform			: rotate( 90deg );
+	-ms-transform		: rotate( 90deg );
+	-moz-transform		: rotate( 90deg );
+	-webkit-transform	: rotate( 90deg );
+	-o-transform		: rotate( 90deg );
+}
+.rotate-180 {
+	transform			: rotate( 180deg );
+	-ms-transform		: rotate( 180deg );
+	-moz-transform		: rotate( 180deg );
+	-webkit-transform	: rotate( 180deg );
+	-o-transform		: rotate( 180deg );
+}
+.rotate-270 {
+	transform			: rotate( 270deg );
+	-ms-transform		: rotate( 270deg );
+	-moz-transform		: rotate( 270deg );
+	-webkit-transform	: rotate( 270deg );
+	-o-transform		: rotate( 270deg );
+}
+/* }}} */
+
+
+/* Special styles for my custom FancyBox-based dialog boxes */
+#fancybox-titlebar {
+	margin          : 0px;
+	padding         : 5px 5px 5px 20px;
+	border          : 0px;
+	border-bottom   : 1px solid black;
+	cursor          : pointer;
+}
+.fbtb-m { display: inline-block; }
+.fbtb-r {
+	display		    : inline-block;
+	float			: right;
+}
+.fbtb-r:hover {
+	color			: black;
+}
+
+.ui-icon-spacer {
+	/* A "fake" icon to use as a spacer in place of an actual jQuery UI icon */
+	background-position		: 4096px 4096px;
+}
+.ui-icon-space { background-position     : 4096px 4096px; }
+.ui-icon-empty { background-position     : 4096px 4096px; }
+.ui-icon-blank { background-position     : 4096px 4096px; }
+
+/* My Icon {{{ */
+.myicon {
+	width						: 16px;
+	height						: 16px;
+	padding						: 0px 1px 1px 0px;
+	display						: inline-block;
+	border						: 1px solid transparent;
+	cursor						: pointer;
+}
+.myicon:hover {
+	cursor						: pointer;
+	border						: 1px solid #8e846b;
+	border-radius				: 4px;
+	-moz-border-radius			: 4px;
+	-webkit-border-radius		: 4px;
+	-khtml-border-radius		: 4px; 
+
+	box-shadow					: 1px 1px 1px #444;
+	-moz-box-shadow				: 1px 1px 1px #444;
+	-webkit-box-shadow			: 1px 1px 1px #444;
+}
+.myicon:active {
+	box-shadow					: 1px 1px 1px #444 inset;
+	-moz-box-shadow				: 1px 1px 1px #444 inset;
+	-webkit-box-shadow			: 1px 1px 1px #444 inset;
+}
+.myicon-disabled {
+	border						: 1px solid transparent !important;
+	box-shadow					: 0px 0px 0px !important;
+	-moz-box-shadow				: 0px 0px 0px !important;
+	-webkit-box-shadow			: 0px 0px 0px !important;
+	cursor						: default !important;
+	opacity						: .35; 
+	filter						: Alpha(Opacity=35);
+}
+/* }}} */
+
+
+/* ui-state-?????     Gradient fills {{{ 
+
+	Generated with the help of:  http://www.colorzilla.com/gradient-editor/
+	
+*/
+
+.ui-state-error,								/* NOTE:  Defined here to get nice, consistent gradient fills/colors across all themes */
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {				/* Pink */
+	color: #f00;
+	border: 1px solid #f00;
+
+	background: #ffd1e8;
+	background: -moz-linear-gradient(top,  #ffd1e8 0%, #eaa8ca 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd1e8), color-stop(100%,#eaa8ca));
+	background: -webkit-linear-gradient(top,  #ffd1e8 0%,#eaa8ca 100%);
+	background: -o-linear-gradient(top,  #ffd1e8 0%,#eaa8ca 100%);
+	background: -ms-linear-gradient(top,  #ffd1e8 0%,#eaa8ca 100%);
+	background: linear-gradient(to bottom,  #ffd1e8 0%,#eaa8ca 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd1e8', endColorstr='#eaa8ca',GradientType=0 );
+}
+
+.ui-state-error-2,								/* NOTE:  Defined here to get nice, consistent gradient fills/colors across all themes */
+.ui-widget-content .ui-state-error-2,
+.ui-widget-header .ui-state-error-2 {				/* Red */
+	color: #fff;
+	border: 1px solid #f00;
+
+	background: #ff305d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff305d 0%, #ff0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff305d), color-stop(100%,#ff0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff305d 0%,#ff0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff305d 0%,#ff0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff305d 0%,#ff0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff305d 0%,#ff0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff305d', endColorstr='#ff0000',GradientType=0 ); /* IE6-9 */
+}
+
+.ui-state-highlight,							/* NOTE:  Defined here to get nice, consistent gradient fills/colors across all themes */
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header  .ui-state-highlight {		/* Yellow */
+	color: #fa9405;
+	border: 1px solid #fa9405;
+
+	background: #ffffea;
+	background: -moz-linear-gradient(top,  #ffffea 0%, #ffffb5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffea), color-stop(100%,#ffffb5));
+	background: -webkit-linear-gradient(top,  #ffffea 0%,#ffffb5 100%);
+	background: -o-linear-gradient(top,  #ffffea 0%,#ffffb5 100%);
+	background: -ms-linear-gradient(top,  #ffffea 0%,#ffffb5 100%);
+	background: linear-gradient(to bottom,  #ffffea 0%,#ffffb5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffea', endColorstr='#ffffb5',GradientType=0 );
+}
+
+.ui-state-highlight-2,
+.ui-widget-content .ui-state-highlight-2, 
+.ui-widget-header  .ui-state-highlight-2 {		/* Bright Yellow */
+	color: #fa9405;
+	border: 1px solid #fa9405;
+
+	background: #ffffad;
+	background: -moz-linear-gradient(top,  #ffffad 0%, #ffff2b 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffad), color-stop(100%,#ffff2b));
+	background: -webkit-linear-gradient(top,  #ffffad 0%,#ffff2b 100%);
+	background: -o-linear-gradient(top,  #ffffad 0%,#ffff2b 100%);
+	background: -ms-linear-gradient(top,  #ffffad 0%,#ffff2b 100%);
+	background: linear-gradient(to bottom,  #ffffad 0%,#ffff2b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffad', endColorstr='#ffff2b',GradientType=0 );
+}
+
+.ui-state-not-startable,
+.ui-widget-content .ui-state-not-startable, 
+.ui-widget-header  .ui-state-not-startable {	/* Orange */
+	color: #755000;
+	border: 1px solid #755000;
+	
+	background: #f9c667;
+	background: -moz-linear-gradient(top,  #f9c667 0%, #f79621 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9c667), color-stop(100%,#f79621));
+	background: -webkit-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -o-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: -ms-linear-gradient(top,  #f9c667 0%,#f79621 100%);
+	background: linear-gradient(to bottom,  #f9c667 0%,#f79621 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9c667', endColorstr='#f79621',GradientType=0 );
+}
+
+.ui-state-not-startable-2,
+.ui-widget-content .ui-state-not-startable-2, 
+.ui-widget-header  .ui-state-not-startable-2 {	/* Dark gray */
+	color: #aaa;
+	border: 1px solid #555;
+	
+	background: #666666;
+	background: -moz-linear-gradient(top,  #666666 0%, #3d3a3a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#666666), color-stop(100%,#3d3a3a));
+	background: -webkit-linear-gradient(top,  #666666 0%,#3d3a3a 100%);
+	background: -o-linear-gradient(top,  #666666 0%,#3d3a3a 100%);
+	background: -ms-linear-gradient(top,  #666666 0%,#3d3a3a 100%);
+	background: linear-gradient(to bottom,  #666666 0%,#3d3a3a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#3d3a3a',GradientType=0 );
+}
+
+.ui-state-not-started,
+.ui-widget-content .ui-state-not-started, 
+.ui-widget-header  .ui-state-not-started {		/* Light Blue */
+	color: #0065a8;
+	border: 1px solid #0065a8;
+
+	background: #d4ebf7;
+	background: -moz-linear-gradient(top,  #d4ebf7 0%, #afe1f7 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d4ebf7), color-stop(100%,#afe1f7));
+	background: -webkit-linear-gradient(top,  #d4ebf7 0%,#afe1f7 100%);
+	background: -o-linear-gradient(top,  #d4ebf7 0%,#afe1f7 100%);
+	background: -ms-linear-gradient(top,  #d4ebf7 0%,#afe1f7 100%);
+	background: linear-gradient(to bottom,  #d4ebf7 0%,#afe1f7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ebf7', endColorstr='#afe1f7',GradientType=0 );
+}
+
+.ui-state-started,
+.ui-widget-content .ui-state-started, 
+.ui-widget-header  .ui-state-started {			/* Blue */
+	color: #0065a8;
+	border: 1px solid #0065a8;
+
+	background: #97d0fc;
+	background: -moz-linear-gradient(top,  #97d0fc 0%, #69addb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#97d0fc), color-stop(100%,#69addb));
+	background: -webkit-linear-gradient(top,  #97d0fc 0%,#69addb 100%);
+	background: -o-linear-gradient(top,  #97d0fc 0%,#69addb 100%);
+	background: -ms-linear-gradient(top,  #97d0fc 0%,#69addb 100%);
+	background: linear-gradient(to bottom,  #97d0fc 0%,#69addb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97d0fc', endColorstr='#69addb',GradientType=0 );
+}
+
+.ui-state-done,
+.ui-widget-content .ui-state-done, 
+.ui-widget-header  .ui-state-done {				/* Light Green */
+	color: green;
+	border: 1px solid green;
+
+	background: #9df2a5;
+	background: -moz-linear-gradient(top,  #9df2a5 0%, #4dea50 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9df2a5), color-stop(100%,#4dea50));
+	background: -webkit-linear-gradient(top,  #9df2a5 0%,#4dea50 100%);
+	background: -o-linear-gradient(top,  #9df2a5 0%,#4dea50 100%);
+	background: -ms-linear-gradient(top,  #9df2a5 0%,#4dea50 100%);
+	background: linear-gradient(to bottom,  #9df2a5 0%,#4dea50 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9df2a5', endColorstr='#4dea50',GradientType=0 );
+}
+
+.ui-state-done-2,
+.ui-widget-content .ui-state-done-2, 
+.ui-widget-header  .ui-state-done-2 {			/* Dark Green */
+	color: #54ff56;
+	border: 1px solid #2a822c;
+
+	background: #4aa850;
+	background: -moz-linear-gradient(top,  #4aa850 0%, #2a822c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4aa850), color-stop(100%,#2a822c));
+	background: -webkit-linear-gradient(top,  #4aa850 0%,#2a822c 100%);
+	background: -o-linear-gradient(top,  #4aa850 0%,#2a822c 100%);
+	background: -ms-linear-gradient(top,  #4aa850 0%,#2a822c 100%);
+	background: linear-gradient(to bottom,  #4aa850 0%,#2a822c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4aa850', endColorstr='#2a822c',GradientType=0 );
+}
+/* }}} */
+
+
+
+.tour-eff-good { color:green; font-weight:bold; }
+.tour-eff-warn { color:#ff7700; font-weight:bold; }
+.tour-eff-error { color:red; font-weight:bold; }
+
+
+
+
+/* **************************  TODO  *******************************/
+
+/* NOTE: This is duplicated as rc-menu* in various templates.  All need to be merged into a single jQuery-based plugin.   !!!! */
+/* Right-click menu Classes {{{ */
+/* See templates/projects-project_list_tpl.html */
+.contextmenu {
+	display             : none;
+	position            : absolute;
+	z-index             : 2000;
+	box-shadow          : 5px 5px 5px #888;
+}
+.contextmenu_item {
+	padding             : 1px 10px 1px 5px;
+	font-size           : 0.8em;
+	font-weight         : bold;
+	border              : 1px solid transparent;
+	vertical-align		: middle;
+}
+.contextmenu_item:hover {
+	background          : #ffdd57;
+	color               : black;
+	cursor              : pointer;
+	border              : 1px solid #777;
+}
+
+.contextmenu_underlay {
+	position            : absolute;
+	display             : none;
+	padding             : 0px;
+	margin              : 0px;
+	top                 : 0px;
+	left                : 0px;
+	z-index             : 1999;
+	background-color    : #999;
+	opacity             : 0.2;
+	filter              : progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+.contextmenu_icon {
+	opacity				: 0.0;
+	filter              : progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	margin-right		: 5px;
+}
+/* }}} */
+
+/* **************************  TODO  *******************************/
+
+
+
+
+/* Animate expanding/contracting of autosized textareas - see t1_list-contents.html */
+.autosize-animated {
+	-webkit-transition      : height 0.1s;
+	-moz-transition         : height 0.1s;
+	transition              : height 0.1s;
+}
+
+/* Add this class to any div to animate changes to any CSS (add/removeClass) on the element */
+/* <div class="foo animate"> ...  $('.foo').addClass( 'ui-state-error' ); */
+.animate-fast {
+	-webkit-transition		: all 0.3s ease;
+	-moz-transition			: all 0.3s ease;
+	-o-transition			: all 0.3s ease;
+	transition				: all 0.3s ease;
+}
+.animate {
+	-webkit-transition		: all 0.6s ease;
+	-moz-transition			: all 0.6s ease;
+	-o-transition			: all 0.6s ease;
+	transition				: all 0.6s ease;
+}
+.animate-slow {
+	-webkit-transition		: all 1.0s ease;
+	-moz-transition			: all 1.0s ease;
+	-o-transition			: all 1.0s ease;
+	transition				: all 1.0s ease;
+}
+
+
+/* ToolTip Theme {{{
+ * “Smoke”  - ‘cause I’m a Tony Stewart (#14) fan!
+ * By Kevin Traas <kevin@tra.as> - Sep 13, 2012
+ */
+.ui-tooltip-smoke {
+	/*
+	background-color		: #111;
+	border					: 2px solid black;
+	border-radius			: 6px; 
+	overflow				: visible;
+	font-size				: 12px; 
+	line-height				: 12px; 
+	font-weight				: bold;
+	*/
+	box-shadow				: 5px 5px 7px #444;
+	-moz-box-shadow			: 5px 5px 7px #444;
+	-webkit-box-shadow		: 5px 5px 7px #444;
+	opacity					: 0.8;
+	-moz-opacity			: 0.8;
+	-webkit-opacity			: 0.8;
+	filter					: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+
+	background-color		: #222;
+	background				: #222;
+	color					: white;
+	font-family				: Tahoma, Verdana, Arial, sans-serif;
+	position				: absolute;
+	padding					: 8px;
+	text-align				: left; 
+	z-index					: 10000; 
+	pointer-events			: none;
+	width					: auto;
+	max-width				: 500px;
+}
+body .ui-tooltip-smoke {
+	border-width			: 2px;
+	border-color			: #000;
+}
+/* }}} */
+
+
+/* CSS for jQuery-UI TimePicker (extension to DatePicker) 
+	http://trentrichardson.com/examples/timepicker/
+*/
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
+
+
+
+/* jQuery-UI Dialog Tweaks */
+.ui-dialog { 
+	padding					: 0px !important; 
+	-moz-box-shadow			: 10px 10px 20px #444;
+	-webkit-box-shadow		: 10px 10px 20px #444;
+	box-shadow				: 10px 10px 20px #444;
+}
+.ui-dialog-titlebar { border-bottom-right-radius: 0px !important; border-bottom-left-radius: 0px !important; }
+
+
+
+.DataTables_sort_wrapper {
+	cursor	: pointer;
+}
+
+.dataTables_scrollBody_fix {
+	/* Bugfix for horizontal scrollbar sometimes showing up.
+		As suggested at:  http://www.datatables.net/forums/discussion/11849/annoying-horizontal-scrollbar-when-using-bscrollinfinite-and-table-borders
+
+		XXX		BE CAREFUL!		This class blocks all horizontal scrollbars, so it can
+								only be applied when the table is *less* than max width.  
+								See ye_list.html for an example of usage....
+
+	*/
+
+	*margin-top					: -1px;
+	-webkit-overflow-scrolling	: touch;
+	overflow-x					: hidden !important;
+}
+
+
+
+
+/* Clearfix - ensure Container height exceeds internal floating contents
+	- See http://pastebin.com/BvFFGkyb for usage example 
+	- Also see mix_orders_v4-mix-configs.html
+*/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; } /* fix for IE */
+
+
+.exception-wrapper {
+	font-family			: verdana,arial,sans-serif;
+	font-size			: 1.3em;
+	line-height			: 1.0em;
+}
+
+.hint {
+	font-style			: italic;
+	font-size			: 0.8em;
+	opacity				: 0.8;
+}
+
+.large   { font-size: 1.2em !important; }
+.larger  { font-size: 1.4em !important; }
+.largest { font-size: 1.6em !important; }
+.big     { font-size: 1.2em !important; }
+.bigger  { font-size: 1.4em !important; }
+.biggest { font-size: 1.6em !important; }
+
+.small    { font-size: 0.9em !important; }
+.smaller  { font-size: 0.8em !important; }
+.smallest { font-size: 0.7em !important; }
+.tiny     { font-size: 0.6em !important; }
+
+.help {
+	/* !important is required to enforce the help cursor on disabled INPUT elements */
+	cursor				: help !important;
+}
+
+.ColVis { border: 0px; }
+.ColVis_Button { white-space: nowrap; min-width: 150px; }

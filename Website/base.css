@@ -1,19 +1,10 @@
+/* importing google font */
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
 
 html {
 	color: #FFFFFF;
 	font-family: 'Shadows Into Light Two', Arial, sans-serif;
 	background-image: url(images/Collage.jpg);
-	/* Harvard - removed gradient as we have a collage background
-	/*background: #AAEA99; /* Old browsers */
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bde6a4+0,6dc46d+100 */
-
-	/*background: #bde6a4; /* Old browsers */
-	/*background: -moz-linear-gradient(top,  #bde6a4 0%, #6dc46d 100%); /* FF3.6-15 */
-	/*background: -webkit-linear-gradient(top,  #bde6a4 0%,#6dc46d 100%); /* Chrome10-25,Safari5.1-6 */
-	/*background: linear-gradient(to bottom,  #bde6a4 0%,#6dc46d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bde6a4', endColorstr='#6dc46d',GradientType=0 ); /* IE6-9 */
-
 }
 
 html, body{

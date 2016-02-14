@@ -465,9 +465,11 @@ table, tr, td, tbody {
 
 /* Contact Us */
 .section {
-	width: 800px;
+	width: 1000px;
 	height: 100%;
 	margin: auto;
+	background-color: #5D0201;
+	padding: 10px;
 }
 
 .section h1 {
@@ -491,7 +493,7 @@ table, tr, td, tbody {
 }
 
 #map iframe {
-	width: 450px;
+	width: 750px;
 	height: 300px;
 	border: 0;
 }
@@ -499,11 +501,12 @@ table, tr, td, tbody {
 #row2wrapper {
 	display: inline-block;
 	width: 100%;
+	margin-top: 50px;
 }
 
 #feedback {
 	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 #feedback form {

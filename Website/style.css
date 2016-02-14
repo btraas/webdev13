@@ -57,8 +57,10 @@ h1, h2, h3, h4, h5 {
 		font-family:  Helvetica, sans-serif;
 		text-align: left;
 		font-size: 48px;
+		font-weight: bold;
 		border-bottom: solid 1px;
 		color: #FFFFFF;
+		margin-top: 50px;
 		}
 		
 .sitemapboxes{

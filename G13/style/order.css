@@ -52,6 +52,38 @@
 	margin: 0 auto;
 }
 
+.space {
+    padding: 20px;
+}
+
+.twoCol {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.twoCol > tbody > tr > td:first-child {
+    text-align: right;
+}
+
+.twoCol > tbody > tr > td {
+    width: 50%;
+    padding: 10px;
+}
+
+.twoCol_separator > tbody > tr > td:first-child {
+    border-right: 1px solid;
+}
+
+.largeRows {
+    padding: 20px;
+}
+
+.medRows {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 .underline {
 	border-bottom: 1px solid;
 	padding-bottom: 3px;
@@ -64,6 +96,14 @@
 .order_datetime {
 	width: 120px;
 }
+
+
+.ui-input {
+    width: 150px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
 
 .halfWidth {
 	width: 48%;

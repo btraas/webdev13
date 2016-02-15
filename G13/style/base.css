@@ -123,6 +123,7 @@ table, tr, td, tbody {
 
 #mainbody {
 	max-width: 1000px;
+	min-height: 500px;
 	height: auto;
 	max-height: fit-content;
 	position: relative;

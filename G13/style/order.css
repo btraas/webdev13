@@ -1,13 +1,14 @@
-/*.hover:hover {
-	cursor: pointer;
-	background-color: rgb(0, 0, 0) transparent !important;
-}*/
+.hover:hover {					/* Hover just adds the default hover style to links */
 
-.round-corners {
+	cursor: pointer;
+	background-color: rgb(0, 0, 0) !important;
+}
+
+.round-corners {				/* For all items that need a subtle corner rounding */
 	border-radius: 3px;
 }
 
-.total td {
+.total td {						/* The extra space in the order summary, ensures total and tax are at the bottom below the line */
 	border-bottom: 1px solid;
 	min-height: 7px;
 	margin-bottom: 5px;
@@ -17,7 +18,7 @@
 	font-weight: bold;
 }
 
-.blackList {
+.blackList {					/*	Replicating the white-on-black list object in our milestone designs */
 	border: 1px solid white;
 	background: black;
 	color: white;
@@ -38,7 +39,7 @@
 	width: 100%;
 }
 
-.top {
+.top {						/* Aligns content in td elements to top */
 	vertical-align: top;
 }
 
@@ -46,16 +47,16 @@
 	text-align: center;
 }
 
-.centerCol {
+.centerCol {				/* A single center column for small webpages (login, register, etc) */
 	width: 500px;
 	margin: 0 auto;
 }
 
-.space {
+.space {					/* Just a general spacer class for elements */
     padding: 20px;
 }
 
-.twoCol {
+.twoCol {					/* Like centerCol, but used for a table to create two columns, the left aligned right and vice versa. */
     max-width: 600px;
     margin: 0 auto;
 }
@@ -69,7 +70,7 @@
     padding: 10px;
 }
 
-.twoCol_separator > tbody > tr > td:first-child {
+.twoCol_separator > tbody > tr > td:first-child {	/* Add a separator for twoCol table */
     border-right: 1px solid;
 }
 
@@ -83,28 +84,28 @@
 }
 
 
-.underline {
+.underline {								/* Replicating the 'underline' heading style in our milestone design */
 	border-bottom: 1px solid;
 	padding-bottom: 3px;
 }
 
-.min_height {
+.min_height {								/* Set element to the minimum it can be */
 	height: 1px;
 }
 
-.order_datetime {
+.order_datetime {							/* Width for order date / time inputs */
 	width: 120px;
 }
 
 
-.ui-input {
+.ui-input {									/* General style for input text / password etc */
     width: 150px;
     border-radius: 3px;
     margin-bottom: 5px;
 }
 
 
-.halfWidth {
+.halfWidth {								/* For elements such as two buttons to take just under 50% width */
 	width: 48%;
 }
 
@@ -112,7 +113,7 @@
 	width: 50px;
 }
 
-#receiptTable {
+#receiptTable {								/* Style unique to the order receipt page */
     width: 500px;
     margin: 0 auto;
     background: white;
@@ -125,7 +126,7 @@
     padding: 20px;
 }
 
-#cat_nav {
+#cat_nav {									/* category navigation in the order blackList menu */
 	vertical-align: top;
 }
 
@@ -148,7 +149,7 @@
 	width: 100%;
 }
 
-#selection_table {
+#selection_table {							/* Table grid showing selection options for menu categories */
 	border-top: 1px solid white;
 	margin-bottom: 30px;
 	width: 500px;
@@ -162,14 +163,14 @@
 	border-collapse: collapse;
 	
 }
-#selection_table tr td:first-child { /* First of each row */
+#selection_table tr td:first-child {	/* First of each row */
 	border-right: 1px solid white;
 }
-#selection_table tr:last-child td {	/* Last row */
+#selection_table tr:last-child td {		/* Last row */
 	border-bottom: 0px;
 }
 
-.itemBlock {
+.itemBlock {							/* Block of the selection table that contains the menu item */
 	width: 100%;
 	height: 100%;
 	padding: 10px;
@@ -182,7 +183,7 @@
 	padding-right: 10px;
 }
 
-.itemBlock_footer {
+.itemBlock_footer {						/* Contains price and add to cart button */
 	position: absolute;
 	bottom: 0;
 	width: 232px;
@@ -198,13 +199,13 @@
 	font-style: italic;
 }
 
-.description {
+.description {							/* For description text - italic and color set */
 	font-style: italic;
 	margin-top: 0px;
 	color: #BBBBBB;
 }
 
-.ui-button {		/* style diverged from jQuery UI */
+.ui-button {							/* style diverged from jQuery UI - styles a button to a common style*/
     display: inline-block;
     position: relative;
     padding: 3px;
@@ -219,32 +220,21 @@
     font-weight: normal;
     color: #373737;
     background: #f7f7f7;
+
+
+	/* Removing browser engine specifics, since they by definition aren't W3C standard... */
+
     /*background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e6e6e6));
     background: -webkit-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
     background: -o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);	
+
     background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);*/
     background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
 }
 
-.ui-highlight {	/* diverged from jQuery UI ui-state-highlight */
-    color: #fa9405;
-    border: 1px solid #fa9405;
-    background: #ffffea;
-    /*background: -moz-linear-gradient(top, #ffffea 0%, #ffffb5 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffea), color-stop(100%,#ffffb5));
-    background: -webkit-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
-    background: -o-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
-    background: -ms-linear-gradient(top, #ffffea 0%,#ffffb5 100%);*/
-    background: linear-gradient(to bottom, #ffffea 0%,#ffffb5 100%);
-}
-
-.cart-white {
-	background-image: url("./images/shopping.png");
-	background-size: 64px 64px;
-	background-repeat: no-repeat;
-	background-position: right;
-}
 
 #orderDetails td {
 	padding-top: 20px;

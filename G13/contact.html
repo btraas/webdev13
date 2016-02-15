@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Tokyo Thyme</title>
-	<link rel="stylesheet" type="text/css" href="base.css">
+	<link rel="stylesheet" type="text/css" href="style/base.css">
 </head>
 <body>
 	<div id="header">
@@ -28,22 +28,62 @@
 				<ul>
 					<li><a href="menu.html">Menu</a></li>
 					<li><a href="order.html">Online Ordering</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<li class="selector_h"><a>Careers</a></li>
+					<li class="selector_h"><a>Contact Us</a></li>
+					<li><a href="careers.html">Careers</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<!-- body -->
 	<div id="main">
 		<div id="mainbody">
-			<div id="career">
-				<h1>Careers</h1>
-				<p> This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.
-					This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.This space is reserved for career information.
+			<!-- contact information -->
+			<div id="row1wrapper">
+				<h1>Contact Us</h1>
+				<!-- address & phone number -->
+				<div id="contact-info">
+					<br>
+					<h2>Location</h2>
+					<p>
+						We're located between 38th & 39th Ave.<br>
+						Across from Point Grey Secondary.<br>
+						(Located on the same block as REmax)<br><br>
+						5405 West Boulevard<br>
+						Vancouver, BC&nbsp;&nbsp;V6M 3W5
+					</p>
+					<p>
+						Tel: (604) 263-3262
+					</p>
+					<br>
+					<h2>Hours of Operation</h2>
+					<p>
+						Monday - Friday: 11:00am - 8:00pm<br>
+						Saturday: 11:30 - 8:30<br>
+						Sunday: Closed<br>
+					</p>
+				</div>
+				<!-- google map -->
+				<div id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.0729985742887!2d-123.15783988475035!3d49.23710518192062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867379f7fe376f%3A0x6c875cb4703bbf8b!2sTokyo+Thyme!5e0!3m2!1sen!2sca!4v1455391407613" >
+					</iframe>
+				</div>
+			</div>
+			<!-- customer feedback form -->
+			<div id="row2wrapper">
+				<h2>Your Feedback</h2>
+				<p>We appreciate your visits to our restaurant. In order for us to serve you better at a future time, please take your time to fill up the fields below and send us feedback.
+				   For general questions, please indicate your email address and we will reply back as soon as possble. We try to answer back within 24 hours from the submission time.
 				</p>
-				<br class="clear">
-				<div = "career_image">
-				<img src="images/chirashi.jpg" width="450px" height="300px">
+				<!-- form -->
+				<div id="feedback">
+					<form>
+						<label for="subject">Subject:</label>
+						<input type="text" id="subject" name="subject">
+						<br>
+						<label for="details">Details:</label>
+						<input type="text" id="details" name="details">
+						<input type="submit" value="Submit">
+					</form>
 				</div>
 			</div>
 		</div>
@@ -108,4 +148,3 @@
 
 </body>
 </html>
-

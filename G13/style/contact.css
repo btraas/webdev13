@@ -1,0 +1,75 @@
+#row1wrapper {
+	display: inline-block;
+	max-width: 1000;
+	padding-top: 20px;
+	padding-left: 20px;
+
+}
+
+#contact-info {
+	float: left;
+	width: 215px;
+}
+
+#map {
+	float: left;
+	margin-top: 15px;
+	padding-left: 25px;
+	overflow-x: hidden;
+}
+
+#map iframe {
+	width: 700px;
+	height: 300px;
+	border: 0;
+	overflow-x: hidden;
+}
+
+#row2wrapper {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+#row2wrapper p {
+	max-width: 400px;
+}
+#feedback {
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+#feedback form {
+	display: inline-block;
+	width: 380px;
+}
+
+#feedback label {
+	float: left;
+	clear: none;
+}
+
+#feedback label[for=details] {
+	margin-top: 10px;
+}
+
+#feedback input {
+	margin-top: 10px;
+	float: right;
+	clear: none;
+}
+
+#feedback input[id=subject] {
+	width: 300px;
+	margin-top: 0;
+}
+
+#feedback input[id=details] {
+	width: 300px;
+	height: 250px;
+}
+
+#feedback input[value=Submit] {
+	width: 80px;
+	clear: both;
+}

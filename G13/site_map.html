@@ -4,27 +4,32 @@
 	<meta charset="utf-8">
 	<title>Tokyo Thyme</title>
 	<link href="style/base.css" rel="stylesheet">
-	<link href="style/order.css" rel="stylesheet">
+	<link href="style/sitemap.css" rel="stylesheet">
 </head>
 
 <body>
+	<!-- Header -->
 	<div id="header">
+		<!-- Logo -->
 		<div id="logo">
 			<a href="index.html"><img src="images/Logo2.jpg" alt="Tokyo Thyme" width="400" height="75"></a>
 		</div>
+		<div id="headerinfo">
+			<!-- Header information/content -->
 			<div id="headertext">
 				<p><b>Telephone: 604-263-3262</b></p>
 			</div>
+			<!-- Social media links -->
 			<div id="acc">
 				<a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver"><img src="images/yelp.jpg" alt="Yelp" width="30" height="30"></a>
 				<a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge"><img src="images/zomato.jpg" alt="Zomato" width="30" height="30"></a>
 				<a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts"><img src="images/facebook.jpg" alt="Facebook" width="30" height="30"></a>
-				<a href="https://twitter.com/tokyothyme"><img src="images/twitter.jpg" alt="Twitter" width="30" height="30"></a>	
+				<a href="https://twitter.com/tokyothyme"><img src="images/twitter.jpg" alt="Twitter" width="30" height="30"></a>
 			</div>
 			<br>
 			<br>
 			<br>
-			
+			<!-- Header horizontal navigation bar -->
 			<div id="h_navbar">
 				<ul>
 					<li><a href="menu.html">Menu</a></li>
@@ -33,25 +38,60 @@
 					<li><a href="careers.html">Careers</a></li>
 				</ul>
 			</div>
-	</div>
-	<div id="main">
-		<div id="mainbody">
-			<form action='http://webdevfoundations.net/scripts/formdemo.asp' method='post'>
-				<div class='centerCol'>
-					<h1 class='underline'>Sign Up</h1>
-					<table class='twoCol twoCol_separator'>
-						<tr><td>First Name</td><td><input type='text' id='fname' name='fname'><span class='required_field'>&#9733;</span></td></tr>
-						<tr><td>Last Name</td><td><input type='text' id='lname' name='lname'></td></tr>
-						<tr><td>Phone Number</td><td><input type='text' id='phone' name='phone'></td></tr>
-						<tr><td>Email Address</td><td><input type='text' id='email' name='email'><span class='required_field'>&#9733;</span></td></tr>
-						<tr><td>Password</td><td><input type='text' id='password' name='password'><span class='required_field'>&#9733;</span></td></tr>
-						<tr><td>Verify Password</td><td><input type='text' id='password2' name='password2'><span class='required_field'>&#9733;</span></td></tr>
-					</table>
-				<div class='center space'><input type='submit' class='ui-button' value='Sign Up' /></div>
-				</div>
-			</form>
 		</div>
-	</div>	
+	</div>
+	<!-- Main body -->
+	<div id="main">
+		<!-- Body content -->
+		<div id="mainbody">
+			<!-- List for site map -->
+			<div id="map">
+			<h1>Site Map</h1>
+			<ul>
+				<li class="level1"><a href="index.html">Homepage</a>
+					<ul>
+						<li class="level2"><a href="menu.html">Menu main page</a>
+							<ul>
+								<li class="level3"><a href="menu/menu1.html">Seasonals/Salad</a></li>
+								<li class="level3"><a href="menu/menu2.html">Sashimi/Nigiri</a></li>
+								<li class="level3"><a href="menu/menu3.html">Appetizer/Hosomaki</a></li>
+								<li class="level3"><a href="menu/menu4.html">Inside-out Roll/Vegetarian Roll</a></li>
+								<li class="level3"><a href="menu/menu5.html">Combinations/Party Tray</a></li>
+								<li class="level3"><a href="menu/menu6.html">Specials/Omakase</a></li>
+							</ul>
+						</li>
+						<li class="level2"><a href="order.html">Online ordering</a>
+							<ul>
+								<li class="level3"><a href="order/appetizer.html">Appetizers</a></li>
+								<li class="level3"><a href="order/sashimi.html">Sashimi</a></li>
+								<li class="level3"><a href="order/salads.html">Salads</a></li>
+								<li class="level3"><a href="order/hosomaki.html">Hosomaki</a></li>
+								<li class="level3"><a href="order/nigiri.html">Nigiri</a></li>
+								<li class="level3"><a href="order/inside_out_roll.html">Inside-Out Rolls</a></li>
+								<li class="level3"><a href="order/veggie_roll.html">Vegetarian Rolls</a></li>
+								<li class="level3"><a href="order/creative_roll.html">Creative Rolls</a></li>
+								<li class="level3"><a href="order/noodles.html">Noodles</a></li>
+								<li class="level3"><a href="order/donburi.html">Donburi</a></li>
+								<li class="level3"><a href="order/combo.html">Combinations</a></li>
+								<li class="level3"><a href="order/party_tray.html">Party Tray</a></li>
+								<li class="level3"><a href="order/specials.html">Seasonal Specials</a></li>
+								<li class="level3"><a href="order/omakase.html">Omakase</a>
+									<ul>
+										<li class="level4"><a href="login.html">Account Sign-in</a></li>
+										<li class="level4"><a href="signup.html">Create an account</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>	
+						<li class="level2"><a href="contact.html">Contact Us</a></li>
+						<li class="level2"><a href="careers.html">Careers</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
 	<div id="footer-container">
     <div id="footer">
 		<!-- Footer content -->
@@ -69,7 +109,7 @@
             <div class='footercolumn' id="footermenu2">
                 <h3>&nbsp;</h3>
                 <ul>
-                    <li><a href="order/noodles.html">Noodle</a></li>
+                    <li><a href="order/noodle.html">Noodle</a></li>
                     <li><a href="order/appetizer.html">Appetizer</a></li>
                     <li><a href="order/nigiri.html">Nigiri</a></li>
                 </ul>
@@ -122,4 +162,4 @@
 
 </body>
 </html>
-<!--Validated-->
+<!-- validated -->

@@ -46,7 +46,7 @@
 					<br>
 					<h2>Location</h2>
 					<p>
-						We're located between 38th & 39th Ave.<br>
+						We're located between 38th &amp; 39th Ave.<br>
 						Across from Point Grey Secondary.<br>
 						(Located on the same block as REmax)<br><br>
 						5405 West Boulevard<br>
@@ -77,12 +77,14 @@
 				</p>
 				<!-- form -->
 				<div id="feedback">
-					<form>
+					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
 						<label for="subject">Subject:</label>
 						<input type="text" id="subject" name="subject">
 						<br>
 						<label for="details">Details:</label>
-						<input type="text" id="details" name="details">
+						<!--<input type="text" id="details" name="details">-->
+						<textarea rows="20" cols="65" id="details" name="details"></textarea>
+						<br>
 						<input type="submit" value="Submit">
 					</form>
 				</div>
@@ -149,4 +151,3 @@
 
 </body>
 </html>
-<!-- Validated -->

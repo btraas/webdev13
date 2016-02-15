@@ -1,47 +1,45 @@
+/* Row #1: Contact Information; */
 #row1wrapper {
 	display: inline-block;
-	max-width: 1000px;
-	padding-top: 20px;
-	padding-left: 20px;
+	width: 1000px;
+	max-width: 96%;
+	padding: 20px;
+}
 
+#row1wrapper h1 {
+	font-size: 50px;
 }
 
 #contact-info {
 	float: left;
-	width: 215px;
 }
 
 #map {
-	float: left;
-	margin-top: 15px;
-	padding-left: 25px;
-	overflow-x: hidden;
+	float: right;
+	margin-top: 75px;
 }
 
 #map iframe {
-	width: 700px;
-	height: 300px;
+	width: 600px;
+	height: 325px;
 	border: 0;
-	overflow-x: hidden;
 }
 
+/* Row #2: Feedback */
 #row2wrapper {
 	display: inline-block;
-	width: 100%;
-	margin-top: 20px;
-	padding-left: 20px;
+	width: 1000px;
+	max-width: 96%;
+	padding: 20px;
 }
-#row2wrapper p {
-	max-width: 400px;
-}
+
 #feedback {
 	margin-top: 30px;
-	margin-bottom: 25px;
 }
 
 #feedback form {
 	display: inline-block;
-	width: 380px;
+	width: 540px;
 }
 
 #feedback label {
@@ -53,24 +51,40 @@
 	margin-top: 10px;
 }
 
-#feedback input {
+#feedback input, textarea {
 	margin-top: 10px;
 	float: right;
 	clear: none;
+	resize: none;
 }
 
 #feedback input[id=subject] {
-	width: 300px;
+	width: 474px;
 	margin-top: 0;
-}
-
-#feedback input[id=details] {
-	width: 300px;
-	height: 250px;
 }
 
 #feedback input[value=Submit] {
 	width: 80px;
 	clear: both;
 }
-/* Validated */
+
+/*@media (max-width: 800px) {
+	#feedback form {
+		width: 100%;
+	}
+
+	#feedback input, textarea {
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	resize: none;
+	width: 60%;
+	}
+
+	#feedback input[value=Submit] {
+		width: 80px;
+		float: right;
+		clear: both;
+		margin-right: 30%;
+	}
+}*/

@@ -119,6 +119,7 @@ table, tr, td, tbody {
 	margin-right: auto;
 	height: auto;
 	overflow: hidden;
+	z-index: 4;
 }
 
 #mainbody {
@@ -135,6 +136,7 @@ table, tr, td, tbody {
 	border: 1px solid #000000;
 	border-top: none;
 	border-bottom: none;
+	z-index: 3;
 }
 
 #maintext{

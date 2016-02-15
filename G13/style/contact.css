@@ -1,6 +1,6 @@
 #row1wrapper {
 	display: inline-block;
-	max-width: 1000;
+	max-width: 1000px;
 	padding-top: 20px;
 	padding-left: 20px;
 
@@ -73,3 +73,4 @@
 	width: 80px;
 	clear: both;
 }
+/* Validated */

@@ -1,12 +1,14 @@
 /* importing google font */
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
 
+/* settings for whole page */
 html {
 	color: #FFFFFF;
 	font-family: 'Shadows Into Light Two', Arial, sans-serif;
 	background-image: url(../images/Collage.jpg);
 }
 
+/* setting the content */
 html, body{
 	overflow-x: hidden;
 	min-height: 100%;
@@ -16,28 +18,33 @@ html, body{
 	padding: 0px;
 }
 
+/* setting the body */
 body {
 	overflow-x: hidden;
 }
 
+/* body anchors */
 body a {
 	color: #FFFFFF;	
 	text-decoration: none;
 }
 
+/* resetting settings list and unorder list*/
 li, ul {
 	list-style-type: none;
 	padding: 0px;
 }
-
+/* resetting settings for headings */
 h1, h2, h3, h4, h5 {
 	margin: 0px;
 }
 
+/* settings for table */
 table, tr, td, tbody {
 	border-collapse: collapse;
 }
 
+/* Header */
 #header {
 	background-color: #000000;
 	max-width: 100%;
@@ -53,14 +60,17 @@ table, tr, td, tbody {
 	z-index: 5;
 }
 
+/* Logo */
 #logo {
 	float:left;
 }
 
+/* Logo image */
 #logo img {
 	padding-top: 20px;
 }
 
+/* Header content */
 #headertext {
 	color: #FFFFFF;
 	float: left;
@@ -69,17 +79,20 @@ table, tr, td, tbody {
 	margin-left: 40px;
 }
 
+/* Header social media */
 #acc {
 	float:right;
 	font-size: 13pt;
+	color: #FFFFFF;
 }
 
+/* Horizontal navigation bar list items */
 #h_navbar li {
 	list-style-type: none;
 	display: inline;
-	/* border-right: 2px solid #FFB808;  can't add this if the bottom line is to show*/
-
 }
+
+/* Horizontal navigation bar anchors */
 #h_navbar li a{
 	text-decoration: none;
 	color: #FFB808;
@@ -91,27 +104,29 @@ table, tr, td, tbody {
 	padding-left: 40px;	
 }
 
-#h_navbar li:last-child { /* No right border on last menu item */
+/* Horizontal navigation bar last specific setting */
+#h_navbar li:last-child { 
 	border: 0px;
 }
 
+/* Horizontal navigation hover effect */
 #h_navbar a:hover{
 	border-bottom: 4px solid #FFB808;
 	color: #FFB808;
 }
+
+/* Horizontal navigation current page */
 .selector_h{
 	border-bottom: 4px solid #FFB808;
 	padding-bottom: 16px;
 }
 
-#acc {
-	color: #FFFFFF;
-}
-
+/* clear float settings */
 .clear {
 	clear:both;
 }
 
+/* Main content */
 #main{
 	max-width: 1000px;
 	margin-left: auto;
@@ -120,7 +135,7 @@ table, tr, td, tbody {
 	overflow: hidden;
 	z-index: 4;
 }
-
+/* Content body */
 #mainbody {
 	max-width: 1000px;
 	min-height: 500px;
@@ -138,20 +153,14 @@ table, tr, td, tbody {
 	z-index: 3;
 }
 
+/* Content text */
 #maintext{
 	max-width: 708px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#banner {
-	margin-left: 101px;
-}
-
-#banner img {
-	margin-top: 0px;
-}
-
+/* Footer */
 #footer {
 	background-color: #000000;
 	width: 100%;
@@ -164,16 +173,19 @@ table, tr, td, tbody {
 	z-index: 4;	
 }
 
+/* Footer inner box */
 #footertext {
 	max-width: 1000px;
 	display: table;
 	margin: 0 auto;
 }
 
+/* Footer content box */
 #footerbox {
 	margin-left: auto;
 }
 
+/* Footer list formatting*/
 .footercolumn {
 	float: left;
 	position: relative;
@@ -182,39 +194,48 @@ table, tr, td, tbody {
 	margin-top: 20px;
 	max-width: 100px;
 }
+
+/* Footer list anchor */
 .footercolumn li a {
 	color: #BBBBBB;
 }
 
+/* Footer list hover */
 .footercolumn a:hover {
 	color: #DDDDDD;
 }
-
+/* Footer list heading 3 */
 .footercolumn h3 {
 	margin: 0px;
 	padding-bottom: 20px;
 }
 
+/* Footer list unordered list*/
 .footercolumn ul {
 	padding-left: 0px;
 	list-style-type: none;
 	margin-bottom: 0px;
 	margin-top: 0px;
-
 }
+
+/* Footer list item */
 .footercolumn li {
 	list-style-type: none;
 }
+
+/* Footer menu */
 #footermenu ul { /* No left padding for first one */
 	padding-left: 0px;
 }
 
+/* Footer order */
 #footerorder {
 	padding-left: 10px;
 	border-left: 1px solid gray;
 	min-height: 120px;
 }
 
+/* Copyright text */
 #copyright {
 	position: absolute;
 	right: 0;
@@ -223,6 +244,7 @@ table, tr, td, tbody {
 	text-align:center;
 }
 
+/* Copyright paragraph */
 #copyright p {
 	margin: 0px;
 }

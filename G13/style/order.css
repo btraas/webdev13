@@ -1,8 +1,7 @@
-.hover:hover {
-
+/*.hover:hover {
 	cursor: pointer;
 	background-color: rgb(0, 0, 0) transparent !important;
-}
+}*/
 
 .round-corners {
 	border-radius: 3px;
@@ -220,26 +219,24 @@
     font-weight: normal;
     color: #373737;
     background: #f7f7f7;
-    background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
+    /*background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e6e6e6));
     background: -webkit-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: -o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
+    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);*/
     background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e6e6e6',GradientType=0 );
 }
 
 .ui-highlight {	/* diverged from jQuery UI ui-state-highlight */
     color: #fa9405;
     border: 1px solid #fa9405;
     background: #ffffea;
-    background: -moz-linear-gradient(top, #ffffea 0%, #ffffb5 100%);
+    /*background: -moz-linear-gradient(top, #ffffea 0%, #ffffb5 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffea), color-stop(100%,#ffffb5));
     background: -webkit-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
     background: -o-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
-    background: -ms-linear-gradient(top, #ffffea 0%,#ffffb5 100%);
+    background: -ms-linear-gradient(top, #ffffea 0%,#ffffb5 100%);*/
     background: linear-gradient(to bottom, #ffffea 0%,#ffffb5 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffea', endColorstr='#ffffb5',GradientType=0 );
 }
 
 .cart-white {

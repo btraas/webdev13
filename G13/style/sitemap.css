@@ -1,101 +1,31 @@
-.title{
-		font-family:  Helvetica, sans-serif;
-		text-align: left;
-		font-size: 48px;
-		font-weight: bold;
-		border-bottom: solid 1px;
-		color: #FFFFFF;
-		margin-top: 50px;
-		}
-		
-.sitemapboxes{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-bottom: 5px;
-	padding-left: 200px;
+/*content spacing*/
+#map h1{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 50pt;
 }
 
-.sitemapboxes2{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 50px;
-	margin-bottom: 5px;
+/*list items*/
+#map li{
+	font-size: 15pt;
 }
 
-.sitemapboxes3{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 100px;
-	margin-bottom: 5px;
+/*list 1 items*/
+.level1{
+	padding-left: 30px;
 }
 
-.sitemapboxes4{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 150px;
-	margin-bottom: 5px;
+/*list 2 items*/
+.level2{
+	padding-left: 40px;
 }
 
-.sitemapboxes5{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 200px;
-	margin-bottom: 5px;
+/*list 3 items*/
+.level3{
+	padding-left: 50px;
 }
-
-.sitemapboxes6{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 250px;
-	margin-bottom: 5px;
-}
-
-.sitemapboxes7{
-	border: 1px solid white;
-	background: black;
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	display: table;
-	list-style-type: none;
-	font-weight: bold;
-	margin-left: 300px;
-	margin-bottom: 5px;
+/*list 4 items*/
+.level4{
+	padding-left: 60px;
 }
 /* Validated */

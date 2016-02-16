@@ -73,16 +73,16 @@ table, tr, td, tbody {
 /* Header content */
 #headertext {
 	color: #FFFFFF;
-	float: left;
+	float: right;
 	font-size: 13pt;
 	width: 250px;
-	margin-left: 40px;
 }
 
 /* Header social media */
 #acc {
 	float:right;
-	margin-right: 15%;
+	margin-top: 1%;
+	margin-right: 5%;
 	font-size: 13pt;
 	color: #FFFFFF;
 }
@@ -246,6 +246,7 @@ div.ordernow {
 
 /* Copyright text */
 #copyright {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	position: absolute;
 	right: 0;
 	margin-top: -20px;

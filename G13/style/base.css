@@ -82,6 +82,7 @@ table, tr, td, tbody {
 /* Header social media */
 #acc {
 	float:right;
+	margin-right: 15%;
 	font-size: 13pt;
 	color: #FFFFFF;
 }
@@ -135,6 +136,14 @@ table, tr, td, tbody {
 	overflow: hidden;
 	z-index: 4;
 }
+
+/* Order Now Button */
+div.ordernow {
+				position:absolute;
+				top: 325px;
+				right: 150px;
+}
+
 /* Content body */
 #mainbody {
 	max-width: 1000px;
@@ -144,7 +153,7 @@ table, tr, td, tbody {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #A8130B;
+	background-image: url(../images/StickTexture.png);
 	padding: 10px;
 	padding-top: 0px;
 	border: 1px solid #000000;

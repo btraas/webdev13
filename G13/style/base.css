@@ -262,6 +262,8 @@ div.ordernow {
 #copyright {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	font-size: 10px;
+	color: #7e7e78;
+	font-style: italic;
 	position: absolute;
 	right: 0;
 	margin-top: -20px;

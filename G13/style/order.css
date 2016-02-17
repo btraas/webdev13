@@ -23,6 +23,7 @@
 	background: black;
 	color: white;
 	border-radius: 5px;
+	margin-top: 20px;
 	padding: 3px;
 	display: table;
 	list-style-type: none;
@@ -126,14 +127,13 @@
     padding: 20px;
 }
 
-#cat_nav {									/* category navigation in the order blackList menu */
+#cat_nav {								/* category navigation in the order blackList menu */
 	vertical-align: top;
 }
 
-#orderGroups {
+#orderGroups a:hover{
+	border-bottom: solid 1px #FFB808;
 	display: inline-block; 
-	margin-bottom: 50px; 
-	margin-right: 30px;
 }
 
 #orderSummary, #orderDetails {

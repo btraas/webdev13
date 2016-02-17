@@ -84,8 +84,10 @@ table, tr, td, tbody {
 #headertext {
 	color: #FFFFFF;
 	float: right;
-	font-size: 13pt;
+	display:inline;
+	font-size: 10pt;
 	width: 250px;
+	margin-top: 7px;
 }
 
 /* Header social media */
@@ -107,7 +109,7 @@ table, tr, td, tbody {
 #h_navbar li a{
 	text-decoration: none;
 	color: #FFB808;
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: bold;
 	padding-top: 10px;
 	padding-bottom: 12px;

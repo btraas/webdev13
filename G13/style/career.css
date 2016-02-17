@@ -1,5 +1,6 @@
 /* text formatting */
 #career {
+	position: relative;
 	padding-top: 20px;
 	padding-left: 20px;
 	max-width: 500px;
@@ -12,6 +13,10 @@
 
 /* image formatting */
 #career_image{
-	padding-top: 20px;
+	position: absolute;
+	float: right;
+	margin-left: 103%;
+	top: 50%;
+	transform: rotate(270deg);
 }
 /* Validated */

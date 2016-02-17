@@ -4,7 +4,7 @@
 /* settings for whole page */
 html {
 	color: #FFFFFF;
-	font-family: 'Shadows Into Light Two', Arial, sans-serif;
+	font-family:Georgia, Helvetica, "Trebuchet MS", "Times New Roman Bold";
 	background-image: url(../images/Collage.jpg);
 }
 
@@ -112,7 +112,8 @@ table, tr, td, tbody {
 
 /* Horizontal navigation hover effect */
 #h_navbar a:hover{
-	border-bottom: 4px solid #FFB808;
+	width: 50px;
+	border-bottom: 2px solid #FFB808;
 	color: #FFB808;
 }
 
@@ -201,7 +202,8 @@ div.ordernow {
 	text-align: left;
 	width: 135px;
 	margin-top: 20px;
-	max-width: 100px;
+	margin-left: 10px;
+	max-width: 110px;
 }
 
 /* Footer list anchor */

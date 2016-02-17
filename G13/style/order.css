@@ -201,8 +201,9 @@
 
 .description {							/* For description text - italic and color set */
 	font-style: italic;
+	font-size: 12px;
 	margin-top: 0px;
-	color: #BBBBBB;
+	color: #FFFFFF;
 }
 
 .ui-button {							/* style diverged from jQuery UI - styles a button to a common style*/

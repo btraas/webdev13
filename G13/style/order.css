@@ -40,6 +40,12 @@
 	width: 100%;
 }
 
+/* Horizontal navigation current page */
+.selector_f{
+	border-bottom: 1px solid #FFB808;
+	padding-bottom: 4px;
+}
+
 .top {						/* Aligns content in td elements to top */
 	vertical-align: top;
 }

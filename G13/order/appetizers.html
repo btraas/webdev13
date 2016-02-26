@@ -6,6 +6,10 @@
 	<link href="../style/base.css" rel="stylesheet">
 	<link href="../style/order.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/Icon.ico">
+	<script src="../scripts/jquery.js"></script>
+	<script src="../scripts/order.js"></script>
+	<script src="../scripts/jquery-ui/jquery-ui.js"></script>
+	<link href="../scripts/jquery-ui/jquery-ui.css" rel="stylesheet">
 </head>
 
 
@@ -153,8 +157,8 @@
 				</table>
 			</div>
 			<div id='orderDetails'><table>
-                <tr><td>Pick-up Date:</td><td><input type="date" class='order_datetime'></td></tr>
-                <tr><td>Pick-up Time:</td><td><input type="time" class='order_datetime'></td></tr>
+                <tr><td>Pick-up Date:</td><td><input type="text" class='order_datetime'></td></tr>
+                <tr><td>Pick-up Time:</td><td><input type="text" class='order_datetime'></td></tr>
                 <tr><td colspan=2>
                 <input type=button class='ui-button halfWidth' value=Clear />
                 <input type=button class='ui-button halfWidth' value=Submit onClick="location.href='../order_receipt.html'" />

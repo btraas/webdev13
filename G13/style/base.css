@@ -5,7 +5,7 @@
 html {
 	color: #FFFFFF;
 	font-family:Georgia, Helvetica, "Trebuchet MS", "Times New Roman Bold";
-	background-image: url(../images/Collage.jpg);
+	background-image: url(../images/collage.png);
 }
 
 /* setting the content */
@@ -152,16 +152,15 @@ table, tr, td, tbody {
 
 /* Order Now Button */
 div.ordernow {
-				position:absolute;
-				top: 325px;
-				right: 150px;
+	position:absolute;
+	top: 325px;
+	right: 150px;
 }
 
 /* Content body */
 #mainbody {
 	max-width: 1000px;
 	min-height: 500px;
-	height: auto;
 	height: auto;
 	position: relative;
 	margin-left: auto;

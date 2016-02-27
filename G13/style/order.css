@@ -94,6 +94,7 @@
 .underline {								/* Replicating the 'underline' heading style in our milestone design */
 	border-bottom: 1px solid;
 	padding-bottom: 3px;
+	margin-top: 0px;
 }
 
 .min_height {								/* Set element to the minimum it can be */

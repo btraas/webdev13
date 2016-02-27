@@ -65,7 +65,9 @@ function addToOrder(item) // {{{
 	else
 	{
 		var html = "<tr class='lineitem item_"+unique+"'>";
-		html	+=		"<td><div class='ui-state-default btn-small' onClick='modifyItem(this, 1);'><span class='ui-icon ui-icon-plusthick' /></div><div class='ui-state-default btn-small' onClick='modifyItem(this, -1);'><span class='ui-icon ui-icon-minusthick' /></div></td>";
+		html	+=		"<td><div class='ui-state-default btn-small' onClick='modifyItem(this, 1);'><span class='ui-icon ui-icon-plusthick'></span></div>"
+		html	+= 			"<div class='ui-state-default btn-small' onClick='modifyItem(this, -1);'><span class='ui-icon ui-icon-minusthick'></span></div>";
+		html	+=		"</td>";
 		html	+=		"<td class='name'>"+name+"</td>";
 		html	+=		"<td class='quantity'>1</td>";
 		html	+=		"<td class='price'>"+price+"</td>";

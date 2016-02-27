@@ -28,7 +28,7 @@ function lastNameCheck(){
 
 function phoneCheck(){
 	var number = document.getElementById("phone").value;
-	var numberExp = /([2,6,7][0,5,7][0,4,8])([0-9]{3})([0-9]{4})/;
+	var numberExp = /(250|604|778)([0-9]{3})([0-9]{4})/;
 	
 	if (number != "" && numberExp.test(number)) {
 	
@@ -50,7 +50,7 @@ function passwordCheck() {
 		return false;
 	}
 	else {
-		alert("Verification failed");
+		alert("Password verification failed");
 		return false;
 	}
 }

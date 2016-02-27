@@ -11,6 +11,7 @@
 	<script src="../scripts/jquery-ui/jquery-ui.js"></script>
 	<link href="../scripts/jquery-ui/jquery-ui.css" rel="stylesheet">
 	<script src="../scripts/jquery-ui-timepicker.js"></script>
+	<link href="../scripts/jquery-ui-timepicker.css" rel="stylesheet">
 </head>
 
 
@@ -161,8 +162,8 @@
                 <tr><td>Pick-up Date:</td><td><input type="text" class='order_datetime'></td></tr>
                 <tr><td>Pick-up Time:</td><td><input type="text" class='order_datetime'></td></tr>
                 <tr><td colspan=2>
-                <input type=button class='ui-button halfWidth' value=Clear />
-                <input type=button class='ui-button halfWidth' value=Submit onClick="location.href='../order_receipt.html'" />
+                <input type=button id='clear' class='ui-button halfWidth' value=Clear />
+                <input type=button id='submit1' class='ui-button halfWidth' value=Submit />
                 </td></tr></table>
             </div>
 		</td>

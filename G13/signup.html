@@ -6,6 +6,7 @@
 	<link href="style/base.css" rel="stylesheet">
 	<link href="style/order.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/Icon.ico">
+	<script src="scripts/sign_up.js"></script>
 </head>
 
 
@@ -23,18 +24,24 @@
 			<a href="index.html"><img src="images/Logo2.jpg" alt="Tokyo Thyme" width="400" height="75"></a>
 		</div>
 	  <div id="headerinfo">
-      
-				<!--Social Media Icons-->
+				
+                <!--Social Media Icons-->
                 
 			<div id="acc">
-				<a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver"><img src="images/Yelp.png" alt="Yelp" width="30" height="30"></a>&nbsp;
-				<a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge"><img src="images/Urbanspoon.png" alt="Zomato" width="30" height="30"></a>&nbsp;
-                <a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a>&nbsp;
+				<a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver"><img src="images/Yelp.png" alt="Yelp" width="30" height="30">
+                </a>&nbsp;
+                
+				<a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge"><img src="images/Urbanspoon.png" alt="Zomato" 
+                width="30" height="30"></a>&nbsp;
+                
+                <a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts"><img src="images/Facebook.png" alt=
+                "Facebook" width="30" height="30"></a>&nbsp;
+                
 				<a href="https://twitter.com/tokyothyme"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a>
 			</div>
             
-            	<!--Phone Number-->
-                
+            <!--Phone Number-->
+            
             <div id="headertext">
 			  <p><font color="#7e7e78"><strong>Ph: 604-263-3262</strong></font></p>
 			</div>
@@ -42,11 +49,11 @@
 			<br>
 			<br>
             
-            	<!--Navigation-->
+            <!--Navigation-->
             
 			<div id="h_navbar">
 				<ul>
-					<li><a href="menu.html">Menu</a></li>
+					<li class="selector_h"><a href="menu.html">Menu</a></li>
 					<li><a href="order.html">Ordering</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="careers.html">Careers</a></li>
@@ -57,55 +64,57 @@
     
     
     
-    <!--Content-->
+	<!--Content-->
     
     
+ 	<div id="main">    
+		<div id="mainbody">
+		  <form action='http://webdevfoundations.net/scripts/formdemo.asp' method='post'>
+			<div class='centerCol'>
+			  <h1 class='underline'>Sign Up</h1>
+			  <table class='twoCol twoCol_separator'>
+				<tr>
+				  <td>First Name</td>
+				  <td><input type='text' id='fname' name='fname' required>
+					<span class='required_field'></span></td>
+				</tr>
+				<tr>
+				  <td>Last Name</td>
+				  <td><input type='text' id='lname' name='lname'></td>
+				</tr>
+				<tr>
+				  <td>Phone Number</td>
+				  <td><input type='text' id='phone' name='phone' maxlength="10" required>
+					<span class="TelErr"></span>
+					<span class='required_field'></span></td>
+				</tr>
+				<tr>
+				  <td>Email Address</td>
+				  <td><input type='email' id='email' name='email'></td>
+				</tr>
+				<tr>
+				  <td>Password</td>
+				  <td><input type='password' id='password' name='password' maxlength="20" required>
+					<span class="p1Error"></span>
+					<span class='required_field'></span></td>
+				</tr>
+				<tr>
+				  <td>Verify Password</td>
+				  <td><input type='password' id='password2' name='password2' maxlength="20" required>
+					<span class="p2Error"></span>
+					<span class='required_field'></span></td>
+				</tr>
+			  </table>
+			  <div class='center space'>
+				<input type='submit' onclick='return mySubmit()' class='ui-button' value='Sign Up' />
+			  </div>
+			</div>
+		  </form>
+		</div>
+	</div>	
     
-	<div id="mainbody">
-	  <form action='http://webdevfoundations.net/scripts/formdemo.asp' method='post'>
-	    <div class='centerCol'>
-	      <h1 class='underline'>Sign Up</h1>
-	      <table class='twoCol twoCol_separator'>
-	        <tr>
-	          <td>First Name*</td>
-	          <td><input type='text' id='fname' name='fname'>
-	            <span class='required_field' required></span></td>
-            </tr>
-	        <tr>
-	          <td>Last Name</td>
-	          <td><input type='text' id='lname' name='lname'></td>
-            </tr>
-	        <tr>
-	          <td>Phone Number</td>
-	          <td><input type='text' id='phone' name='phone'></td>
-            </tr>
-	        <tr>
-	          <td>Email Address*</td>
-	          <td><input type='text' id='email' name='email' required>
-	            <span class='required_field'></span></td>
-            </tr>
-	        <tr>
-	          <td>Password*</td>
-	          <td><input type='text' id='password' name='password' required>
-	            <span class='required_field'></span></td>
-            </tr>
-	        <tr>
-	          <td>Verify Password*</td>
-	          <td><input type='text' id='password2' name='password2' required>
-	            <span class='required_field'></span></td>
-            </tr>
-          </table>
-	      <div class='center space'>
-	        <input type='submit' class='ui-button' value='Sign Up' />
-          </div>
-        </div>
-      </form>
-</div>
-	<div id="main"> </div>	
     
-    
-    
-    <!--Footer-->
+	<!--Footer-->
     
     
     
@@ -115,11 +124,11 @@
         <div id="footertext">
 			<!-- Footer menu list1 -->
             <div class='footercolumn' id="footermenu">
-                <h3><a href ="#">Menu</a></h3>
+                <h3><a href ="menu.html">Menu</a></h3>
                 <ul>
                     <li><a href="order/sashimi.html">Sashimi</a></li>
                     <li><a href="order/hosomaki.html">Hosomaki</a></li>
-                    <li><a href="order/inside_out_roll.html">Inside-Out Roll</a></li>
+                    <li><a href="order/inside_out_roll">Inside-Out Roll</a></li>
                 </ul>
             </div>
 			<!-- Footer menu list2 -->
@@ -127,7 +136,7 @@
                 <h3>&nbsp;</h3>
                 <ul>
                     <li><a href="order/noodles.html">Noodle</a></li>
-                    <li><a href="order/appetizer.html">Appetizer</a></li>
+                    <li><a href="order/appetizers.html">Appetizer</a></li>
                     <li><a href="order/nigiri.html">Nigiri</a></li>
                 </ul>
             </div>
@@ -137,7 +146,7 @@
                 <ul>
                     <li><a href="order/veggie_roll.html">Vegetarian Roll</a></li>
                     <li><a href="order/donburi.html">Donburi</a></li>
-                    <li><a href="order/salads.html">Salad</a></li>
+                    <li><a href="order/salad.html">Salad</a></li>
                 </ul>
             </div>
 			<!-- Footer menu list4 -->
@@ -146,14 +155,14 @@
                 <ul>
                     <li><a href="order/specials.html">Special</a></li>
                     <li><a href="order/combo.html">Combo</a></li>
-                    <li><a href="order/party_tray.thml">Party Tray</a></li>
+                    <li><a href="order/party_tray.html">Party Tray</a></li>
                 </ul>
             </div>
 			<!-- Footer order list -->
             <div class='footercolumn' id="footerorder">
                 <h3>Ordering</h3>
                 <ul>
-					<li><a href="login.html">Sign-in</a></li>
+                    <li><a href="login.html">Sign-in</a></li>
                     <li><a href="signup.html">Sign-up</a></li>
                 </ul>
             </div>
@@ -161,22 +170,20 @@
             <div class='footercolumn' id="footercontact">
                 <h3><a href="contact.html">Contact</a></h3>
             </div>
-			<!-- Footer careers -->
-            <div class='footercolumn' id="footercareers">
+            <!-- Footer careers -->
+			<div class='footercolumn' id="footercareers">
                 <h3><a href="careers.html">Careers</a></h3>
             </div>
-			<!-- Footer site map -->
-            <div class='footercolumn' id="footersitemap">
+            <!-- Footer site map -->
+			<div class='footercolumn' id="footersitemap">
                 <h3><a href="site_map.html">Site Map</a></h3>
             </div>
         </div>
-			<!-- Footer copyright text -->
-            <div id="copyright">
-                <p>Created by Group13 2016 &copy; </p>
-            </div>
-
+		<!-- Footer copyright text -->
+		<div id="copyright">
+			<p>Created by Group13 2016 &copy; </p>
+		</div>
     </div></div>
-
 </body>
 </html>
-<!--Validated-->
+<!-- Validated -->

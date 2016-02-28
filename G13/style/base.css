@@ -1,6 +1,27 @@
 /* importing google font */
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
 
+@media screen and (min-height: 769px) {
+	#main > #mainbody {
+		min-height: 570px;
+	}
+}
+
+@media screen and (min-height: 869px) {
+    #main > #mainbody {
+        min-height: 685px;
+    }
+}
+
+
+@media screen and (min-height: 969px) {
+	#main > #mainbody {
+		min-height: 830px;
+	}
+	
+}
+
+
 /* settings for whole page */
 html {
 	color: #FFFFFF;

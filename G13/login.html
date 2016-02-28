@@ -6,6 +6,7 @@
 	<link href="style/base.css" rel="stylesheet">
 	<link href='style/order.css' rel='stylesheet'>
 	<link rel="icon" type="image/png" href="images/Icon.ico">
+	<script src="scripts/login.js"></script>
 </head>
 
 
@@ -70,14 +71,15 @@
 	<div id="main">
 		<div id="mainbody">
 			<form action='http://webdevfoundations.net/scripts/formdemo.asp' method='post'>
-				<table class='twoCol twoCol_separator largeRows'><tr>
+				<table class='twoCol twoCol_separator largeRows'>
+				<tr>
 					<td class='top'>
 						<h1>Sign In</h1>
 						<p>Welcome back! Please enter your email address and password.</p>
-						<table>
-							<tr><td>Email Address</td><td><input type=text class='ui-input' name='email' id='email'></td></tr>
-							<tr><td>Password</td><td><input type='password' class='ui-input' name='password' id='password'></td></tr>
-						</table>
+							<label>Email Address</label>
+							<input type='text' class='ui-input' name='email' id='email'>
+							<label>Password</label>
+							<input type='password' class='ui-input' name='password' id='password'/>
 					</td>
 					<td class='top'>
 						<h1>Sign Up</h1>
@@ -85,10 +87,11 @@
 					</td>
 				</tr>
 				<tr>	
-					<td><input type='submit' class='ui-button' value='Sign In' /></td>
+					<td><input type='button' class='ui-button' value='Sign In' id='submit' onClick='validate()' /></td>
 					 <!-- This is not a form submission, it just takes us to the sign up page. -->
 					<td><input type='button' class='ui-button' value='Sign Up' onClick="location.href='signup.html';" /></td>
-				</tr></table>
+				</tr>
+				</table>
 			</form>
 		</div>
 	</div>

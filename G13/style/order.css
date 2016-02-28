@@ -9,7 +9,7 @@
 }
 
 .total td {						/* The extra space in the order summary, ensures total and tax are at the bottom below the line */
-	border-bottom: 1px solid;
+	border-bottom: 1px solid darkgray;
 	min-height: 7px;
 	margin-bottom: 5px;
 }
@@ -94,13 +94,14 @@
 .underline {								/* Replicating the 'underline' heading style in our milestone design */
 	border-bottom: 1px solid;
 	padding-bottom: 3px;
+	margin-top: 0px;
 }
 
 .min_height {								/* Set element to the minimum it can be */
 	height: 1px;
 }
 
-.order_datetime {							/* Width for order date / time inputs */
+.order_datetime {							/* Width for  darkgrayorder date / time inputs */
 	width: 120px;
 }
 
@@ -111,6 +112,18 @@
     margin-bottom: 5px;
 }
 
+.btn-small {
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	border-radius: 5px;
+	margin: 0px;
+	cursor: pointer;
+}
+.icon-vertical {
+	clear: both;
+	float: left;
+}
 
 .halfWidth {								/* For elements such as two buttons to take just under 50% width */
 	width: 48%;
@@ -143,7 +156,7 @@
 }
 
 #orderSummary, #orderDetails {
-	width: 225px; 
+	width: 255px; 
 	margin-top: 15px;
 }
 
@@ -155,8 +168,26 @@
 	width: 100%;
 }
 
+#orderItems td {
+	padding: 4px;
+}
+
 #orderItems .lineitem {
 	height: 20px;
+	font-size: 85%;
+}
+
+#orderItems .lineitem td:first-child {
+	width: 25px;
+	padding: 4px;
+}
+
+#orderItems .lineitem td {
+	border-bottom: 1px solid darkgray;
+}
+
+#orderItems .lineitem .quantity {
+	padding-right: 2px;
 }
 
 #selection_table {							/* Table grid showing selection options for menu categories */
@@ -216,10 +247,10 @@
 	color: #FFFFFF;
 }
 
-.ui-button {							/* style diverged from jQuery UI - styles a button to a common style*/
+.ui-button {							
+	font-family: Arial;
     display: inline-block;
     position: relative;
-    padding: 3px;
     line-height: normal;
     margin-right: .1em;
     cursor: pointer;
@@ -227,23 +258,16 @@
     text-align: center;
 	border-radius: 3px;
 
-	border: 1px solid #d3d3d3; /* style from ui-state-default */
+	border: 1px solid #d3d3d3; 
     font-weight: normal;
     color: #373737;
     background: #f7f7f7;
 
 
-	/* Removing browser engine specifics, since they by definition aren't W3C standard... */
-
-    /*background: -moz-linear-gradient(top, #f7f7f7 0%, #e6e6e6 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#e6e6e6));
-    background: -webkit-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: -o-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);
-    background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);	
-
-    background: -ms-linear-gradient(top, #f7f7f7 0%,#e6e6e6 100%);*/
     background: linear-gradient(to bottom, #f7f7f7 0%,#e6e6e6 100%);
+}
+div.ui-button {
+	padding: 4px !important;
 }
 
 

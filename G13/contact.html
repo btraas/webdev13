@@ -5,68 +5,39 @@
 		<title>Tokyo Thyme</title>
 		<link rel="stylesheet" type="text/css" href="style/base.css">
 		<link rel="stylesheet" type="text/css" href="style/contact.css">
-		<link rel="icon" type="image/png" href="images/Icon.ico">
+		<script language="JavaScript" type="text/javascript" src="scripts/feedback-form.js"></script>
 	</head>
-    
-    
-    
-    <!--Header-->
-    
-    
-    
 	<body>
-	<div id="header">
-    
-    			<!--Logo-->
-                
-		<div id="logo">
-			<a href="index.html"><img src="images/Logo2.jpg" alt="Tokyo Thyme" width="400" height="75"></a>
-		</div>
-	  <div id="headerinfo">
-				
-                <!--Social Media Icons-->
-                
-			<div id="acc">
-				<a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver"><img src="images/Yelp.png" alt="Yelp" width="30" height="30">
-                </a>&nbsp;
-                
-				<a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge"><img src="images/Urbanspoon.png" alt="Zomato" 
-                width="30" height="30"></a>&nbsp;
-                
-                <a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts"><img src="images/Facebook.png" alt=
-                "Facebook" width="30" height="30"></a>&nbsp;
-                
-				<a href="https://twitter.com/tokyothyme"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a>
+		<!-- header / GNB -->
+		<div id="header">
+			<div id="logo">
+				<a href="index.html"><img src="images/Logo2.jpg" alt="Tokyo Thyme" width="400" height="75"></a>
 			</div>
-            
-            	<!--Phone Number-->
-                
-            <div id="headertext">
-			  <p><font color="#7e7e78"><strong>Ph: 604-263-3262</strong></font></p>
-			</div>
-			<br>
-			<br>
-			<br>
-            
-            	<!--Navigation-->
-                
-			<div id="h_navbar">
-				<ul>
-					<li><a href="menu.html">Menu</a></li>
-					<li><a href="order.html">Ordering</a></li>
-					<li class="selector_h"><a href="contact.html">Contact</a></li>
-					<li><a href="careers.html">Careers</a></li>
-				</ul>
+			<div id="headerinfo">
+				<!-- SNS -->
+				<div id="acc">
+					<a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver"><img src="images/Yelp.png" alt="Yelp" width="30" height="30"></a>
+					<a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge"><img src="images/Urbanspoon.png" alt="Urbanspoon" width="30" height="30"></a>
+					<a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a>
+					<a href="https://twitter.com/tokyothyme"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a>	
+				</div>
+				<div id="headertext">
+					<p><b>Tel: 604-263-3262</b></p>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div id="h_navbar">
+					<ul>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="order.html">Order</a></li>
+						<li class="selector_h"><a>Contact</a></li>
+						<li><a href="careers.html">Careers</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-    
-    
-    
-		<!--Content-->
-        
-        
-        
+		<!-- body -->
 		<div id="main">
 			<div id="mainbody">
 				<!-- contact information -->
@@ -107,26 +78,33 @@
 					   For general questions, please indicate your email address and we will reply back as soon as possble. We try to answer back within 24 hours from the submission time.
 					</p>
 					<!-- form -->
-					<div id="feedback">
-						<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
-							<label for="subject">Subject:</label>
-							<input type="text" id="subject" name="subject">
-							<br>
-							<label for="details">Details:</label>
-							<textarea rows="20" cols="70" id="details" name="details"></textarea>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
+					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return isBlur()">
+						<table id="feedback">
+							<tbody>
+								<tr>
+									<th>
+										<label for="subject">Subject:</label>
+									</th>
+									<td>
+										<input type="text" id="subject" name="subject">
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<label for="details">Details:</label>
+									</th>
+									<td>
+										<textarea rows="20" cols="50" id="details" name="details"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="submit" value="Submit">
+					</form>
 				</div>
 			</div>
 		</div>
-        
-        
-        
-		<!--Footer-->
-        
-        
-        
+		<!-- footer -->
 		<div id="footer-container">
 		    <div id="footer">
 		        <div id="footertext">
@@ -135,7 +113,7 @@
 		                <ul>
 		                    <li><a href="order/sashimi.html">Sashimi</a></li>
 		                    <li><a href="order/hosomaki.html">Hosomaki</a></li>
-		                    <li><a href="order/inside_out_roll">Inside-Out Roll</a></li>
+		                    <li><a href="order/inside_out_roll">In-Out Roll</a></li>
 		                </ul>
 		            </div>
 		            <div class='footercolumn' id="footermenu2">
@@ -149,7 +127,7 @@
 		            <div class='footercolumn' id="footermenu3">
 		                <h3>&nbsp;</h3>
 		                <ul>
-		                    <li><a href="order/veggie_roll.html">Vegetarian Roll</a></li>
+		                    <li><a href="order/veggie_roll.html">Vegetable Roll</a></li>
 		                    <li><a href="order/donburi.html">Donburi</a></li>
 		                    <li><a href="order/salad.html">Salad</a></li>
 		                </ul>
@@ -176,12 +154,12 @@
 		                <h3><a href="careers.html">Careers</a></h3>
 		            </div>
 		            <div class='footercolumn' id="footersitemap">
-		                <h3><a href="site_map.html">Site Map</a></h3>
+		                <h3><a href="sitemap.html">Site Map</a></h3>
 		            </div>
 		        </div>
-		            <div id="copyright">
-		                <p>Created by Group13 2016 &copy; </p>
-		        	</div>
+	            <div id="copyright">
+	                <p>Created by Group13 2016 &copy; </p>
+	        	</div>
 			</div>
 		</div>
 	</body>

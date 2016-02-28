@@ -1,3 +1,7 @@
+#mainbody {
+	border: 0;
+}
+
 /* Row #1: Contact Information; */
 #row1wrapper {
 	display: inline-block;
@@ -35,11 +39,6 @@
 
 #feedback {
 	margin-top: 30px;
-}
-
-#feedback form {
-	display: inline-block;
-	
 }
 
 #feedback label {

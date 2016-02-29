@@ -9,13 +9,19 @@
 }
 
 .total td {						/* The extra space in the order summary, ensures total and tax are at the bottom below the line */
-	border-bottom: 1px solid darkgray;
+	/* border-bottom: 1px solid darkgray; */
 	min-height: 7px;
 	margin-bottom: 5px;
 }
 
 .totalText {
 	font-weight: bold;
+}
+.totals:first-child td {
+	border-top: 2px solid darkgray;
+}
+.totals {
+	padding: 4px;
 }
 
 .blackList {					/*	Replicating the white-on-black list object in our milestone designs */
@@ -155,6 +161,10 @@
 	display: inline-block; 
 }
 
+#orderSummary {
+	max-height: 80%;
+}
+
 #orderSummary, #orderDetails {
 	width: 255px; 
 	margin-top: 15px;
@@ -164,8 +174,10 @@
 	padding-top: 10px;
 }
 #orderItems {
-	height: 300px;
+	height: 500px;
 	width: 100%;
+	overflow-y: auto;
+	display: block;
 }
 
 #orderItems td {

@@ -76,8 +76,10 @@
     
 	<div id="main">
 		<div id="mainbody">
-		<table class='fullWidth'><tr>
-		<td id='cat_nav'><div id='orderGroups' class='blackList'>
+	<!--	<table class='fullWidth'><tr>
+		<td id='cat_nav'>
+	-->
+		  <div id='orderGroups' class='blackList' style='float: left;'>
 			<ul>
 				<li class="selector_f"><a href='appetizers.html'>Appetizers</a></li>
 				<li><a href='sashimi.html'>Sashimi</a></li>
@@ -93,9 +95,9 @@
 				<li><a href='party_tray.html'>Party Tray</a></li>
 				<li><a href='specials.html'>Specials</a></li>
 			</ul>
-		</div></td>
+		</div><!--</td>-->
 
-		<td class='top'><div>
+		<!--<td class='top'>--><div style='float: left;'>
 			<h1>Appetizers</h1>
 			<table id='selection_table'>
 				<tr>
@@ -147,8 +149,8 @@
 					</div></td>
 				</tr>
 			</table>
-		</div></td>
-		<td class=top>
+		</div><!--</td>-->
+		<!--<td class=top>--><div style='float: left;'>
 			<div class=underline><h2>Order Summary</h2>
 			</div>
 			<div id='orderSummary' class='blackList'>
@@ -156,7 +158,7 @@
 					<!-- lineitems inserted here -->
 					<tr class='total'><td colspan=2></td></tr>
 				</table>
-				<table style='width: 100%;'>
+				<table id='orderTotals' style='width: 100%;'>
 					<tr class='min_height totals'><td>Tax (5%)</td><td class='price'>$0.00</td></tr>
 					<tr class='min_height totals'><td>Total</td><td class='price'>$0.00</td></tr>
 				</table>
@@ -169,8 +171,8 @@
                 <input type=button id='submit1' class='ui-button halfWidth' value=Submit />
                 </td></tr></table>
             </div>
-		</td>
-	</tr></table>
+		<!--</td>--></div>
+	<!--</tr></table>-->
 
 		</div>
 	</div>

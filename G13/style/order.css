@@ -1,3 +1,13 @@
+#mainbody > div {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#mainbody > div:first-child {
+	margin-left: 5px;
+}
+#mainbody > div:last-child {
+	margin-right: 5px;
+}
 .hover:hover {					/* Hover just adds the default hover style to links */
 
 	cursor: pointer;
@@ -12,6 +22,7 @@
 	/* border-bottom: 1px solid darkgray; */
 	min-height: 7px;
 	margin-bottom: 5px;
+	width: 255px;
 }
 
 .totalText {
@@ -20,8 +31,13 @@
 .totals:first-child td {
 	border-top: 2px solid darkgray;
 }
-.totals {
-	padding: 4px;
+.totals td {
+	padding: 3px 0px 3px 8px;
+}
+
+.price {
+	text-align: right;
+	padding-right: 5px !important;
 }
 
 .blackList {					/*	Replicating the white-on-black list object in our milestone designs */
@@ -161,6 +177,15 @@
 	display: inline-block; 
 }
 
+@media screen and (max-width: 1080px) {
+	#orderGroups ul li {
+		display: inline-block;
+	}
+	#cat_nav::after {
+		clear: both;
+	}
+}
+
 #orderSummary {
 	max-height: 80%;
 }
@@ -200,6 +225,7 @@
 
 #orderItems .lineitem .quantity {
 	padding-right: 2px;
+	width: 26px;
 }
 
 #selection_table {							/* Table grid showing selection options for menu categories */

@@ -1,7 +1,7 @@
 
 // order.js - javascript funtions and event handlers for the order pages - Brayden Traas
 
-var taxpct = 1.05;		// 1.05 -> multiplier. total + tax = total * multiplier.
+var taxpct = 0.05;		// 0.05 -> multiplier.
 var minMinutes = 15;	// 15   -> minimum time to order completion
 var maxDays = 30;		// 30   -> max days for advance orders
 
@@ -38,6 +38,11 @@ $(document).ready(function()
 	{
 		submit1();
 	});
+
+
+	/* Updates minimum date / time each minutes */
+	setInterval(setMinDateTime, 60*1000);
+
 
 	$('#orderItems .total').next().find('td').first().attr('colspan',3);
 	$('#orderItems .total').next().next().find('td').first().attr('colspan', 3);
@@ -97,8 +102,31 @@ function modifyItem(elem, increment) // {{{
 
 } // }}}
 
+function setMinDateTime() // {{{
+{
+	var now = new Date();
+    var minTime = new Date(now.getTime() + minMinutes*60000);
+    var maxTime = new Date(now.getTime() + maxDays*86400000);
+
+	$('input.order_datetime').first().datepicker( 'option', 'minDate', minTime );
+	$('input.order_datetime').first().datepicker( 'option', 'maxDate', maxTime );
+	$('input.order_datetime').last().timepicker( 'option', 'minDate', minTime );
+
+	var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
+    if(date.getTime() < minTime.getTime() - 60000 || date.getTime() > maxTime.getTime())
+    {
+		$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000);
+	}
+
+
+} // }}}
+
+
+
 function submit1() // {{{ Validate data in cookies / table, then proceed
 {
+	setMinDateTime(); // Set date to min date/time if it's less than valid date.
+
 	var now = new Date();
 	var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
@@ -112,7 +140,7 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 	var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
     if(date.getTime() < minTime.getTime() - 60000 || date.getTime() > maxTime.getTime())
     {
-        alert("Error: Invalid date!");
+        alert("Error: Invalid date/time!");
         return false;
     }
 
@@ -150,20 +178,19 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 function calculateTotal() // {{{
 {
 	var sum = 0;
-
+	var tax = 0;
 	$(".lineitem").each(function() 
 	{
 		var priceVal = parseFloat($(this).find('.price').text().replace(/[$]/g,''));
 		var qty		 = parseInt($(this).find('.quantity').text());
 		sum += priceVal * qty;
 	});
-	sum = sum.toFixed(2);
-	//alert("Total (before tax): "+sum);	
-	$('#orderItems .total').next().find('.price').text("$"+sum);
-
-	sum = calculateTax(sum, taxpct);
-	//alert("Total (after tax): "+sum);
-	$('#orderItems .total').next().next().find('.price').text("$"+sum);
+	
+	tax = calculateTax(sum, taxpct);
+	sum = (parseFloat(sum) + parseFloat(tax)).toFixed(2);
+	
+	$('#orderTotals .totals').first().find('.price').text("$"+tax);
+	$('#orderTotals .totals').last().find('.price').text("$"+sum);
 
 
 } // }}}
@@ -174,7 +201,8 @@ function calculateTax(total, pct) // {{{
 } // }}}
 
 
-function convertTo24Hour(time) {
+function convertTo24Hour(time)  // {{{
+{
     var hours = parseInt(time.substr(0, 2));
     if(time.indexOf('am') != -1 && hours == 12) {
         time = time.replace('12', '0');
@@ -183,8 +211,7 @@ function convertTo24Hour(time) {
         time = time.replace(hours, (hours + 12));
     }
     return time.replace(/(\sam|\spm)/, '');
-}
-
+} // }}}
 function empty(mixed_var) { // {{{
   //  discuss at: http://phpjs.org/functions/empty/
   // original by: Philippe Baumann

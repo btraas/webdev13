@@ -22,6 +22,30 @@
 }
 
 
+@media screen and (max-width: 1050px) {
+	#h_navbar, #h_navbar li {
+		display: inline-block !important;
+	}
+}
+@media screen and (max-width: 685px) {
+	#headertext {
+		position: absolute;
+		top: 0;
+		margin-top: 50px !important;
+		margin-right: 10px;
+	}
+	#acc {
+		float: left !important;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	#h_navbar ul {
+		margin: 0px;
+	}
+}
+
 /* settings for whole page */
 html {
 	color: #FFFFFF;

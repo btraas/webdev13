@@ -181,9 +181,6 @@
 	#orderGroups ul li {
 		display: inline-block;
 	}
-	#cat_nav::after {
-		clear: both;
-	}
 }
 
 #orderSummary {

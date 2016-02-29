@@ -26,6 +26,13 @@
 	#h_navbar, #h_navbar li {
 		display: inline-block !important;
 	}
+
+	@media screen and (min-width: 650px) {
+    #h_navbar ul {
+        margin: 0px;
+    }
+}
+
 }
 @media screen and (max-width: 685px) {
 	#headertext {
@@ -37,12 +44,6 @@
 	#acc {
 		float: left !important;
 		margin-left: 10px;
-	}
-}
-
-@media screen and (min-width: 650px) {
-	#h_navbar ul {
-		margin: 0px;
 	}
 }
 

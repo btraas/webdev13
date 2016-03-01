@@ -1,4 +1,5 @@
 #mainbody > div {
+	float: left;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -33,6 +34,10 @@
 }
 .totals td {
 	padding: 3px 0px 3px 8px;
+}
+
+#orderTotals {
+	width: 100%;
 }
 
 .price {
@@ -180,6 +185,20 @@
 @media screen and (max-width: 1080px) {
 	#orderGroups ul li {
 		display: inline-block;
+	}
+}
+
+#orderMenu {
+	min-width: 400px;
+	text-align: center;
+}
+
+@media screen and (min-width: 1081px) {
+
+	#orderSummaryDetails {
+		position: absolute;
+		right: 0;
+		margin-right: 25px !important;
 	}
 }
 

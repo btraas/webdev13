@@ -4,13 +4,14 @@
 
 
 $BASH_PATH = "C:/cygwin64/bin/";
+$SH_PATH = "/cygdrive/d/webdev13/G13/";
 
 $_POST['payload'] = 'hi';
 
 if( $_POST['payload'] ) {
 	
 
-	echo shell_exec( $BASH_PATH.'bash pull.sh' );
+	echo shell_exec( $BASH_PATH."bash ".$SH_PATH."pull.sh" );
 
 }
 

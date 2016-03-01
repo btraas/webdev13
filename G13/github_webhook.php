@@ -11,6 +11,8 @@ if( $_POST['payload'] ) {
 	
 
 	copy('sync_in_progress.html', 'index.html');
+	sleep(1);
+
 	$msg  = shell_exec( $GIT_PATH.'git fetch origin master' );
 	$msg2 = shell_exec( $GIT_PATH.'git reset --hard HEAD' ); 
 	$msg3 = shell_exec( $GIT_PATH.'git merge -s recursive -X theirs origin/master' );

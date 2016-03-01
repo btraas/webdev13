@@ -113,7 +113,7 @@ function setMinDateTime() // {{{
 	$('input.order_datetime').last().timepicker( 'option', 'minDate', minTime );
 
 	var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
-    if(date.getTime() < minTime.getTime() - 60000 || date.getTime() > maxTime.getTime())
+    if(date.getTime() < minTime.getTime() || date.getTime() > maxTime.getTime())
     {
 		$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000);
 	}
@@ -125,8 +125,6 @@ function setMinDateTime() // {{{
 
 function submit1() // {{{ Validate data in cookies / table, then proceed
 {
-	setMinDateTime(); // Set date to min date/time if it's less than valid date.
-
 	var now = new Date();
 	var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
@@ -138,10 +136,17 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 	}
 
 	var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
-    if(date.getTime() < minTime.getTime() - 60000 || date.getTime() > maxTime.getTime())
+    if(date.getTime() < minTime.getTime() || date.getTime() > maxTime.getTime())
     {
-        alert("Error: Invalid date/time!");
-        return false;
+		if(date.getTime() < minTime.getTime() && date.getTime() > (minTime.getTime() - 5*60*1000 ))
+		{
+			$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000)
+		}
+		else
+		{
+			alert("Error: Invalid date/time!");
+			return false;
+		}
     }
 
 

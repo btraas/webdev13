@@ -27,7 +27,7 @@
 		display: inline-block !important;
 	}
 
-	@media screen and (min-width: 650px) {
+	@media screen and (min-width: 650px) and (max-width: 1000px) {
     #h_navbar ul {
         margin: 0px;
     }

@@ -49,12 +49,13 @@
 	border: 1px solid white;
 	background: black;
 	color: white;
-	border-radius: 5px;
+	border-radius: 0px;
 	margin-top: 20px;
 	padding: 3px;
 	display: table;
 	list-style-type: none;
 	font-weight: bold;
+	box-shadow: 0px 0px 5px 1px black;
 }
 .blackList ul {
 	margin: 0px;
@@ -177,14 +178,44 @@
 	vertical-align: top;
 }
 
-#orderGroups a:hover{
-	border-bottom: solid 1px #FFB808;
-	display: inline-block; 
+#orderGroups a{
+	border-bottom: solid 1px black;
 }
 
+#orderGroups a:hover{
+	border-bottom: solid 1px #FFB808;
+}
+
+#orderGroups {
+	margin-top: 58px;
+}
+
+#orderGroups li a {
+	display: block;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+
 @media screen and (max-width: 1080px) {
+	#mainbody:before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 20px;
+		font-size: 200%;
+		font-weight: bold;
+		content: "Choose a Category";
+	
+	}
 	#orderGroups ul li {
 		display: inline-block;
+		width: 160px;
+	}
+	#orderGroups ul li a {
+		padding: 15px;
+		display: block;
+		border-right: 1px solid #3C2802;
 	}
 }
 
@@ -201,13 +232,17 @@
 	}
 }
 
+#orderSummaryDetails h2 {
+	margin-top: 25px;
+}
+
 #orderSummary {
 	max-height: 80%;
 }
 
 #orderSummary, #orderDetails {
 	width: 255px; 
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 #order{
@@ -247,7 +282,7 @@
 	border-top: 1px solid white;
 	margin-bottom: 30px;
 	width: 500px;
-	box-shadow: 0px 0px 4px 2px black;
+	box-shadow: 0px 0px 5px 1px black;
 }
 #selection_table td {
 	border-bottom: 1px solid white;

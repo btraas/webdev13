@@ -55,7 +55,7 @@ function addToOrder(item) // {{{
 	var name  = item.parent().parent().find('h3').text();
 	var price = item.parent().parent().find('.price').text().replace(/$/, '');
 
-	var unique = name.replace(/\s/g, '');
+	var unique = name.replace(/[^a-zA-Z]/g, '');
 
 	// alert("name: " + name + " price: "+price);
 	

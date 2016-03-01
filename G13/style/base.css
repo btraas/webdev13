@@ -27,21 +27,52 @@
 		display: inline-block !important;
 	}
 	#h_navbar ul {
-		margin-bottom: 0px;
+		margin-bottom: 0px; 
+	}
+	#header {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		min-width: 0px;
+		min-height: 110px;
+	}
+	#headertext {
 	}
 }
 
-}
-@media screen and (max-width: 685px) {
+
+@media screen and (max-width: 750px) {
 	#headertext {
-		position: absolute;
 		top: 0;
-		margin-top: 50px !important;
-		margin-right: 10px;
+
+		float: none;
+        display: inline-block;
+        position: relative;
+	    margin-top: 3px !important;
+
 	}
 	#acc {
 		float: left !important;
-		margin-left: 10px;
+		margin-left: 50px;
+	}
+	#logo {
+		margin: 0 auto;
+		float: none !important;
+		text-align: center;
+	}
+	#logo img {
+		max-width: 100%;
+	}
+	#h_navbar {
+		width: 100%;
+	}
+	#h_navbar li {
+		width: 24%;
+	}
+	#h_navbar ul li a {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+		display: block;
 	}
 }
 
@@ -147,6 +178,7 @@ table, tr, td, tbody {
 #h_navbar li {
 	list-style-type: none;
 	display: inline;
+	padding-bottom: 16px;
 }
 
 /* Horizontal navigation bar anchors */
@@ -160,6 +192,11 @@ table, tr, td, tbody {
 	padding-right: 40px;
 	padding-left: 40px;	
 }
+#h_navbar li:not(:last-child) a {
+	border-right: 1px solid #2C1802;
+}
+
+
 
 /* Horizontal navigation bar last specific setting */
 #h_navbar li:last-child { 
@@ -168,7 +205,7 @@ table, tr, td, tbody {
 
 /* Horizontal navigation hover effect */
 #h_navbar a:hover{
-	width: 50px;
+	/* width: 50px; */
 	border-bottom: 2px solid #FFB808;
 	color: #FFB808;
 }
@@ -176,7 +213,9 @@ table, tr, td, tbody {
 /* Horizontal navigation current page */
 .selector_h{
 	border-bottom: 4px solid #FFB808;
-	padding-bottom: 16px;
+	/* padding-bottom: 16px; BT - This adds 16px extra space to the menu, but only for pages that have this class applied. 
+								Moved to #h_navbar li above 
+	*/ 
 }
 
 /* clear float settings */

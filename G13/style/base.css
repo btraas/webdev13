@@ -26,6 +26,9 @@
 	#h_navbar, #h_navbar li {
 		display: inline-block !important;
 	}
+	#h_navbar ul {
+		margin-bottom: 0px;
+	}
 }
 
 }

@@ -189,6 +189,7 @@ table, tr, td, tbody {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	min-height: 800px;
 	height: auto;
 	overflow: hidden;
 	z-index: 4;

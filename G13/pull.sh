@@ -4,13 +4,16 @@ cp sync_in_progress.html index.html
 
 #exit
 
-echo `git pull` >itworked.txt
+#echo `git pull` >itworked.txt
 
+#exit
+
+echo $USER >itworked.txt
 exit
 
-echo `git fetch`
-echo `git reset --hard HEAD`
-echo `git merge -s recursive -X theirs origin/master`
+echo `sudo git fetch`
+echo `sudo git reset --hard HEAD`
+echo `sudo git merge -s recursive -X theirs origin/master`
 exit
 
 #git pull

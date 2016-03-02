@@ -47,6 +47,7 @@ $(document).ready(function()
 	$('#orderItems .total').next().find('td').first().attr('colspan',3);
 	$('#orderItems .total').next().next().find('td').first().attr('colspan', 3);
 	$('#orderItems .total td').attr('colspan',4);
+
 });
 
 
@@ -129,9 +130,41 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 	var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
 
+	var items = [];
+    $('#orderItems .lineitem').each(function()
+    {
+        if(parseInt($(this).find('.quantity').text()) <= 0)
+        {
+            alertDialog('Error: Invalid quantity for:'+$(this).find('.name').text());
+            return false;
+        }
+        items.push(
+        {
+            itemID:     0,
+            name:       $(this).find('.name').text(),
+            quantity:   parseInt($(this).find('.quantity').text()),
+            price:      parseFloat($(this).find('.price').text().replace(/[$]/g, '')),
+        });
+    });
+
+
+	if(items.length <= 0)
+    {
+        alertDialog("Error: No items selected!");
+        return false;
+    }
+
 	if(empty($('.order_datetime').first().val()) || empty($('.order_datetime').last().val()))
 	{
-		alert("Error: Date / Time not specified!");
+		confirmDialog("Error: Date / Time not specified!\nSet ASAP (in "+minMinutes+" minutes)?",
+		{
+			title: "No Date / Time",
+		}, function() 
+		{ 
+			$('input.order_datetime').first().datepicker('setDate', minTime + 60*1000);
+			$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000); 
+			 submit1(); // run again
+		});
 		return false;
 	}
 
@@ -144,36 +177,17 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 		}
 		else
 		{
-			alert("Error: Invalid date/time!");
+			alertDialog("Error: Invalid date/time!");
 			return false;
 		}
     }
 
 
-	var items = [];
-	$('#orderItems .lineitem').each(function() 
+	alertDialog('Date: '+date+"\n Items: "+JSON.stringify(items),
 	{
-		if(parseInt($(this).find('.quantity').text()) <= 0) 
-		{
-			alert('Error: Invalid quantity for:'+$(this).find('.name').text());
-			return false;
-		}
-		items.push(
-		{
-			itemID:		0, 
-			name:		$(this).find('.name').text(), 
-			quantity:	parseInt($(this).find('.quantity').text()), 
-			price:		parseFloat($(this).find('.price').text().replace(/[$]/g, '')),
-		});
+		title: "JSON Form data (will be hidden next milestone)",
+		width: 500
 	});
-
-	if(items.length <= 0)
-	{
-		alert("Erorr: No items selected!");
-		return false;
-	}
-
-	alert('Data to pass: date:'+date+" items: "+JSON.stringify(items));
 	return true;
 
 
@@ -205,6 +219,208 @@ function calculateTax(total, pct) // {{{
 
 } // }}}
 
+
+
+
+
+// The following functions are from external sources.
+// https://intranet.devrygreenhouses.com/rc/js/devry-ui-functions.js
+
+
+$.extend( // getOrCreateDialog() {{{
+{
+	/** Create DialogBox by ID
+	* 
+	* @param { String } elementID
+	*/
+	getOrCreateDialog: function( id ) 
+	{
+		$box = $('#' + id);
+		if( !$box.length ) 
+		{
+			$box = $('<div id="' + id + '"><p></p></div>').hide().appendTo('body');
+		}
+		return $box;
+	}		
+}); // }}}
+/** Improved alert() using a jQuery-UI Dialog box {{{
+*
+*   Usage:
+*       alertDialog( "This is some alert message", { 'title': 'Did you know?' } );
+*
+*   Note:
+*       Unlike confirm(), this dialog is Asynchronous.  It will NOT halt JS execution.
+*
+* @depends $.getOrCreateDialog
+*
+* @param { String } the alert message
+* @param { Object } jQuery Dialog box options
+*/
+function alertDialog( message, options )
+{
+    // NOTE:    These are the default options.  Many more can be set (i.e. height, width, title, position, Class, etc.)
+    //          For more info, see http://api.jqueryui.com/dialog/
+    var defaults = {
+        title           : "Alert Message",
+        modal           : true,
+        resizable       : false,
+        buttons         :
+        {
+            OK          : function()
+            {
+                $(this).dialog('close');
+            }
+        },
+        focus           : function()
+        {
+            $('#alert').next().find('button:eq(0)').addClass('ui-state-default').focus();
+        },
+        show            : 'fade',
+        hide            : 'fade',
+        minHeight       : 50,
+        width           : 300,
+        dialogClass     : '', //'ui-state-highlight',
+        closeOnEscape   : true,
+    }
+
+    $alert = $.getOrCreateDialog( 'alert' );
+
+    // set message
+    message = message.replace( /\n/g, '<br />' );
+    $("p", $alert).html( '<div style="text-align:left;">' + message + '</div>' );
+
+    // init dialog
+    $alert.dialog( $.extend( {}, defaults, options ) );
+
+	options = empty(options) ? defaults : options;
+
+    $('#alert').next()
+        .removeClass( 'ui-widget-content' ).addClass( options.dialogClass ? options.dialogClass : defaults.dialogClass ).css( 'border', '0px' )
+        .find('.ui-button').addClass('small_button').css( { 'width':'70px', 'margin-left':'10px' } )
+        .find('.ui-button-text').css( { 'padding-top':'2px' } );
+
+    // Make sure dialog appears above other dialogs
+    $('#alert').closest('.ui-dialog').css( 'z-index', 10001 );
+
+} // }}}
+/** Improved confirm() using a jQuery-UI Dialog box {{{
+*
+*   Usage:
+*       confirmDialog( "Are you sure?", { 'title': 'Please confirm' }, function() { console.log( "User clicked OK!" ); }, function() { console.log( "User clicked cancel" ); } );
+*       confirmDialog( 'The message', { 'title': 'The Title', 'button1Label': 'Yes', 'button2Label': 'No' }, function() { alert( 'Yes' ); }, function() { alert( 'No' ); } );
+*
+*   Note:
+*       Unlike confirm(), this dialog is Asynchronous.  It will NOT halt JS execution, which is why the callbacks are required.
+*
+*       See js/jquery.dataTables.FilterMgr.js for an example of a using confirmDialog() as a quick/easy   ---->TODO INPUT DIALOG TODO <----.
+*
+* @depends $.getOrCreateDialog
+*
+* @param { String } the alert message
+* @param { String/Object } the confirm callback
+* @param { Object } jQuery Dialog box options
+*/
+function confirmDialog( message, options, callback1, callback2, callback3, callback4 )
+{
+    // NOTE:    These are the default options.  Many more can be set (i.e. height, width, title, position, Class, etc.)
+    //          For more info, see http://api.jqueryui.com/dialog/
+
+    var defaults = {
+        title           : "Are you sure?",
+        modal           : true,
+        resizable       : false,
+        buttonWidth     : '70px',
+        button1Label    : 'OK',
+        button2Label    : 'Cancel',
+        button3Label    : null,
+        button4Label    : null,
+        buttons         :
+        [
+            {
+                text    : !empty( options.button1Label ) ? options.button1Label : 'OK',
+                click   : function()
+                {
+                    $(this).dialog('close');
+                    return (typeof callback1 == 'string') ?  window.location.href = callback1 : callback1();
+                }
+            },
+            {
+                text    : !empty( options.button2Label ) ? options.button2Label : 'Cancel',
+                click   : function()
+                {
+                    $(this).dialog('close');
+                    if( !empty( callback2 ) )
+                        return (typeof callback2 == 'string') ?  window.location.href = callback2 : callback2();
+                    return false;
+                }
+            },
+            {
+                text    : !empty( options.button3Label ) ? options.button3Label : null,
+                click   : function()
+                {
+                    $(this).dialog('close');
+                    if( !empty( callback3 ) )
+                        return (typeof callback3 == 'string') ?  window.location.href = callback3 : callback3();
+                    return false;
+                }
+            },
+            {
+                text    : !empty( options.button4Label ) ? options.button4Label : null,
+                click   : function()
+                {
+                    $(this).dialog('close');
+                    if( !empty( callback4 ) )
+                        return (typeof callback4 == 'string') ?  window.location.href = callback4 : callback4();
+                    return false;
+                }
+            }
+        ],
+        focus           : function()
+        {
+            // Make the last button the default
+            $('#confirm').next().find('button:eq(0)').blur();
+            $('#confirm').next().find('button').last().addClass('ui-state-default').focus();
+        },
+        show            : 'fade',
+        hide            : 'fade',
+        minHeight       : 50,
+        width           : 300,
+        dialogClass     : '',//'ui-state-highlight',
+        closeOnEscape   : true,
+		buttonWidth		: 'auto',
+    }
+
+    $confirm = $.getOrCreateDialog( 'confirm' );
+
+    // set message
+    message = message.replace( /\n/g, '<br />' );
+    $("p", $confirm).html( '<div style="text-align:left;">' + message + '</div>' );
+
+
+    // If user doesn't want a 3rd button, then remove it (and the 4th) from the default collection
+    if( empty( options.button3Label ) ) defaults.buttons.splice( 2, 2 );
+
+    // If user doesn't want a 4th button, then remove it from the default collection
+    else if( empty( options.button4Label ) ) defaults.buttons.splice( 3, 1 );
+
+
+    // init dialog
+    $confirm.dialog( $.extend( {}, defaults, options ) );
+
+	options = empty(options) ? defaults : options;
+
+
+    var buttonWidth = ( typeof options.buttonWidth != 'undefined' ) ? options.buttonWidth : defaults.buttonWidth;
+
+    $('#confirm').next()
+        .removeClass( 'ui-widget-content' ).addClass( options.dialogClass ? options.dialogClass : defaults.dialogClass ).css( 'border', '0px' )
+        .find('.ui-button').addClass('small_button').css( { 'width':buttonWidth, 'margin-left':'10px' } )
+        .find('.ui-button-text').css( { 'padding-top':'2px' } );
+
+    // Make sure dialog appears above other dialogs
+    $('#confirm').closest('.ui-dialog').css( 'z-index', 10001 );
+
+} // }}}
 
 function convertTo24Hour(time)  // {{{
 {

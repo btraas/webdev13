@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
 	#headertext {
 		top: 0;
 
@@ -67,6 +67,7 @@
 	}
 	#h_navbar li {
 		width: 24%;
+		padding-bottom: 0px !important;
 	}
 	#h_navbar ul li a {
 		text-align: center;
@@ -178,7 +179,7 @@ table, tr, td, tbody {
 #h_navbar li {
 	list-style-type: none;
 	display: inline;
-	padding-bottom: 16px;
+	padding-bottom: 16px; 
 }
 
 /* Horizontal navigation bar anchors */

@@ -1,0 +1,6 @@
+
+@media screen and (max-width: 1080px) {
+	#mainbody:before {
+		display: none;
+	
+	}

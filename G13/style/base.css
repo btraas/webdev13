@@ -180,6 +180,7 @@ table, tr, td, tbody {
 	list-style-type: none;
 	display: inline;
 	padding-bottom: 16px; 
+	border-bottom: 4px solid black;
 }
 
 /* Horizontal navigation bar anchors */
@@ -192,6 +193,7 @@ table, tr, td, tbody {
 	padding-bottom: 12px;
 	padding-right: 40px;
 	padding-left: 40px;	
+	border-bottom: 2px solid black;
 }
 #h_navbar li:not(:last-child) a {
 	border-right: 1px solid #2C1802;
@@ -212,7 +214,7 @@ table, tr, td, tbody {
 }
 
 /* Horizontal navigation current page */
-.selector_h{
+#h_navbar li.selector_h{
 	border-bottom: 4px solid #FFB808;
 	/* padding-bottom: 16px; BT - This adds 16px extra space to the menu, but only for pages that have this class applied. 
 								Moved to #h_navbar li above 

@@ -37,7 +37,7 @@ function phoneCheck(){
 	var number = document.getElementById("phone");
 	var numberExp = /(250|604|778)([0-9]{3})([0-9]{4})/;
 	
-	if (number != "" && numberExp.test(number.value)) {
+	if (number.value != "" && numberExp.test(number.value)) {
 		number.style.borderColor = "white";
 		return true;
 	}
@@ -51,26 +51,50 @@ function phoneCheck(){
 }
 
 function passwordCheck() {
-	var pass1 = document.getElementById("password").value;
-	var pass2 = document.getElementById("password2").value;
+	var pass1 = document.getElementById("password");
+	var pass2 = document.getElementById("password2");
 	var passExp = /([\d\D\w\W]{1,20})/;
 	
-	if (pass1 != "" && pass2 != "" && passExp.test(pass1) && passExp.test(pass2) && pass1 == pass2){
-	
-		return false;
+	if (pass1.value != "" && pass2.value != "" && passExp.test(pass1.value) && passExp.test(pass2.value) && pass1.value == pass2.value){
+		pass1.style.borderColor="white";
+		pass2.style.borderColor="white";
+		return true;
 	}
 	else {
-		alert("Password verification failed");
+		pass1.style.borderColor = "yellow";
+		pass1.style.borderStyle = "solid";
+		pass1.style.borderWeight = "3px";
+		pass2.style.borderColor = "yellow";
+		pass2.style.borderStyle = "solid";
+		pass2.style.borderWeight = "3px";
 		return false;
 	}
 }
 
+function emailCheck(){
+	var mailBox = document.getElementById("email");
+	var emailPattern = /^.*?\b@\b.*?((com)|(ca)|(org))$/;
+	if (mailBox.value.length > 0){
+		if (emailPattern.test(mailBox.value)){	
+			mailBox.style.borderColor = "white";
+			return true;
+			
+		} else {
+			mailBox.style.borderColor = "yellow";
+			mailBox.style.borderStyle = "solid";
+			mailBox.style.borderWeight = "3px";
+			mailBox.focus();
+			return false;
+		}
+	} else {return true;}
+}
+
 function mySubmit(){
 	
-	if(firstNameCheck() && lastNameCheck() && phoneCheck() && passwordCheck()){
+	if(firstNameCheck() && lastNameCheck() && phoneCheck() && emailCheck() && passwordCheck()){
 		alert("Sign up successful");
-		window.location ="login.html"
-		return true;
+		window.location = "login.html";
+		return false;
 	}
 	else{
 		alert("Sign up unsuccessful. Please check over your information.")

@@ -1,41 +1,51 @@
 function firstNameCheck(){
-	var firstName = document.getElementById("fname").value;
+	var firstName = document.getElementById("fname");
 	var fNameExp = /^([^0-9]*)$/;
 	
-	if (isNaN(firstName) && fNameExp.test(firstName)) {
-	
+	if (isNaN(firstName.value) && fNameExp.test(firstName.value)) {
+		firstName.style.borderColor = "white";
 		return true;
 	}
 	else {
-		alert("Name is incorrect");
+		firstName.style.borderColor = "yellow";
+		firstName.style.borderStyle = "solid";
+		firstName.style.borderWeight = "3px";
+		firstName.focus();
 		return false;
 	}
 }
 
 function lastNameCheck(){
-	var lastName = document.getElementById("lname").value;
+	var lastName = document.getElementById("lname");
 	var lNameExp = /^([^0-9]*)$/;
-	
-	if (lNameExp.test(lastName)) {
-	
+	if(lastName.value.length > 0){
+	if (lNameExp.test(lastName.value)) {
+		lastName.style.borderColor = "white";
 		return true;
 	}
 	else {
-		alert("Last name is incorrect");
+		lastName.style.borderColor = "yellow";
+		lastName.style.borderStyle = "solid";
+		lastName.style.borderWeight = "3px";
+		lastName.focus();
 		return false;
 	}
+	} else {return true;}
 }
 
 function phoneCheck(){
-	var number = document.getElementById("phone").value;
+	var number = document.getElementById("phone");
 	var numberExp = /(250|604|778)([0-9]{3})([0-9]{4})/;
 	
-	if (number != "" && numberExp.test(number)) {
-	
+	if (number != "" && numberExp.test(number.value)) {
+		number.style.borderColor = "white";
 		return true;
 	}
 	else {
-		alert("Number is incorrect");
+		number.style.borderColor = "yellow";
+		number.style.borderStyle = "solid";
+		number.style.borderWeight = "3px";
+		number.focus();
 		return false;
 	}
 }
@@ -63,7 +73,7 @@ function mySubmit(){
 		return true;
 	}
 	else{
-
+		alert("Sign up unsuccessful. Please check over your information.")
 		return false;
 	}
 }

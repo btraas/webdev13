@@ -103,10 +103,37 @@ table.pricings tr:nth-child(even){
 	margin-bottom: 250px;
 }
 .noodle{
-	margin-bottom: 200px;
+	margin-bottom: 250px;
 }
 .miso{
 	font-size: 8pt;
 	text-align:center;
+}
+@media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
+.sashimi{
+	margin-bottom: 0px;
+}
+.nigiri2{
+	margin-bottom: 0px;
+}
+.hosomaki2{
+	margin-bottom: 0px;
+}
+.IO_roll2{
+	margin-bottom: 0px;
+}
+.combo2{
+	margin-bottom: 0px;
+}
+.party_tray{
+	margin-bottom: 0px;
+}
+
+.specials{
+	margin-bottom: 0px;
+}
+.noodle{
+	margin-bottom: 0px;
+}
 }
 /* Validated */

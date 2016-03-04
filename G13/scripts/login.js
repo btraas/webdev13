@@ -5,10 +5,9 @@ function validate(){
 		alert ("Login successfully");
 		window.location = "order.html"; 
 		return false;
-		}
-
-	else{
-	alert("Failed to login.");
-	return false;
-		}
 	}
+	else{
+		alert("Failed to login.");
+		return false;
+	}
+}

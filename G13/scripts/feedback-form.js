@@ -10,7 +10,7 @@ function isBlur() {
 
 	if (subject.value == "") {
 		subject.style.borderStyle = "solid";
-		subject.style.borderColor = "red";
+		subject.style.borderColor = "yellow";
 		subject.style.borderWidth = "3px";
 		subject.focus();
 
@@ -19,7 +19,7 @@ function isBlur() {
 
 	if (details.value == "") {
 		subject.style.borderStyle = "solid";
-		details.style.borderColor = "red";
+		details.style.borderColor = "yellow";
 		details.style.borderWidth = "3px";
 		details.focus();
 

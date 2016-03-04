@@ -97,7 +97,7 @@ function mySubmit(){
 		return false;
 	}
 	else{
-		alert("Sign up unsuccessful. Please check over your information.")
+		alert("Sign up is unsuccessful. Please check over your information.")
 		return false;
 	}
 }

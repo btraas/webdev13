@@ -102,4 +102,11 @@ table.pricings tr:nth-child(even){
 .specials{
 	margin-bottom: 250px;
 }
+.noodle{
+	margin-bottom: 200px;
+}
+.miso{
+	font-size: 8pt;
+	text-align:center;
+}
 /* Validated */

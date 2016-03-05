@@ -162,10 +162,13 @@ table, tr, td, tbody {
 	float: right;
 	display:inline;
 	font-size: 10pt;
-	width: 250px;
+	width: 245px;
 	margin-top: 7px;
 }
 
+#headertext p {
+	padding-left: 80px;
+}
 /* Header social media */
 #acc {
 	float:right;
@@ -173,6 +176,12 @@ table, tr, td, tbody {
 	margin-right: 5%;
 	font-size: 13pt;
 	color: #FFFFFF;
+	
+}
+
+/*Social Media spacing*/
+#acc img{
+	padding-left: 5px;
 }
 
 /* Horizontal navigation bar list items */

@@ -109,6 +109,7 @@ table.pricings tr:nth-child(even){
 	font-size: 8pt;
 	text-align:center;
 }
+
 @media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
 .sashimi{
 	margin-bottom: 0px;

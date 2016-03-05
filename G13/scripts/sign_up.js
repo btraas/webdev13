@@ -35,7 +35,7 @@ function lastNameCheck(){
 
 function phoneCheck(){
 	var number = document.getElementById("phone");
-	var numberExp = /(250|604|778)([0-9]{3})([0-9]{4})/;
+	var numberExp = /(250|604|778)([0-9]{7})/;
 	
 	if (number.value != "" && numberExp.test(number.value)) {
 		number.style.borderColor = "white";
@@ -53,7 +53,7 @@ function phoneCheck(){
 function passwordCheck() {
 	var pass1 = document.getElementById("password");
 	var pass2 = document.getElementById("password2");
-	var passExp = /([\d\D\w\W]{1,20})/;
+	var passExp = /([\d\D\w\W]{6,20})/;
 	
 	if (pass1.value != "" && pass2.value != "" && passExp.test(pass1.value) && passExp.test(pass2.value) && pass1.value == pass2.value){
 		pass1.style.borderColor="white";
@@ -74,19 +74,17 @@ function passwordCheck() {
 function emailCheck(){
 	var mailBox = document.getElementById("email");
 	var emailPattern = /^.*?\b@\b.*?((com)|(ca)|(org))$/;
-	if (mailBox.value.length > 0){
-		if (emailPattern.test(mailBox.value)){	
-			mailBox.style.borderColor = "white";
-			return true;
-			
-		} else {
-			mailBox.style.borderColor = "yellow";
-			mailBox.style.borderStyle = "solid";
-			mailBox.style.borderWeight = "3px";
-			mailBox.focus();
-			return false;
-		}
-	} else {return true;}
+	if (emailPattern.test(mailBox.value)){	
+		mailBox.style.borderColor = "white";
+		return true;
+		
+	} else {
+		mailBox.style.borderColor = "yellow";
+		mailBox.style.borderStyle = "solid";
+		mailBox.style.borderWeight = "3px";
+		mailBox.focus();
+		return false;
+	}
 }
 
 function mySubmit(){

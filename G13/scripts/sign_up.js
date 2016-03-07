@@ -90,12 +90,10 @@ function emailCheck(){
 function mySubmit(){
 	
 	if(firstNameCheck() && lastNameCheck() && phoneCheck() && emailCheck() && passwordCheck()){
-		alert("Sign up successful");
 		window.location = "login.html";
 		return false;
 	}
 	else{
-		alert("Sign up is unsuccessful. Please check over your information.")
 		return false;
 	}
 }

@@ -60,14 +60,14 @@
 						<br>
 						<h2>Hours of Operation</h2>
 						<p>
-							Monday - Friday: 11:00am - 8:00pm<br>
-							Saturday: 11:30 - 8:30<br>
+							Monday - Friday: 11:00 AM - 8:00 PM<br>
+							Saturday: 11:30 AM - 8:30 PM<br>
 							Sunday: Closed<br>
 						</p>
 					</div>
 					<!-- google map -->
 					<div id="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.0729985742887!2d-123.15783988475035!3d49.23710518192062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867379f7fe376f%3A0x6c875cb4703bbf8b!2sTokyo+Thyme!5e0!3m2!1sen!2sca!4v1455391407613" >
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.0729985742887!2d-123.15783988475035!3d49.23710518192062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867379f7fe376f%3A0x6c875cb4703bbf8b!2sTokyo+Thyme!5e0!3m2!1sen!2sca!4v1455391407613">
 						</iframe>
 					</div>
 				</div>
@@ -79,27 +79,32 @@
 					</p>
 					<!-- form -->
 					<form action="http://webdevfoundations.net/scripts/formdemo.asp" method="post" onsubmit="return isBlur()">
-						<table id="feedback">
-							<tbody>
-								<tr>
-									<th>
-										<label for="subject">Subject:</label>
-									</th>
-									<td>
-										<input type="text" id="subject" name="subject">
-									</td>
-								</tr>
-								<tr>
-									<th>
-										<label for="details">Details:</label>
-									</th>
-									<td>
-										<textarea rows="20" cols="50" id="details" name="details"></textarea>
-									</td>
-								</tr>
-							</tbody>
+						<table>
+							<tr>
+								<th>
+									<label for="subject">Subject</label>
+								</th>
+								<td>
+									<input type="text" name="subject" id="subject"/>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="details">Details</label>
+								</th>
+								<td>
+									<textarea rows="20" name="details" id="details"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td>
+								</td>
+								<td>
+									<input type="reset" value="Clear"/>
+									<input type="submit" value="Submit"/>
+								</td>
+							</tr>
 						</table>
-						<input type="submit" value="Submit">
 					</form>
 				</div>
 			</div>

@@ -37,55 +37,57 @@
 	padding: 20px;
 }
 
-#feedback {
-	margin-top: 30px;
+table {
+	width: 500px;
+	margin-top: 40px;
 }
 
-#feedback label {
-	float: left;
-	clear: none;
-	width: 70px;
+th {
+	width: 5em;
+	text-align: left;
 }
 
-#feedback label[for=details] {
-	margin-top: 10px;
+th:first-child {
+	vertical-align: bottom;
 }
 
-#feedback input, textarea {
-	margin-top: 10px;
-	float: left;
-	clear: none;
+th:last-of-type {
+	vertical-align: top;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0;
+	border-width: 2px;
 	resize: none;
 }
 
-#feedback input[id=subject] {
-	width: 400px;
-	margin-top: 0;
+input[value="Submit"],
+input[value="Clear"] {
+	width: 6em;
 }
 
-#feedback input[value=Submit] {
-	width: 80px;
-	float: right;
-	clear: both;
+td:last-child {
+	text-align: center;
 }
 
-/*@media (max-width: 800px) {
-	#feedback form {
+tr:not(:first-child) > td,
+tr:not(:first-child) > th {
+	padding-top: 20px;
+}
+
+@media (max-width: 800px) {
+	table {
+		width: 75%;
+	}
+
+	input,
+	textarea {
 		width: 100%;
 	}
 
-	#feedback input, textarea {
-	margin-top: 10px;
-	margin-left: 20px;
-	float: left;
-	resize: none;
-	width: 60%;
+	td:last-child {
+		text-align: center;
 	}
-
-	#feedback input[value=Submit] {
-		width: 80px;
-		float: right;
-		clear: both;
-		margin-right: 30%;
-	}
-}*/
+}

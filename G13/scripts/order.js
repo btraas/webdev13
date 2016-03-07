@@ -48,6 +48,9 @@ $(document).ready(function()
 	$('#orderItems .total').next().next().find('td').first().attr('colspan', 3);
 	$('#orderItems .total td').attr('colspan',4);
 
+
+	setOrder(); // populate order from cookie
+
 });
 
 
@@ -56,6 +59,7 @@ function addToOrder(item) // {{{
 	var name  = item.parent().parent().find('h3').text();
 	var price = item.parent().parent().find('.price').text().replace(/$/, '');
 
+	var id = 0;
 	var unique = name.replace(/[^a-zA-Z]/g, '');
 
 	// alert("name: " + name + " price: "+price);
@@ -70,7 +74,7 @@ function addToOrder(item) // {{{
 	}
 	else
 	{
-		var html = "<tr class='lineitem item_"+unique+"'>";
+		var html = "<tr data-itemid='"+id+"' class='lineitem item_"+unique+"'>";
 		html	+=		"<td><div class='ui-state-default btn-small' onClick='modifyItem(this, 1);'><span class='ui-icon ui-icon-plusthick'></span></div>"
 		html	+= 			"<div class='ui-state-default btn-small' onClick='modifyItem(this, -1);'><span class='ui-icon ui-icon-minusthick'></span></div>";
 		html	+=		"</td>";
@@ -122,15 +126,13 @@ function setMinDateTime() // {{{
 
 } // }}}
 
-
-
-function submit1() // {{{ Validate data in cookies / table, then proceed
+function getOrder() // {{{ Get JSON order 
 {
 	var now = new Date();
-	var minTime = new Date(now.getTime() + minMinutes*60000);
+    var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
 
-	var items = [];
+    var items = [];
     $('#orderItems .lineitem').each(function()
     {
         if(parseInt($(this).find('.quantity').text()) <= 0)
@@ -148,39 +150,92 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
     });
 
 
-	if(items.length <= 0)
+	return items;
+	
+} // }}}
+
+function setOrder() // {{{ Set JSON order from cookie
+{
+	var orderCookie = getCookie("order");
+
+
+	console.log("cookie: "+orderCookie);
+
+	if(orderCookie == "" ) return;
+	
+	var result = JSON.parse(orderCookie);
+	result.forEach(function(obj) 
+	{
+		obj.itemID;
+		obj.name;
+		obj.quantity;
+		obj.price;		
+		
+		var unique = obj.name.replace(/[^a-zA-Z]/g, '');
+
+		var html = "<tr data-itemid='"+obj.itemID+"' class='lineitem item_"+unique+"'>";
+        html    +=      "<td><div class='ui-state-default btn-small' onClick='modifyItem(this, 1);'><span class='ui-icon ui-icon-plusthick'></span></div>"
+        html    +=          "<div class='ui-state-default btn-small' onClick='modifyItem(this, -1);'><span class='ui-icon ui-icon-minusthick'></span></div>";
+        html    +=      "</td>";
+        html    +=      "<td class='name'>"+obj.name+"</td>";
+        html    +=      "<td class='quantity'>"+obj.quantity+"</td>";
+        html    +=      "<td class='price'>"+obj.price+"</td>";
+        html    += "</tr>";
+
+        //alert(html);
+        $('#orderItems .total').before(html);
+
+
+	});
+	
+
+} // }}}
+
+function submit1() // {{{ Validate data in cookies / table, then proceed
+{
+
+	var items = getOrder();
+
+	var now = new Date();
+    var minTime = new Date(now.getTime() + minMinutes*60000);
+    var maxTime = new Date(now.getTime() + maxDays*86400000);
+
+    if(items.length <= 0)
     {
         alertDialog("Error: No items selected!");
         return false;
     }
 
-	if(empty($('.order_datetime').first().val()) || empty($('.order_datetime').last().val()))
-	{
-		confirmDialog("Error: Date / Time not specified!\nSet ASAP (in "+minMinutes+" minutes)?",
-		{
-			title: "No Date / Time",
-		}, function() 
-		{ 
-			$('input.order_datetime').first().datepicker('setDate', minTime + 60*1000);
-			$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000); 
-			 submit1(); // run again
-		});
-		return false;
-	}
+    if(empty($('.order_datetime').first().val()) || empty($('.order_datetime').last().val()))
+    {
+        confirmDialog("Error: Date / Time not specified!\nSet ASAP (in "+minMinutes+" minutes)?",
+        {
+            title: "No Date / Time",
+        }, function()
+        {
+            $('input.order_datetime').first().datepicker('setDate', minTime + 60*1000);
+            $('input.order_datetime').last().timepicker('setTime', minTime + 60*1000);
+             submit1(); // run again
+        });
+        return false;
+    }
 
-	var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
+    var date = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val()));
     if(date.getTime() < minTime.getTime() || date.getTime() > maxTime.getTime())
     {
-		if(date.getTime() < minTime.getTime() && date.getTime() > (minTime.getTime() - 5*60*1000 ))
-		{
-			$('input.order_datetime').last().timepicker('setTime', minTime + 60*1000)
-		}
-		else
-		{
-			alertDialog("Error: Invalid date/time!");
-			return false;
-		}
+        if(date.getTime() < minTime.getTime() && date.getTime() > (minTime.getTime() - 5*60*1000 ))
+        {
+            $('input.order_datetime').last().timepicker('setTime', minTime + 60*1000)
+        }
+        else
+        {
+            alertDialog("Error: Invalid date/time!");
+            return false;
+        }
     }
+
+
+
 
 
 	alertDialog('Date: '+date+"\n Items: "+JSON.stringify(items),
@@ -210,6 +265,13 @@ function calculateTotal() // {{{
 	
 	$('#orderTotals .totals').first().find('.price').text("$"+tax);
 	$('#orderTotals .totals').last().find('.price').text("$"+sum);
+
+
+	console.log(JSON.stringify(getOrder()));
+
+	document.cookie="order="+JSON.stringify(getOrder());;
+
+	console.log("this is the set cookie: "+readCookie("order"));
 
 
 } // }}}
@@ -475,5 +537,28 @@ function empty(mixed_var) { // {{{
   }
 
   return false;
+} // }}}
+
+function getCookie(cname) { // {{{ from w3schools
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+} // }}}
+
+
+function readCookie(name) { // {{{
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
 } // }}}
 

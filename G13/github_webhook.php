@@ -1,7 +1,7 @@
 <?php
 // Use in the "Post-Receive URLs" section of your GitHub repo.
 if ( $_REQUEST['payload'] ) {
-    echo shell_exec( 'cd /var/www/webdev13/ && sudo git reset --hard HEAD && sudo git pull' );
+    echo nl2br(shell_exec( 'cd /var/www/webdev13/ && sudo git reset --hard HEAD && sudo git pull' ));
     exit();
 }
 

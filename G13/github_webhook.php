@@ -6,7 +6,10 @@ if ($_REQUEST['pass'] == getenv("GITHUB_PASS")) {
     exit();
 }
 
-echo "Invalid format!";
+// else display info
+
+
+echo nl2br(shell_exec( 'cd /var/www/webdev13/ && sudo git log -p -2' ));
 
 ?>
 

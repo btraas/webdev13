@@ -5,7 +5,6 @@ var taxpct = 0.05;		// 0.05 -> multiplier.
 var minMinutes = 15;	// 15   -> minimum time to order completion
 var maxDays = 30;		// 30   -> max days for advance orders
 
-
 $(document).ready(function() 
 {
 	var now = new Date();

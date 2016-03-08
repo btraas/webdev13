@@ -1,19 +1,7 @@
 <?php
-
-// Git auto-pull script called by github. Provided by gist.github.com/cowboy/619858
-
-
-$BASH_PATH = "C:/cygwin64/bin/";
-$SH_PATH = "/cygdrive/d/webdev13/G13/";
-
-$_POST['payload'] = 'hi';
-
-if( $_POST['payload'] ) {
-	
-
-	echo shell_exec( $BASH_PATH."bash ".$SH_PATH."pull.sh" );
-
+// Use in the "Post-Receive URLs" section of your GitHub repo.
+if ( $_POST['payload'] ) {
+  shell_exec( 'cd /var/www/webdev13/ && sudo git reset --hard HEAD && sudo git pull' );
 }
-
-
 ?>
+

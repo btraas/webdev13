@@ -159,7 +159,7 @@ function setOrder() // {{{ Set JSON order from cookie
 	var orderCookie = getCookie("order");
 
 
-	console.log("cookie: "+orderCookie);
+	// console.log("cookie: "+orderCookie);
 
 	if(orderCookie == "" ) return;
 	
@@ -171,6 +171,9 @@ function setOrder() // {{{ Set JSON order from cookie
 		obj.quantity;
 		obj.price;		
 		
+		if(empty(obj.name) || empty(obj.quantity)) return;
+
+
 		var unique = obj.name.replace(/[^a-zA-Z]/g, '');
 
 		var html = "<tr data-itemid='"+obj.itemID+"' class='lineitem item_"+unique+"'>";
@@ -179,7 +182,7 @@ function setOrder() // {{{ Set JSON order from cookie
         html    +=      "</td>";
         html    +=      "<td class='name'>"+obj.name+"</td>";
         html    +=      "<td class='quantity'>"+obj.quantity+"</td>";
-        html    +=      "<td class='price'>"+obj.price+"</td>";
+        html    +=      "<td class='price'>$"+obj.price.toFixed(2)+"</td>";
         html    += "</tr>";
 
         //alert(html);

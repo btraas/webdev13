@@ -94,6 +94,7 @@
 .twoCol {					/* Like centerCol, but used for a table to create two columns, the left aligned right and vice versa. */
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .twoCol > tbody > tr > td:first-child {

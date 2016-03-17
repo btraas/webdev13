@@ -5,6 +5,7 @@
 	<title>Tokyo Thyme</title>
 	<link href="../style/base.css" rel="stylesheet">
 	<link href="../style/menu.css" rel="stylesheet">
+    <link href="../style/order.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="../images/Icon.ico">
 </head>
 
@@ -46,77 +47,24 @@
 	<div id="main">
 		<div id="mainbody">
 			<!-- Body vertical navigation bar -->
-			<div id="v_navbar">
+			<div id="orderGroups" class="blackList">
 				<ul>
-					<li><h2><a href="../menu.html">Seasonal/Salad</a></h2></li>
-					<li class="selector_v"><h2>Sashimi/Nigiri</h2></li>
-					<li><h2><a href="menu2.html">Appetizer/Hosomaki</a></h2></li>
-					<li><h2><a href="menu3.html">I/O Roll/Veggie Roll</a></h2></li>
-					<li><h2><a href="menu4.html">Donburi/Noodle</a></h2></li>
-					<li><h2><a href="menu5.html">Combo/Party Tray</a></h2></li>
-					<li><h2><a href="menu6.html">Specials/Omakase</a></h2></li>
+					<li><a href="../menu.html">Seasonal/Salad</a></li>
+					<li class="selector_f"><a href="menu1.html">Sashimi/Nigiri</a></li>
+					<li><a href="menu2.html">Appetizer/Hosomaki</a></li>
+					<li><a href="menu3.html">I/O Roll/Veggie Roll</a></li>
+					<li><a href="menu4.html">Donburi/Noodle</a></li>
+					<li><a href="menu5.html">Combo/Party Tray</a></li>
+					<li><a href="menu6.html">Specials/Omakase</a></li>
 				</ul>
 			</div>
-			<!-- Body content/menu layout -->
+            <!-- Body content -->
 			<div id="menutext">
+            	<!-- Body content/menu layout -->
 				<div id="left_col">
-					<!-- Section 1 -->
-					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
-					<h1>Sashimi</h1>
-					<table class ="pricings">
-						<tr>
-							<td class="menu_n">Tuna Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Salmon Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n smallertext">Tuna & Salmon Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n smallertext">Sockeye Salmon Sashimi</td>
-							<td class="menu_p">$16.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Red Tuna Sashimi</td>
-							<td class="menu_p">$18.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Hamachi Sashimi</td>
-							<td class="menu_p">$18.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Assorted Sashimi</td>
-							<td class="menu_p">$21.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
-						</tr>
-					</table>
-					<div class="sashimi"></div>
 					<!-- Section 2 -->
 					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+                    <figcaption class="caption">Chirashi</figcaption>
 					<h1>Nigiri</h1>
 					<table class ="pricings">
 						<tr>
@@ -189,6 +137,8 @@
 						<tr>
 							<td colspan="2" class="menu_d">Cooked Prawn</td>
 						</tr>
+                        </table>
+                        <table class ="pricings">
 						<tr>
 							<td class="menu_n">Tako</td>
 							<td class="menu_p">$2.00</td>
@@ -203,12 +153,7 @@
 						<tr>
 							<td colspan="2" class="menu_d">Flying Fish Roe</td>
 						</tr>
-						</table>
-					<!-- Section 3 -->
-					<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-					<div class="nigiri2"></div>					
-					<table class="pricings">
-						<tr>
+                        <tr>
 							<td class="menu_n">Hokkigai</td>
 							<td class="menu_p">$2.00</td>
 						</tr>
@@ -272,7 +217,7 @@
 							<td colspan="2" class="menu_d">Yellowtail</td>
 						</tr>
 						<tr>
-							<td class="menu_n">Amaebi
+							<td class="menu_n">Amaebi</td>
 							<td class="menu_p">$3.50</td>
 						</tr>
 						<tr>
@@ -298,6 +243,81 @@
 						</tr>
 						<tr>
 							<td colspan="2" class="menu_d">Sea Urchin</td>
+						</tr>
+						</table>
+                        <!-- Section 1 -->
+					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
+                    <figcaption class="caption">Chirashi</figcaption>
+					<h1>Sashimi</h1>
+					<table class ="pricings">
+						<tr>
+							<td class="menu_n">Tuna Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Salmon Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n smallertext">Tuna & Salmon Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n smallertext">Sockeye Salmon Sashimi</td>
+							<td class="menu_p">$16.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Red Tuna Sashimi</td>
+							<td class="menu_p">$18.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Hamachi Sashimi</td>
+							<td class="menu_p">$18.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Assorted Sashimi</td>
+							<td class="menu_p">$21.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
+						</tr>
+					</table>
+					
+					<!-- Section 3 -->
+					<table class ="pricings">
+						<tr>
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+						</tr>
+						<tr>
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+						</tr>
+                        <tr>
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+						</tr>
+						<tr>
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 					</table>
 				</div>

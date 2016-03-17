@@ -37,6 +37,17 @@
 	padding: 20px;
 }
 
+#hours {
+	width: 285px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+#time {
+	text-align: right;
+}
+
 table {
 	width: 500px;
 	margin-top: 40px;

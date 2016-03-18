@@ -167,6 +167,15 @@ table, tr, td, tbody {
 	margin-top: 7px;
 }
 
+/*Text Beside User Logo*/
+#headertext2 {
+	color: #FFFFFF;
+	display:inline;
+	font-size: 10pt;
+	float: right;
+	margin-top: 7px;
+}
+
 #headertext p {
 	padding-left: 80px;
 }
@@ -368,6 +377,7 @@ div.ordernow {
 	margin-top: -20px;
 	margin-right: 55px;
 	text-align:center;
+	text-decoration: none;
 }
 
 /* Copyright paragraph */

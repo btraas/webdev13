@@ -5,7 +5,7 @@
 	<title>Tokyo Thyme</title>
 	<link href="style/base.css" rel="stylesheet">
 	<link href="style/order.css" rel="stylesheet">
-	<link href='style/orderextras.css' rel='stylesheet'>
+	<link href="style/orderextras.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/Icon.ico">
 	<script src="scripts/sign_up.js"></script>
 </head>
@@ -75,35 +75,34 @@
 			  <h1 class='underline'>Sign Up</h1>
 			  <table class='twoCol twoCol_separator'>
 				<tr>
-				  <td>First Name* <br><span class="instruction">Must not include any digits</span></td>
-				  <td><input type='text' id='fname' name='fname' required><br>&nbsp;
-					<!--<span class='required_field'></span>--></td>
+				  <td>First Name</td>
+				  <td><input type='text' id='fname' name='fname' required></td>
 				</tr>
 				<tr>
-				  <td>Last Name&nbsp; <br><span class ="instruction">Must not include any digits</span></td>
-				  <td><input type='text' id='lname' name='lname'><br>&nbsp;</td>
+				  <td>Last Name</td>
+				  <td><input type='text' id='lname' name='lname' required></td>
 				<tr>
-				  <td>Phone Number* <br> <span class="instruction">Area code = 604, 250, 778</span></td>
+				  <td>Phone Number<br> <span class="instruction">Must have area code: 604, 250, 778</span></td>
 				  <td><input type='text' id='phone' name='phone' maxlength="10" required><br>&nbsp;
 					<!--<span class='required_field'></span>--></td>
 				</tr>
 				<tr>
-				  <td>Email Address*<br>&nbsp;</td>
-				  <td><input type='email' id='email' name='email' required><br>&nbsp;</td>
+				  <td>Email Address</td>
+				  <td><input type='email' id='email' name='email' required></td>
 				</tr>
 				<tr>
-				  <td>Password* <br><span class ="instruction">Must be at least 6 characters</span></td>
+				  <td>Password<br><span class ="instruction">Must be at least 6 characters</span></td>
 				  <td><input type='password' id='password' name='password' maxlength="20" required><br>&nbsp;
 					<!--<span class='required_field'></span>--></td>
 				</tr>
 				<tr>
-				  <td>Verify Password*</td>
+				  <td>Verify Password</td>
 				  <td><input type='password' id='password2' name='password2' maxlength="20" required>
 					<!--<span class='required_field'></span>--></td>
 				</tr>
 			  </table>
 			  <div class='center space'>
-				<input type='submit' onclick='return mySubmit()' class='ui-button' value='Sign Up' />
+				<input type="image" src="images/Signup_Button.jpg" alt="Signup Button" onclick='return mySubmit()' class='ui-button' value='Sign Up' />
 			  </div>
 			</div>
 		  </form>

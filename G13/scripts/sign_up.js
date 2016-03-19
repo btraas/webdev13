@@ -89,9 +89,11 @@ function emailCheck(){
 
 function mySubmit(){
 	
-	if(firstNameCheck() && lastNameCheck() && phoneCheck() && emailCheck() && passwordCheck()){
+	if(firstNameCheck() & lastNameCheck() & 
+	   phoneCheck() & emailCheck() &
+	   passwordCheck()){
 		window.location = "login.html";
-		return false;
+		return true;
 	}
 	else{
 		return false;

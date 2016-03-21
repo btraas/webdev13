@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
+@media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 300dpi) {
 	#headertext {
 		top: 0;
 

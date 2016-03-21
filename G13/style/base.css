@@ -50,6 +50,7 @@
 	    margin-top: 3px !important;
 
 	}
+
 	#acc {
 		float: left !important;
 		margin-left: 50px;
@@ -81,7 +82,7 @@
 html {
 	color: #FFFFFF;
 	font-family: Tahoma, "Trebuchet MS", "Times New Roman Bold";
-	background-image: url(../images/collage1.jpg);
+	background-image: url(../images/collage4.jpg);
 }
 
 /* setting the content */
@@ -113,6 +114,7 @@ li, ul {
 /* resetting settings for headings */
 h1, h2, h3, h4, h5 {
 	margin: 0px;
+	margin-bottom: 10px;
 }
 
 /*space between h1 and header*/
@@ -163,6 +165,15 @@ table, tr, td, tbody {
 	display:inline;
 	font-size: 10pt;
 	width: 245px;
+	margin-top: 7px;
+}
+
+/*Text Beside User Logo*/
+#headertext2 {
+	color: #FFFFFF;
+	display:inline;
+	font-size: 10pt;
+	float: right;
 	margin-top: 7px;
 }
 
@@ -367,6 +378,7 @@ div.ordernow {
 	margin-top: -20px;
 	margin-right: 55px;
 	text-align:center;
+	text-decoration: none;
 }
 
 /* Copyright paragraph */

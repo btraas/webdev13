@@ -5,6 +5,7 @@
 	<title>Tokyo Thyme</title>
 	<link href="style/base.css" rel="stylesheet">
 	<link href="style/menu.css" rel="stylesheet">
+	<link href="style/order.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/Icon.ico">
 </head>
 
@@ -37,6 +38,10 @@
                 "Facebook" width="30" height="30"></a>
                 
 				<a href="https://twitter.com/tokyothyme"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a>
+                  
+                &nbsp;&nbsp;
+                <a href="../login.html"><img src="images/people.png" alt="Login Status" width="30" height="30"><p id="headertext2"><b>&nbsp;Sign In</b></p></a>
+                
 			</div>
             
             <!--Phone Number-->
@@ -70,23 +75,72 @@
 	<div id="main">
 		<div id="mainbody">
 			<!-- Body vertical navigation bar -->
-			<div id="v_navbar">
+			<div id='orderGroups' class='blackList'>
 				<ul>
-					<li class = "selector_v"><h2>Seasonal/Salad</h2></li>
-					<li><h2><a href="menu/menu1.html">Sashimi/Nigiri</a></h2></li>
-					<li><h2><a href="menu/menu2.html">Appetizer/Hosomaki</a></h2></li>
-					<li><h2><a href="menu/menu3.html">I/O Roll/Veggie Roll</a></h2></li>
-					<li><h2><a href="menu/menu4.html">Donburi/Noodle</a></h2></li>
-					<li><h2><a href="menu/menu5.html">Combo/Party Tray</a></h2></li>
-					<li><h2><a href="menu/menu6.html">Specials/Omakase</a></h2></li>
+					<li class="selector_f"><a href="menu.html">Seasonal/Salad</a></h2></li>
+					<li><a href="menu/menu1.html">Sashimi/Nigiri</a></li>
+					<li><a href="menu/menu2.html">Appetizer/Hosomaki</a></li>
+					<li><a href="menu/menu3.html">I/O Roll/Veggie Roll</a></li>
+					<li><a href="menu/menu4.html">Donburi/Noodle</a></li>
+					<li><a href="menu/menu5.html">Combo/Party Tray</a></li>
+					<li><a href="menu/menu6.html">Specials/Omakase</a></li>
 				</ul>
 			</div>
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col">
+				<div id="left_col700">
 					<!-- Section 1 -->
-					<img src = "images/chirashi.jpg" alt="Food picture" width="250" height="125">
+					<img src="images/Photos/Image3_DoubleBites.jpg" alt="Food picture" width = "250" height ="125">
+                    <figcaption class="caption">Sesame Crusted Tuna Steak</figcaption>
+					<h1>Salads</h1>
+					<table class ="pricings">
+						<tr>
+							<td class="menu_n">House Salad
+							<td class="menu_p">$4.95</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Tofu Teriyaki Salad
+							<td class="menu_p">$5.95</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Tofu teriyaki, tomato, kaiware on top of mesclun greens</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Chicken Teriyaki Salad
+							<td class="menu_p">$6.50</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Chicken teriyaki, tomato, cucumber, crushed peanuts on mesclun greens</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Sashimi Salad
+							<td class="menu_p">$12.50</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Assorted sashimi on top of mesclun greens</td>
+						</tr>
+						<tr>
+							<td class="menu_n">House Special Sunomono
+							<td class="menu_p">$6.75<br>$12.50</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Sesame Crusted Tuna Steak
+							<td class="menu_p">$13.50</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Seered tuna covered in black and white sesame served w/ spicy sauce on a bed of mesclun greens</td>
+						</tr>
+					</table>
+					<!-- Section 2 -->
+					<img src = "images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+                    <figcaption class="caption">Chirashi</figcaption>
 					<h1>Seasonals</h1>
 					<table class ="pricings">
 						<tr>
@@ -146,71 +200,25 @@
 							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
 						</tr>
 					</table>
-					<!-- Section 2 -->
-					<img src = "images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
-					<h1>Salads</h1>
+					<!-- Section 3 -->
 					<table class ="pricings">
 						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
+							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
+							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+						</tr>
+                        <tr>
+							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
-						</tr>
-						<tr>
-							<td class="menu_n">House Salad
-							<td class="menu_p">$5.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Crispy noodles on top of mesclun greens</td>
+							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 					</table>
-					<!-- Section 3 -->
-					<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-					<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-					<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
 				</div>
 			</div>
 		</div>
@@ -287,6 +295,9 @@
 		<div id="copyright">
 			<p>Created by Group13 2016 &copy; </p>
 		</div>
+        <div id="copyright">
+        	<p><br>Icons made by <a href="http://www.freepik.com" title="Freepik" style="color: rgb(126,126,120)">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" style="color: rgb(126,126,120)">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" style="color: rgb(126,126,120)">CC 3.0 BY</a></p>
+        </div>
     </div></div>
 </body>
 </html>

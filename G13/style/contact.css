@@ -37,6 +37,10 @@
 	padding: 20px;
 }
 
+#buttons {
+	float: right;
+}
+
 #hours {
 	width: 285px;
 	border-spacing: 0px;

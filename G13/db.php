@@ -18,7 +18,7 @@ function runQ($query, $printerror=false) // {{{
 	{
 		if($printerror) echo $link->error;
 		return FALSE;
-
+	}
 	$arr = array();
 	
 	while($row = $result->fetch_assoc())

@@ -14,6 +14,8 @@ function runQ($query) // {{{
 	$result = $link->query($query);
 
 
+	if($result === FALSE) return FALSE;
+
 	$arr = array();
 	
 	while($row = $result->fetch_assoc())

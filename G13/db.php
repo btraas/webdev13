@@ -1,5 +1,6 @@
 <?php
 
+require_once("log.php");
 
 function runQ($query, $printerror=false) // {{{
 {

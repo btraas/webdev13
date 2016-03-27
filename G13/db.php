@@ -1,7 +1,7 @@
 <?php
 
 
-function runQ($query) // {{{
+function runQ($query, $printerror=false) // {{{
 {
 	
 	$link = new mysqli(     "localhost",    // Server (localhost = this server)
@@ -14,7 +14,10 @@ function runQ($query) // {{{
 	$result = $link->query($query);
 
 
-	if($result === FALSE) return FALSE;
+	if($result === FALSE) 
+	{
+		if($printerror) echo $link->error;
+		return FALSE;
 
 	$arr = array();
 	

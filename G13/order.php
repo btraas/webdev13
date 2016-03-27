@@ -29,7 +29,7 @@ echo "</table>";
 
 $q = "INSERT INTO products(name, description, price) VALUES('test', 'test 2', 9999)";
 
-if(runQ($q) === FALSE) 	echo "Could not add product";
+if(runQ($q, true) === FALSE) 	echo "Could not add product";
 else 					echo "Product added successfully";
 
 

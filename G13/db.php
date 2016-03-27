@@ -4,7 +4,7 @@
 function runQ($query, $printerror=false) // {{{
 {
 	
-	$link = new mysqli(     "localhost",    // Server (localhost = this server)
+	$link = new mysqli( "localhost",    // Server (localhost = this server)
                         "webdev13",     // Username
                         "c1536withBen", // Password
                         "webdev13"      // Database name
@@ -16,6 +16,7 @@ function runQ($query, $printerror=false) // {{{
 
 	if($result === FALSE) 
 	{
+		logger("Failed Query: $query: ".$link->error);
 		if($printerror) echo $link->error;
 		return FALSE;
 	}

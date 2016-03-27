@@ -3,9 +3,8 @@
 $link = new mysqli(		"localhost", 	// Server (localhost = this server)
 						"webdev13", 	// Username
 						"c1536withBen",	// Password
-						"webdev13",		// Database name
-					)
-or die("Could not connect: " . $link->connect_error());
+						"webdev13"		// Database name
+) or die("Could not connect: " . $link->connect_error());
 
 print ("Connected successfully <br \>");
 

@@ -2,6 +2,9 @@
 
 // Include DB connection script
 require_once("db.php");
+require_once("log.php");
+
+logger($_REQUEST);
 
 // getCategory in db.php
 $category = getCategory(@$_REQUEST['category']);

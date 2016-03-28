@@ -33,12 +33,12 @@
 	}
 	
 	//Sanitize the POST values
-	$fname = $_POST[fname];
-	$lname = $_POST[lname];
-	$phone = $_POST[phone];
-	$email = $_POST[email];
-	$password = $_POST[password];
-	$password2 = $_POST[password2];
+	$fname = $_POST['fname'];
+	$lname = $_POST['lname'];
+	$phone = $_POST['phone'];
+	$email = $_POST['email'];
+	$password = $_POST['password'];
+	$password2 = $_POST['password2'];
 	
 	//Input Validations
 	if($fname == '') {

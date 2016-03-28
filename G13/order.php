@@ -3,34 +3,52 @@
 // Include DB connection script
 require_once("db.php");
 
+// getCategory in db.php
+$category = getCategory(@$_REQUEST['category']);
+if(empty($category)) $category = 'appetizers';
+
+
+
+
 // function to run a query (from db.php)
-$items = runQ("SELECT * FROM products");
+$items = runQ("SELECT p.*, pc.*, p.name AS product_name, pc.name AS category FROM products p 
+				INNER JOIN product_categories pc ON pc.product_id = pc.product_id
+				WHERE LOWER(pc.name) = LOWER('$category') ");
 
 
+
+echo file_get_contents("order_header.html");
+
+echo "<div id='orderMenu'>\n";
+echo "<h1>".$items[0]['category']."</h1>\n";
 
 // iterate over array to print data
 
-echo "<table>";
+echo "<table id='selection_table'><tr>";
 
+
+$i = 0;
 foreach($items AS $item)
 {
-	echo "<tr>";
+	$i++;
+	if($i % 2 == 0) echo "</tr>\n<tr>";
 
-	foreach($item AS $attr)
-	{
-		echo "<td>$attr</td>";
-	}
-	echo "</tr>";
-
+	echo "<td><div class='itemBlock'>
+		  		<h3>$item[product_name]</h3>
+			  	<p class='description'>$item[description]</p>
+				<div class='itemBlock_footer'>
+					<div class='addItem ui-button'>Add to Order</div>
+					<div class='price'>$$item[price]</div>
+				</div>
+			</div></td>";
 }
 
-echo "</table>";
+echo "</tr></table>";
 
 
-$q = "INSERT INTO products(name, description, price) VALUES('test', 'test 2', 9999)";
+echo "</div>";
+echo file_get_contents('order_footer.html');
 
-if(runQ($q, true) === FALSE) 	echo "Could not add product";
-else 					echo "Product added successfully";
 
 
 ?>

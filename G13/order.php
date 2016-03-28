@@ -46,7 +46,7 @@ else $title = $items[0]['category'];
 
 
 echo "<div id='orderMenu'>\n";
-echo "<h1>".$items[0]['category']."</h1>\n";
+echo "<h1>$title</h1>\n";
 
 // iterate over array to print data
 

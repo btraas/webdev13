@@ -95,7 +95,7 @@
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', '$email', '$password')";
+	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', '$email', "md5('$password')")";
 	
 	if(runQ($qry) === FALSE) {
 		echo "We could not sign you up. Please try again or contact us.";

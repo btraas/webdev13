@@ -12,7 +12,7 @@ if(empty($category)) $category = 'appetizers';
 
 // function to run a query (from db.php)
 $items = runQ("SELECT p.*, pc.*, p.name AS product_name, pc.name AS category FROM products p 
-				INNER JOIN product_categories pc ON pc.product_id = pc.product_id
+				INNER JOIN product_categories pc ON pc.product_id = p.product_id
 				WHERE LOWER(pc.name) = LOWER('$category') ");
 
 

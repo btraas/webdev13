@@ -77,9 +77,7 @@
 	//If there are input validations, redirect back to the registration form
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-		foreach ($_SESSION['ERRMSG_ARR'] as $msg) {
-					echo '<li>', $msg, '</li>'; 
-				}
+		echo $errmsg_arr;
 		session_write_close();
 		header("location: signup_form.php");
 		exit();

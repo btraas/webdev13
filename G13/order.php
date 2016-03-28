@@ -32,9 +32,9 @@ echo "	<div id='orderGroups' class='blackList'>
 
 foreach($groups AS $g)
 {
-	$category = getCategoryURL(@$g['name']);
+	$cat = getCategoryURL(@$g['name']);
 
-	echo "<li><a href='/order/$category/'>$g[name]</a></li>\n";
+	echo "<li><a href='/order/$cat/'>$g[name]</a></li>\n";
 }
 
 echo "		</ul>

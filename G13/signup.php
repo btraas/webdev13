@@ -95,11 +95,12 @@
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', 'email', 'password')";
+	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', '$email', '".md5($_POST['password'])."')";
 	
 	if(runQ($qry) === FALSE) {
 		echo "We could not sign you up. Please try again or contact us.";
 	} else {
-		echo "Thank you for signing up!";
+		echo nl2br("Thank you for signing up, " .$fname. "!\n");
+		echo "You can now log in using the email address you provided.";
 	}
 ?>

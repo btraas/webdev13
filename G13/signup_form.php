@@ -53,9 +53,8 @@
 							<tr>
 							  	<td>First Name</td>
 							  	<td>
-								  	<input type='text' id='fname' name='fname'>
+								  	<input type='text' id='fname' name='fname' required>
 								  	<div id ="errFirst">
-								  		<?php echo $errFirst;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -65,16 +64,14 @@
 							  	<td>
 								  	<input type='text' id='lname' name='lname'>
 								  	<div id ="errLast">
-								  		<?php echo $errLast;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
 							<tr>
 							  	<td>Phone Number<br> <span class="instruction">Must have area code: 604, 250, 778</span></td>
 							  	<td>
-								  	<input type='text' id='phone' name='phone' maxlength="10"><br>&nbsp;
+								  	<input type='text' id='phone' name='phone' maxlength="10" required><br>&nbsp;
 									<div id ="errPhone">
-										<?php echo $errPhone;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -82,9 +79,8 @@
 							<tr>
 							  	<td>Email Address</td>
 							  	<td>
-								  	<input type='email' id='email' name='email'>
+								  	<input type='email' id='email' name='email' required>
 								  	<div id ="errEmail">
-								  		<?php echo $errEmail;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -92,9 +88,8 @@
 							<tr>
 							  	<td>Password<br><span class ="instruction">Must be at least 6 characters</span></td>
 							  	<td>
-								  	<input type='password' id='password' name='password' maxlength="20"><br>&nbsp;
+								  	<input type='password' id='password' name='password' maxlength="20" required><br>&nbsp;
 									<div id ="errPassword">
-										<?php echo $errPassword;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -102,8 +97,7 @@
 							<tr>
 							  	<td>Verify Password</td>
 							  	<td>
-								  	<input type='password' id='password2' name='password2' maxlength="20">
-								  	<?php echo $errPassword2;?>
+								  	<input type='password' id='password2' name='password2' maxlength="20" required>
 								</td>
 							</tr>
 					  	</table>

@@ -55,6 +55,7 @@
 							  	<td>
 								  	<input type='text' id='fname' name='fname'>
 								  	<div id ="errFirst">
+								  		<?php echo $errFirst;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -64,6 +65,7 @@
 							  	<td>
 								  	<input type='text' id='lname' name='lname'>
 								  	<div id ="errLast">
+								  		<?php echo $errLast;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -72,6 +74,7 @@
 							  	<td>
 								  	<input type='text' id='phone' name='phone' maxlength="10"><br>&nbsp;
 									<div id ="errPhone">
+										<?php echo $errPhone;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -81,6 +84,7 @@
 							  	<td>
 								  	<input type='email' id='email' name='email'>
 								  	<div id ="errEmail">
+								  		<?php echo $errEmail;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -90,6 +94,7 @@
 							  	<td>
 								  	<input type='password' id='password' name='password' maxlength="20"><br>&nbsp;
 									<div id ="errPassword">
+										<?php echo $errPassword;?>
 										<!--empty to begin, filled by js -->
 									</div>
 								</td>
@@ -98,6 +103,7 @@
 							  	<td>Verify Password</td>
 							  	<td>
 								  	<input type='password' id='password2' name='password2' maxlength="20">
+								  	<?php echo $errPassword2;?>
 								</td>
 							</tr>
 					  	</table>

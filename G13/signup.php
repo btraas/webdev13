@@ -27,30 +27,32 @@
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 	$password2 = $_POST['password2'];
+
+	$errFirst = $errLast = $errPhone = $errEmail = $errPassword = $errPassword2 = "";
 	
 	//Input Validations
 	if($fname == '') {
-		$errmsg_arr[] = 'First name missing';
+		$errFirst = 'First name missing';
 		$errflag = true;
 	}
 	if($lname == '') {
-		$errmsg_arr[] = 'Last name missing';
+		$errLast = 'Last name missing';
 		$errflag = true;
 	}
 	if($phone == '') {
-		$errmsg_arr[] = 'Phone number missing';
+		$errPhone = 'Phone number missing';
 		$errflag = true;
 	}
 	if($email == '') {
-		$errmsg_arr[] = 'Email address missing';
+		$errEmail = 'Email address missing';
 		$errflag = true;
 	}
 	if($password == '') {
-		$errmsg_arr[] = 'Password missing';
+		$errPassword = 'Password missing';
 		$errflag = true;
 	}
 	if($password2 == '') {
-		$errmsg_arr[] = 'Confirm password missing';
+		$errPassword2 = 'Confirm password missing';
 		$errflag = true;
 	}
 	if(strcmp($password, $password2) != 0 ) {

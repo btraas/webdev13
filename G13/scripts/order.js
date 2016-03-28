@@ -269,7 +269,8 @@ function submit2() // {{{
 		location.href = '/order/submit';
 		return true;
 	}
-	else return false;
+
+	return false;
 
 } // }}}
 

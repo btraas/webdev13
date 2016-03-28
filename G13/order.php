@@ -102,6 +102,8 @@ function review() // {{{
 
 function submit() // {{{
 {
+	showCategory();
+
 	if(!isset($_COOKIE['order']) ) 
 	{
 		alert("Order is empty!");
@@ -114,13 +116,10 @@ function submit() // {{{
 //	$requested = date('Y-m-d H:i:s', strtotime($order_meta['timestamp']));
 	$requested = date('Y-m-d H:i:s'); // for now
 
-	runQ("BEGIN");
-
 	$q = "INSERT INTO orders(user_id, requested) VALUES($user_id, '$requested')";
-	if($r = runQ($q) == FALSE) 
+	if(($r = runQ($q)) === FALSE) 
 	{
 		alert("Unable to add order!");
-		runQ("ROLLBACK");
 		exit();
 	}
 	$r = runQ("SELECT order_id FROM orders ORDER BY submitted DESC LIMIT 1");
@@ -134,17 +133,15 @@ function submit() // {{{
 		$notes = mysql_escape_string(@$item['notes']);
 		$q = "INSERT INTO order_items(order_id, product_id, quantity, notes)
 				VALUES ($order_id, $product, $quantity, '$notes' )";
-		if($r = runQ($q) == FALSE)
+		if(($r = runQ($q)) === FALSE)
 	    {
 			alert("Unable to add order!");
-			runQ("ROLLBACK");
 			exit();
 		}
 
 	}
 
-	runQ("COMMIT");
-
+	alert("Order submitted.");
 
 } // }}}
 

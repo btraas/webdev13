@@ -41,7 +41,7 @@ function getCategory($input) // {{{
 
 function getCategoryURL($input) // {{{
 {
-	return str_replace(' ', '_', $input);
+	return strtolower(urlencode(str_replace(' ', '_', $input)));
 } // }}}
 
 

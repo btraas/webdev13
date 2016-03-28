@@ -16,8 +16,34 @@ $items = runQ("SELECT p.*, pc.*, p.name AS product_name, pc.name AS category FRO
 				WHERE LOWER(pc.name) = LOWER('$category') ");
 
 
+$groups = runQ("SELECT name FROM product_categories");
+
 
 echo file_get_contents("order_header.html");
+
+
+
+echo "	<div id='orderGroups' class='blackList'>
+			<ul>";
+
+
+foreach($groups AS $g)
+{
+	$category = getCategoryURL(@$g['name']);
+
+	echo "<li><a href='/order/$category/'>$g[name]</a></li>\n";
+}
+
+echo "		</ul>
+		</div>";
+
+
+
+
+
+
+
+
 
 echo "<div id='orderMenu'>\n";
 echo "<h1>".$items[0]['category']."</h1>\n";

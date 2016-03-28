@@ -30,8 +30,8 @@ echo "<table id='selection_table'><tr>";
 $i = 0;
 foreach($items AS $item)
 {
-	$i++;
 	if($i % 2 == 0) echo "</tr>\n<tr>";
+	$i++;
 
 	echo "<td><div class='itemBlock'>
 		  		<h3>$item[product_name]</h3>

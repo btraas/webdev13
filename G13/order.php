@@ -39,9 +39,9 @@ echo "		</ul>
 
 
 
-
-
-
+$title = "";
+if(empty($items) || empty($items[0]['category'])) $title = "Invalid Category: $category";
+else $title = $items[0]['category'];
 
 
 

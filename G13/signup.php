@@ -100,7 +100,7 @@
 	if(runQ($qry) === FALSE) {
 		echo "We could not sign you up. Please try again or contact us.";
 	} else {
-		echo "Thank you for signing up! " .$fname;
-		echo "You can now log in with the email address you provided.";
+		echo "Thank you for signing up, " .$fname. "!\n";
+		echo "You can now log in using the email address you provided.";
 	}
 ?>

@@ -240,13 +240,14 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 
 
 
-
-
+	location.href = '/order/review';
+/*
 	alertDialog('Date: '+date+"\n Items: "+JSON.stringify(items),
 	{
 		title: "JSON Form data (will be hidden next milestone)",
 		width: 500
 	});
+*/
 	return true;
 
 

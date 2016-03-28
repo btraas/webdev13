@@ -109,7 +109,7 @@ function submit() // {{{
 		alert("Order is empty!");
 		exit();
 	}
-	$order_items = json_decode(@$_COOKIE['order']);
+	$order_items = json_decode(@$_COOKIE['order'], true);
 //	$order_meta  = json_decode(@$_COOKIE['order_meta']); // for another milestone
 
 	$user_id = 0; // for now

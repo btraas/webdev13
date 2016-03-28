@@ -50,6 +50,11 @@ $(document).ready(function()  // {{{
 	$('#orderItems .total td').attr('colspan',4);
 
 
+	$('input').change(function() 
+	{
+		calculateTotal();
+	});
+
 	setOrder(); // populate order from cookie
 
 }); // }}}
@@ -159,10 +164,9 @@ function setOrder() // {{{ Set JSON order from cookie
 {
 	var orderCookie = getCookie("order");
 
-
 	// console.log("cookie: "+orderCookie);
 
-	if(orderCookie == "" ) return;
+	if(orderCookie == "") return;
 	
 	var result = JSON.parse(orderCookie);
 	result.forEach(function(obj) 
@@ -196,16 +200,15 @@ function setOrder() // {{{ Set JSON order from cookie
 
 } // }}}
 
-function submit1() // {{{ Validate data in cookies / table, then proceed
+function validate()// {{{
 {
 
 	var items = getOrder();
 
-	var now = new Date();
+    var now = new Date();
     var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
 
-	console.log('minTime: '+minTime);
 
     if(items.length <= 0)
     {
@@ -222,7 +225,7 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
         {
             $('input.order_datetime').first().datepicker('setDate', new Date(minTime + 60*1000));
             $('input.order_datetime').last().timepicker('setTime', minTime + 60*1000);
-             submit1(); // run again
+             validate(); // run again
         });
         return false;
     }
@@ -237,26 +240,38 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
         else
         {
             alertDialog("Error: Invalid date/time!");
-			console.log("Invalid date/time: "+date+" minTime: "+minTime);
             return false;
         }
     }
 
-
-
-	location.href = '/order/review';
-/*
-	alertDialog('Date: '+date+"\n Items: "+JSON.stringify(items),
-	{
-		title: "JSON Form data (will be hidden next milestone)",
-		width: 500
-	});
-*/
 	return true;
+
+} // }}}
+function submit1() // {{{ Validate data in cookies / table, then proceed
+{
+
+	if(validate() == true) 
+	{
+		location.href = '/order/review';
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 
 
 } //  }}}
+function submit2() // {{{
+{
+	if(validate() == true)
+	{
+		location.href = '/order/submit';
+		return true;
+	}
+	else return false;
 
+} // }}}
 
 function calculateTotal() // {{{
 {
@@ -272,17 +287,13 @@ function calculateTotal() // {{{
 	tax = calculateTax(sum, taxpct);
 	sum = (parseFloat(sum) + parseFloat(tax)).toFixed(2);
 	
-	console.log(tax + ' ' + sum);
 
 	$('#orderTotals .totals').first().find('.price').text("$"+tax);
 	$('#orderTotals .totals').last().find('.price').text("$"+sum);
 
 
-	console.log(JSON.stringify(getOrder()));
 
 	document.cookie="order="+JSON.stringify(getOrder())+";path=/";
-
-	console.log("this is the set cookie: "+readCookie("order"));
 
 
 } // }}}

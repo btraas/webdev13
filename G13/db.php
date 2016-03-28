@@ -15,7 +15,7 @@ function runQ($query, $printerror=false) // {{{
 	$result = $link->query($query);
 
 
-	if($result === FALSE) 
+	if($result == FALSE) 
 	{
 		logger("Failed Query: $query: ".$link->error);
 		if($printerror) echo $link->error;

@@ -2,6 +2,7 @@
 
 require_once('db.php');
 require_once('log.php');
+require_once('auth.php');
 
 $mode = @$_REQUEST['mode'];
 
@@ -9,6 +10,39 @@ switch($mode)
 {
 	case 'login' : runLogin(); exit();
 }
+
+include('page_header.php');
+
+?>
+
+<link href='style/order.css' rel='stylesheet'>
+<link href='style/orderextras.css' rel='stylesheet'>
+<script src="scripts/login.js"></script>
+
+<table class='twoCol twoCol_separator largeRows'>
+	<tr>
+    	<td class='top'>
+        	<h1>Sign In</h1>
+            <p>Welcome back! Please enter your email address and password.</p>
+            <label>Email Address</label>
+            <input type='text' class='ui-input' name='email' id='email'>
+            <label>Password</label>
+            <input type='password' class='ui-input' name='password' id='password'/>
+        </td>
+        <td class='top'>
+        	<h1>Sign Up</h1>
+            <p>In order to use our online ordering service, you must have an account with us. This will give you the option to save your orders for future use and receive digital receipts.</p>
+        </td>
+	</tr>
+    <tr>
+        <td><input type="image" src="/images/Login_Button.jpg" alt="Login Button" class='ui-button' value='Sign In' id='login' onClick='validate()' /></td>
+        <!-- This is not a form submission, it just takes us to the sign up page. -->
+        <td><input type="image" src="/images/Signup_Button.jpg" alt="Signup Button" class='ui-button' value='Sign Up' onClick="location.href='signup.html';" /></td>
+    </tr>
+</table>
+<?php
+
+include('page_footer.php');
 
 
 function runLogin() // {{{
@@ -51,53 +85,5 @@ function login() // {{{
 	return $auth;
 } // }}}
 
-function isLoggedIn() // {{{
-{
-	logger("checking logged in...");
-
-	$session = @$_COOKIE['sessionkey'];
-	$user    = @$_COOKIE['user'];
-	if(empty($session) || empty($user)) 
-	{
-		logger("empty session/user");
-		return false;
-	}
-
-	if($session == getSessionKey($user, getPass($user))) 
-	{
-		logger("session matches!");
-		return true;
-	}
-	logger("session mismatch!");
-	return false; // else
-
-}  // }}}
-
-function getUser() // {{{
-{
-	if(isLoggedIn())
-	{
-		$user    = @$_COOKIE['user'];
-	    if( empty($user)) return array();
-
-		$q = "SELECT * FROM users WHERE email = '".getEmail($user)."'";
-		$r = runQ($q);
-		return @$r[0];
-	}
-	return array(); // else
-} // }}}
-
-function getSessionKey($user, $pass) // {{{
-{
-	return md5( date('Y-m-d H') . $user . $pass );
-} // }}}
-function getPass($user) // {{{ only the MD5 hash of the password
-{
-	$email = getEmail($user);
-	$r = runQ("SELECT password FROM users WHERE email = '$email'");
-
-	return @$r[0]['password'];
-
-} // }}}
 
 ?>

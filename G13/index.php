@@ -1,49 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    	<meta charset="utf-8">
-    	<title>Tokyo Thyme</title>
-    	<link href="style/base.css" rel="stylesheet">
-    	<link href="style/index.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="images/Icon.ico">
-    </head>
-    <body>
-        <!-- header / GNB -->
-    	<div id="header">       
-        	<div id="logo">
-    			<a href="index.html"><img src="images/Logo2.jpg" alt="Tokyo Thyme" width="400" height="75"></a>
-    		</div>
-            <div id="headerinfo">
-                <!-- SNS -->
-                <div id="acc">
-                    <a href="http://www.yelp.ca/biz/tokyo-thyme-vancouver" target="_blank"><img src="images/Yelp.png" alt="Yelp" width="30" height="30"></a>
-                    <a href="https://www.zomato.com/vancouver/tokyo-thyme-arbutus-ridge" target="_blank"><img src="images/Urbanspoon.png" alt="Urbanspoon" width="30" height="30"></a>
-                    <a href="https://www.facebook.com/pages/Tokyo-Thyme/144095502300686?fref=ts" target="_blank"><img src="images/Facebook.png" alt="Facebook" width="30" height="30"></a>
-                    <a href="https://twitter.com/tokyothyme" target="_blank"><img src="images/Twitter.png" alt="Twitter" width="30" height="30"></a>
-                      
-                &nbsp;&nbsp;
-                <a href="../login.html"><img src="images/people.png" alt="Login Status" width="30" height="30"><p id="headertext2"><b>&nbsp;Sign In</b></p></a>
-                    
-                </div>
-				<div id="headertext">
-					<p><b>Ph: 604-263-3262</b></p>
-				</div>
-    			<br>
-    			<br>
-    			<br>
-    			<div id="h_navbar">
-    				<ul>
-    					<li><a href="menu.html">Menu</a></li>
-    					<li><a href="order.html">Ordering</a></li>
-    					<li><a href="contact.html">Contact</a></li>
-    					<li><a href="careers.html">Careers</a></li>
-    				</ul>
-    			</div>
-    		</div>
-    	</div>
-        <!-- body -->
-    	<div id="main">
-    		<div id="mainbody">
+    	<?php includE('page_header.php'); ?>
+		<link href="style/index.css" rel="stylesheet">
     			<div class="container">
                     <!-- Jssor Slider Begin -->
                     <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
@@ -107,69 +63,6 @@
     				<p>Tokyo Thyme located at the north edge of Kerrisdale, Vancouver.  We focus on cuisine that is a fusion between traditional Japanese and contemporary. Our aim is to appeal to customers by incorporating quality through traditional methods and show casing its dishes by giving it a modern feel/twist. You can definitely expect to get the best of both worlds when you come in to dine or order take-out at our restaurant. </p>
     				<p>The restaurant is owned by a husband and wife that are passionate about Japanese cuisine. The sushi chef has received training from a Japanese chef during his time in San Francisco. He and his wife immigrated to Vancouver where he worked for a short period of time at Vancouver’s prestigious Tojo’s before he decided to open a store with his wife. During his time at Tojo’s he was recognized as Vancouver’s first Mexican sushi chef that met the strict Japanese standards necessary to be a sushi chef in Japan.</p>
                 </div>
-    		</div>
-    	</div>
-        <!--Footer-->
-    	<div id="footer-container">
-            <div id="footer">
-                <div id="footertext">
-                    <div class='footercolumn' id="footermenu">
-                        <h3><a href ="#">Menu</a></h3>
-                        <ul>
-                            <li><a href="order/sashimi.html">Sashimi</a></li>
-                            <li><a href="order/hosomaki.html">Hosomaki</a></li>
-                            <li><a href="order/inside_out_roll.html">In-Out Roll</a></li>
-                        </ul>
-                    </div>
-                    <div class='footercolumn' id="footermenu2">
-                        <h3>&nbsp;</h3>
-                        <ul>
-                            <li><a href="order/noodle.html">Noodle</a></li>
-                            <li><a href="order/appetizer.html">Appetizer</a></li>
-                            <li><a href="order/nigiri.html">Nigiri</a></li>
-                        </ul>
-                    </div>
-                    <div class='footercolumn' id="footermenu3">
-                        <h3>&nbsp;</h3>
-                        <ul>
-                            <li><a href="order/veggie_roll.html">Vegetable Roll</a></li>
-                            <li><a href="order/donburi.html">Donburi</a></li>
-                            <li><a href="order/salads.html">Salad</a></li>
-                        </ul>
-                    </div>
-                    <div class='footercolumn' id="footermenu4">
-                        <h3>&nbsp;</h3>
-                        <ul>
-                            <li><a href="order/specials.html">Special</a></li>
-                            <li><a href="order/combo.html">Combo</a></li>
-                            <li><a href="order/party_tray.thml">Party Tray</a></li>
-                        </ul>
-                    </div>
-                    <div class='footercolumn' id="footerorder">
-                        <h3>Ordering</h3>
-                        <ul>
-        					<li><a href="login.html">Sign-in</a></li>
-                            <li><a href="signup.html">Sign-up</a></li>
-                        </ul>
-                    </div>
-                    <div class='footercolumn' id="footercontact">
-                        <h3><a href="contact.html">Contact</a></h3>
-                    </div>
-                    <div class='footercolumn' id="footercareers">
-                        <h3><a href="careers.html">Careers</a></h3>
-                    </div>
-                    <div class='footercolumn' id="footersitemap">
-                        <h3><a href="sitemap.html">Site Map</a></h3>
-                    </div>
-                </div>
-                <div id="copyright">
-                  <p><em><font color="#7e7e78">Created by Group13 2016 &copy; </font></em></p>
-                </div>
-                <div id="copyright">
-        	<p><br>Icons made by <a href="http://www.freepik.com" title="Freepik" style="color: rgb(126,126,120)">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon" style="color: rgb(126,126,120)">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" style="color: rgb(126,126,120)">CC 3.0 BY</a></p>
-        </div>
-            </div>
-        </div>
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
@@ -238,5 +131,5 @@
                 //responsive code end
             });
         </script>
-    </body>
-</html>
+
+<?php include('page_footer.php'); ?>

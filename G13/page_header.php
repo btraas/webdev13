@@ -5,6 +5,7 @@
     	<title>Tokyo Thyme</title>
     	<link href="/style/base.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/images/Icon.ico">
+		<?php include_once('auth.php'); ?>
     </head>
     <body>
         <!-- header / GNB -->

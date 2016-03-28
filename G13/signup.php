@@ -31,33 +31,35 @@
 	$errFirst = $errLast = $errPhone = $errEmail = $errPassword = $errPassword2 = "";
 	
 	//Input Validations
-	if($fname == '') {
-		$errFirst = 'First name missing';
-		$errflag = true;
-	}
-	if($lname == '') {
-		$errLast = 'Last name missing';
-		$errflag = true;
-	}
-	if($phone == '') {
-		$errPhone = 'Phone number missing';
-		$errflag = true;
-	}
-	if($email == '') {
-		$errEmail = 'Email address missing';
-		$errflag = true;
-	}
-	if($password == '') {
-		$errPassword = 'Password missing';
-		$errflag = true;
-	}
-	if($password2 == '') {
-		$errPassword2 = 'Confirm password missing';
-		$errflag = true;
-	}
-	if(strcmp($password, $password2) != 0 ) {
-		$errmsg_arr[] = 'Passwords do not match';
-		$errflag = true;
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if($fname == '') {
+			$errFirst = "First name missing";
+			$errflag = true;
+		}
+		if($lname == '') {
+			$errLast = "Last name missing";
+			$errflag = true;
+		}
+		if($phone == '') {
+			$errPhone = "Phone number missing";
+			$errflag = true;
+		}
+		if($email == '') {
+			$errEmail = "Email address missing";
+			$errflag = true;
+		}
+		if($password == '') {
+			$errPassword = "Password missing";
+			$errflag = true;
+		}
+		if($password2 == '') {
+			$errPassword2 = "Confirm password missing";
+			$errflag = true;
+		}
+		if(strcmp($password, $password2) != 0 ) {
+			$errmsg_arr[] = "Passwords do not match";
+			$errflag = true;
+		}
 	}
 	
 	//Check for duplicate login ID

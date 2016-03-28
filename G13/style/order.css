@@ -160,19 +160,24 @@
 }
 
 .medium {
-	width: 50px;
+	width: 100px;
 }
 
-#receiptTable {								/* Style unique to the order receipt page */
+
+.receipt, #receiptTable {								/* Style unique to the order receipt page */
     width: 500px;
     margin: 0 auto;
     background: white;
+	opacity: 0.8;
     color: black;
+	padding: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-#receiptTable tr {
+.receipt tr, #receiptTable tr {
     border-bottom: 2px solid darkGray;
 }
-#receiptTable td {
+.receipt td, #receiptTable td {
     padding: 20px;
 }
 

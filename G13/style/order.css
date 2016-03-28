@@ -252,6 +252,10 @@
 	margin-top: 0px;
 }
 
+#orderDetails.nowidthrestriction {
+	width: auto;
+}
+
 #order{
 	padding-top: 10px;
 }

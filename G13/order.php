@@ -102,7 +102,62 @@ function review() // {{{
 
 function submit() // {{{
 {
-	
+	if(!isset($_COOKIE['order']) ) 
+	{
+		alert("Order is empty!");
+		exit();
+	}
+	$order_items = json_decode(@$_COOKIE['order']);
+//	$order_meta  = json_decode(@$_COOKIE['order_meta']); // for another milestone
+
+	$user_id = 0; // for now
+//	$requested = date('Y-m-d H:i:s', strtotime($order_meta['timestamp']));
+	$requested = date('Y-m-d H:i:s'); // for now
+
+	runQ("BEGIN");
+
+	$q = "INSERT INTO orders(user_id, requested) VALUES($user_id, '$requested')";
+	if($r = runQ($q) == FALSE) 
+	{
+		alert("Unable to add order!");
+		runQ("ROLLBACK");
+		exit();
+	}
+	$r = runQ("SELECT order_id FROM orders ORDER BY submitted DESC LIMIT 1");
+	$order_id = $r[0]['order_id'];
+
+
+	foreach($order_items AS $item)
+	{
+		$product = intval($item['itemID']);
+		$quantity = intval($item['quantity']);
+		$notes = mysql_escape_string(@$item['notes']);
+		$q = "INSERT INTO order_items(order_id, product_id, quantity, notes)
+				VALUES ($order_id, $product, $quantity, '$notes' )";
+		if($r = runQ($q) == FALSE)
+	    {
+			alert("Unable to add order!");
+			runQ("ROLLBACK");
+			exit();
+		}
+
+	}
+
+	runQ("COMMIT");
+
+
 } // }}}
+
+
+
+function alert($msg) // {{{
+{
+	echo "	<script>
+				alertDialog('$msg');
+			</script>";
+} // }}}
+
+
+
 
 ?>

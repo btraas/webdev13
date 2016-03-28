@@ -96,7 +96,7 @@ function review() // {{{
 {
 	echo file_get_contents('page_header.html');
 	echo file_get_contents('order_header.html');
-	echo file_get_contents('order_review.html')
+	echo file_get_contents('order_review.html');
 	echo file_get_contents('page_footer.html');
 } // }}}
 

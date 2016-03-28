@@ -7,7 +7,7 @@ var taxpct = 0.05;		// 0.05 -> multiplier.
 var minMinutes = 15;	// 15   -> minimum time to order completion
 var maxDays = 30;		// 30   -> max days for advance orders
 
-$(document).ready(function() 
+$(document).ready(function()  // {{{
 {
 	var now = new Date();
 	var minTime = new Date(now.getTime() + minMinutes*60000);
@@ -52,7 +52,7 @@ $(document).ready(function()
 
 	setOrder(); // populate order from cookie
 
-});
+}); // }}}
 
 
 function addToOrder(item) // {{{
@@ -192,6 +192,7 @@ function setOrder() // {{{ Set JSON order from cookie
 
 	});
 	
+	calculateTotal();
 
 } // }}}
 
@@ -203,6 +204,8 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
 	var now = new Date();
     var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
+
+	console.log('minTime: '+minTime);
 
     if(items.length <= 0)
     {
@@ -217,7 +220,7 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
             title: "No Date / Time",
         }, function()
         {
-            $('input.order_datetime').first().datepicker('setDate', minTime + 60*1000);
+            $('input.order_datetime').first().datepicker('setDate', new Date(minTime + 60*1000));
             $('input.order_datetime').last().timepicker('setTime', minTime + 60*1000);
              submit1(); // run again
         });
@@ -234,6 +237,7 @@ function submit1() // {{{ Validate data in cookies / table, then proceed
         else
         {
             alertDialog("Error: Invalid date/time!");
+			console.log("Invalid date/time: "+date+" minTime: "+minTime);
             return false;
         }
     }
@@ -268,6 +272,8 @@ function calculateTotal() // {{{
 	tax = calculateTax(sum, taxpct);
 	sum = (parseFloat(sum) + parseFloat(tax)).toFixed(2);
 	
+	console.log(tax + ' ' + sum);
+
 	$('#orderTotals .totals').first().find('.price').text("$"+tax);
 	$('#orderTotals .totals').last().find('.price').text("$"+sum);
 

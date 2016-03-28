@@ -56,7 +56,7 @@
 		<!-- body -->
 	 	<div id="main">    
 			<div id="mainbody">
-			  	<form action='http://webdevfoundations.net/scripts/formdemo.asp' method='post'>
+			  	<form action='signup.php' method='post'>
 					<div class='centerCol'>
 					  	<h1 class='underline'>Sign Up</h1>
 					  	<table class='twoCol twoCol_separator'>

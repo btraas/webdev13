@@ -11,7 +11,7 @@
 	//Validation error flag
 	$errflag = false;
 	
-	//Connect to mysql server
+	/*//Connect to mysql server
 	$link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
 	if(!$link) {
 		die('Failed to connect to server: ' . mysql_error());
@@ -21,7 +21,7 @@
 	$db = mysql_select_db(DB_DATABASE);
 	if(!$db) {
 		die("Unable to select database");
-	}
+	}*/
 	
 	//Function to sanitize values received from the form. Prevents SQL injection
 	function clean($str) {
@@ -33,12 +33,12 @@
 	}
 	
 	//Sanitize the POST values
-	$fname = clean($_POST['fname']);
-	$lname = clean($_POST['lname']);
-	$phone = clean($_POST['phone']);
-	$email = clean($_POST['email']);
-	$password = clean($_POST['password']);
-	$password2 = clean($_POST['password2']);
+	$fname = $_POST[fname];
+	$lname = $_POST[lname];
+	$phone = $_POST[phone];
+	$email = $_POST[email];
+	$password = $_POST[password];
+	$password2 = $_POST[password2];
 	
 	//Input Validations
 	if($fname == '') {
@@ -49,25 +49,29 @@
 		$errmsg_arr[] = 'Last name missing';
 		$errflag = true;
 	}
-	if($login == '') {
-		$errmsg_arr[] = 'Login ID missing';
+	if($phone == '') {
+		$errmsg_arr[] = 'Phone number missing';
+		$errflag = true;
+	}
+	if($email == '') {
+		$errmsg_arr[] = 'Email address missing';
 		$errflag = true;
 	}
 	if($password == '') {
 		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
-	if($cpassword == '') {
+	if($password2 == '') {
 		$errmsg_arr[] = 'Confirm password missing';
 		$errflag = true;
 	}
-	if( strcmp($password, $cpassword) != 0 ) {
+	if(strcmp($password, $password2) != 0 ) {
 		$errmsg_arr[] = 'Passwords do not match';
 		$errflag = true;
 	}
 	
 	//Check for duplicate login ID
-	if($login != '') {
+	/*if($login != '') {
 		$qry = "SELECT * FROM members WHERE login='$login'";
 		$result = mysql_query($qry);
 		if($result) {
@@ -80,25 +84,23 @@
 		else {
 			die("Query failed");
 		}
-	}
+	}*/
 	
 	//If there are input validations, redirect back to the registration form
 	if($errflag) {
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
 		session_write_close();
-		header("location: register_form.php");
+		header("location: signup_form.php");
 		exit();
 	}
 
 	//Create INSERT query
-	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', 'email', ".md5($_POST['password'])."')";
-	$result = @mysql_query($qry);
+	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', 'email', 'password')";
+	mysql_query($qry);
 	
-	//Check whether the query was successful or not
-	if($result) {
-		header("location: login.php?login=".$login."&password=".$password);
-		exit();
-	}else {
-		die("Query failed");
+	if(runQ($qry) === FALSE) {
+		echo "Could not add user.";
+	} else {
+		echo "User added successfully!";
 	}
 ?>

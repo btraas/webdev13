@@ -21,8 +21,8 @@ $items = runQ("SELECT p.*, pc.*, p.name AS product_name, pc.name AS category FRO
 
 $groups = runQ("SELECT name FROM product_categories");
 
-
-echo file_get_contents("order_header.html");
+echo file_get_contents('page_header.html');		// Global HTML, CSS etc
+echo file_get_contents("order_header.html");	// Order HTML, CSS, JS
 
 
 
@@ -77,7 +77,7 @@ echo "</tr></table>";
 
 echo "</div>";
 echo file_get_contents('order_footer.html');
-
+echo file_get_contents('page_footer.html');
 
 
 ?>

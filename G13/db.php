@@ -36,7 +36,7 @@ function runQ($query, $printerror=false) // {{{
 
 function getCategory($input) // {{{
 {
-	return str_replace('_', ' ', preg_replace("/[^a-zA-Z_]/", "", $input));
+	return str_replace('_', ' ', preg_replace("/[^a-zA-Z_\-~]/", "", $input));
 } // }}}
 
 function getCategoryURL($input) // {{{

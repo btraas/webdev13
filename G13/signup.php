@@ -96,11 +96,10 @@
 
 	//Create INSERT query
 	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', 'email', 'password')";
-	mysql_query($qry);
 	
 	if(runQ($qry) === FALSE) {
-		echo "Could not add user.";
+		echo "We could not sign you up. Please try again or contact us.";
 	} else {
-		echo "User added successfully!";
+		echo "Thank you for signing up!";
 	}
 ?>

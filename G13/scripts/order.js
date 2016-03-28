@@ -273,7 +273,7 @@ function calculateTotal() // {{{
 
 	console.log(JSON.stringify(getOrder()));
 
-	document.cookie="order="+JSON.stringify(getOrder());;
+	document.cookie="order="+JSON.stringify(getOrder())+";path=/";
 
 	console.log("this is the set cookie: "+readCookie("order"));
 

@@ -39,6 +39,10 @@ function getCategory($input) // {{{
 	return str_replace('_', ' ', preg_replace("/[^a-zA-Z_]/", "", $input));
 } // }}}
 
+function getCategoryURL($input) // {{{
+{
+	return strtolower(urlencode(str_replace(' ', '_', $input)));
+} // }}}
 
 
 ?>

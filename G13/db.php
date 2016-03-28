@@ -47,4 +47,15 @@ function getCategoryURL($input) // {{{
 } // }}}
 
 
+function getEmail($input) // {{{
+{
+	return filter_var($input, FILTER_SANITIZE_EMAIL);
+} // }}}
+
+function getPassword($input) // {{{
+{
+	return md5($input);
+
+} // }}}
+
 ?>

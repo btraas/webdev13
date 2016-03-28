@@ -1,0 +1,35 @@
+2016-03-28 04:26:39 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = '': Unknown column 'username' in 'where clause'
+2016-03-28 04:26:41 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = '': Unknown column 'username' in 'where clause'
+2016-03-28 04:27:55 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = 'd41d8cd98f00b204e9800998ecf8427e': Unknown column 'username' in 'where clause'
+2016-03-28 04:27:56 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = 'd41d8cd98f00b204e9800998ecf8427e': Unknown column 'username' in 'where clause'
+2016-03-28 04:27:56 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = 'd41d8cd98f00b204e9800998ecf8427e': Unknown column 'username' in 'where clause'
+2016-03-28 04:29:07 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 04:29:07 Failed Query: SELECT COUNT(*) AS count FROM users 
+					WHERE username = 'btraas@gmail.com'
+					AND   password = '5f4dcc3b5aa765d61d8327deb882cf99': Unknown column 'username' in 'where clause'
+2016-03-28 04:30:10 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 04:30:14 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 04:31:12 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 04:32:54 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 05:12:47 btraas@gmail.com 5f4dcc3b5aa765d61d8327deb882cf99
+2016-03-28 05:12:53 Failed Query: SELECT * FROM users WHERE email = '.: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''.' at line 1
+2016-03-28 05:14:07 Failed Query: SELECT * FROM users WHERE email = 'btraas@gmail.com.: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''btraas@gmail.com.' at line 1
+2016-03-28 05:16:39 checking logged in...
+2016-03-28 05:16:39 session matches!
+2016-03-28 05:16:39 checking logged in...
+2016-03-28 05:16:39 session matches!
+2016-03-28 05:16:39 Failed Query: SELECT * FROM users WHERE email = 'btraas@gmail.com.: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''btraas@gmail.com.' at line 1
+2016-03-28 05:17:17 checking logged in...
+2016-03-28 05:17:17 session matches!
+2016-03-28 05:17:17 checking logged in...
+2016-03-28 05:17:17 session matches!

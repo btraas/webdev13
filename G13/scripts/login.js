@@ -30,9 +30,25 @@ function passwordValid(){
 
 function validate(){
 	if(emailValid() && passwordValid()){
-		window.location = "order.html";
-		return false;
+		submit();
 	} else {
 		return false;
 	}
 }
+
+
+
+function submit() // {{{
+{
+	var user = document.getElementById("email").value;
+	var pass = document.getElementById("password").value;
+
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "login.php?mode=login", true);
+	xhr.withCredentials = true;
+	xhr.setRequestHeader("Authorization", 'Basic ' + btoa(user+':'+pass));
+	xhr.onload = function () {
+		    eval(xhr.responseText);
+	};
+	xhr.send();
+} // }}}

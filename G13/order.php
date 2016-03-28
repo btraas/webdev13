@@ -3,6 +3,7 @@
 // Include DB connection script
 require_once("db.php");
 require_once("log.php");
+require_once("login.php");
 
 //logger($_REQUEST);
 
@@ -33,7 +34,7 @@ function showCategory() // {{{
 
 	$groups = runQ("SELECT name FROM product_categories");
 	
-	echo file_get_contents('page_header.html');		// Global HTML, CSS etc
+	include('page_header.php');		// Global HTML, CSS etc
 	echo file_get_contents("order_header.html");	// Order HTML, CSS, JS
 	
 	
@@ -94,7 +95,7 @@ function showCategory() // {{{
 
 function review() // {{{
 {
-	echo file_get_contents('page_header.html');
+	echo file_get_contents('page_header.php');
 	echo file_get_contents('order_header.html');
 	echo file_get_contents('order_review.html');
 	echo file_get_contents('page_footer.html');

@@ -7,33 +7,33 @@
                     <div class='footercolumn' id="footermenu">
                         <h3><a href ="#">Menu</a></h3>
                         <ul>
-                            <li><a href="/order/sashimi.html">Sashimi</a></li>
-                            <li><a href="/order/hosomaki.html">Hosomaki</a></li>
-                            <li><a href="/order/inside_out_roll.html">In-Out Roll</a></li>
+                            <li><a href="/order/sashimi/">Sashimi</a></li>
+                            <li><a href="/order/hosomaki/">Hosomaki</a></li>
+                            <li><a href="/order/inside-out_roll/">In-Out Roll</a></li>
                         </ul>
                     </div>
                     <div class='footercolumn' id="footermenu2">
                         <h3>&nbsp;</h3>
                         <ul>
-                            <li><a href="/order/noodle.html">Noodle</a></li>
-                            <li><a href="/order/appetizer.html">Appetizer</a></li>
-                            <li><a href="/order/nigiri.html">Nigiri</a></li>
+                            <li><a href="/order/noodles/">Noodle</a></li>
+                            <li><a href="/order/appetizers/">Appetizer</a></li>
+                            <li><a href="/order/nigiri/">Nigiri</a></li>
                         </ul>
                     </div>
                     <div class='footercolumn' id="footermenu3">
                         <h3>&nbsp;</h3>
                         <ul>
-                            <li><a href="/order/veggie_roll.html">Vegetable Roll</a></li>
-                            <li><a href="/order/donburi.html">Donburi</a></li>
-                            <li><a href="/order/salads.html">Salad</a></li>
+                            <li><a href="/order/veggie_roll/">Vegetable Roll</a></li>
+                            <li><a href="/order/donburi/">Donburi</a></li>
+                            <li><a href="/order/salads/">Salad</a></li>
                         </ul>
                     </div>
                     <div class='footercolumn' id="footermenu4">
                         <h3>&nbsp;</h3>
                         <ul>
-                            <li><a href="/order/specials.html">Special</a></li>
-                            <li><a href="/order/combo.html">Combo</a></li>
-                            <li><a href="/order/party_tray.thml">Party Tray</a></li>
+                            <li><a href="/order/specials/">Special</a></li>
+                            <li><a href="/order/combo/">Combo</a></li>
+                            <li><a href="/order/party_tray/">Party Tray</a></li>
                         </ul>
                     </div>
                     <div class='footercolumn' id="footerorder">

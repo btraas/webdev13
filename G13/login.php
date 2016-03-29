@@ -1,5 +1,6 @@
 <?php
 
+// Useful functions
 require_once('db.php');
 require_once('log.php');
 require_once('auth.php');
@@ -15,10 +16,24 @@ include('page_header.php');
 
 ?>
 
+<link href='scripts/jquery-ui/jquery-ui.css' rel='stylesheet'>
 <link href='style/order.css' rel='stylesheet'>
 <link href='style/orderextras.css' rel='stylesheet'>
 <script src="scripts/login.js"></script>
 
+
+<?php if(isLoggedIn()): ?>
+
+<div style='text-align: center; width: 100%; margin-top: 100px;'>
+
+<h1>Welcome <?php $u = getUser(); echo @$u['fname']." ".@$u['lname'] ?></h1>
+
+<input type='button' value='Place an Order' class='ui-button' onClick='location.href="/order/"' style='margin-top: 30px;' />
+<input type='button' value='Sign Out' class='ui-button' onClick='logout()' style='margin-top: 30px;' />
+
+</div>
+
+<?php else: ?>
 <table class='twoCol twoCol_separator largeRows'>
 	<tr>
     	<td class='top'>
@@ -35,11 +50,14 @@ include('page_header.php');
         </td>
 	</tr>
     <tr>
-        <td><input type="image" src="/images/Login_Button.jpg" alt="Login Button" class='ui-button' value='Sign In' id='login' onClick='validate()' /></td>
+        <td><input type="image" src="/images/Login_Button.jpg" alt="Login Button" class='' value='Sign In' id='login' onClick='validate()' /></td>
         <!-- This is not a form submission, it just takes us to the sign up page. -->
-        <td><input type="image" src="/images/Signup_Button.jpg" alt="Signup Button" class='ui-button' value='Sign Up' onClick="location.href='signup.html';" /></td>
+        <td><input type="image" src="/images/Signup_Button.jpg" alt="Signup Button" class='' value='Sign Up' onClick="location.href='signup.html';" /></td>
     </tr>
 </table>
+<?php endif; ?>
+
+
 <?php
 
 include('page_footer.php');

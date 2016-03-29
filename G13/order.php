@@ -94,10 +94,10 @@ function showCategory() // {{{
 
 function review() // {{{
 {
-	echo file_get_contents('page_header.php');
-	echo file_get_contents('order_header.php');
+	include('page_header.php');
+	include('order_header.php');
 	echo file_get_contents('order_review.html');
-	echo file_get_contents('page_footer.html');
+	include('page_footer.php');
 } // }}}
 
 function submit() // {{{
@@ -141,7 +141,7 @@ function submit() // {{{
 
 	}
 
-	alert("Order submitted.");
+	alert("Thank-you for your order.");
 
 } // }}}
 

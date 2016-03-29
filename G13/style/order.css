@@ -212,7 +212,7 @@
 		margin: 20px;
 		font-size: 200%;
 		font-weight: bold;
-		content: "Choose a Category";
+		/* content: "Choose a Category"; */
 	
 	}
 	#orderGroups ul li {

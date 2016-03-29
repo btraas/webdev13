@@ -1,4 +1,4 @@
-    	<?php includE('page_header.php'); ?>
+    	<?php include('page_header.php'); ?>
 		<link href="style/index.css" rel="stylesheet">
     			<div class="container">
                     <!-- Jssor Slider Begin -->

@@ -96,7 +96,7 @@ function review() // {{{
 {
 	include('page_header.php');
 	include('order_header.php');
-	echo file_get_contents('order_review.html');
+	include('order_review.php');
 	include('page_footer.php');
 } // }}}
 

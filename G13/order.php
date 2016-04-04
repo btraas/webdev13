@@ -4,6 +4,7 @@
 require_once("db.php");
 require_once("log.php");
 require_once("DOM_functions.php");
+require_once("auth.php");
 
 //logger($_REQUEST);
 
@@ -95,6 +96,17 @@ function showCategory() // {{{
 
 function review() // {{{
 {
+	if(!isLoggedIn())
+	{
+		// echo basic HTML & js functions
+		include('page_header.php');
+		include('page_footer.php');
+
+		$js = "location.href = '/login'";
+		alert("Please sign in to place an order.", $js);	// DOM_functions.php
+		exit();												// displays dialog box which runs given JS code on "OK" click
+	}
+
 	include('page_header.php');
 	include('order_header.php');
 	include('order_review.php');
@@ -110,10 +122,25 @@ function submit() // {{{
 		alert("Order is empty!");
 		exit();
 	}
+
+	if(!isLoggedIn())
+    {
+        // echo basic HTML & js functions
+        include('page_header.php');
+        include('page_footer.php');
+
+        $js = "location.href = '/login'";
+        alert("Please sign in to place an order.", $js);
+        exit();
+    }
+
+	$user = getUser();
+	$user_id = intval(@$user['num']);
+
+
 	$order_items = json_decode(@$_COOKIE['order'], true);
 //	$order_meta  = json_decode(@$_COOKIE['order_meta']); // for another milestone
 
-	$user_id = 0; // for now
 //	$requested = date('Y-m-d H:i:s', strtotime($order_meta['timestamp']));
 	$requested = date('Y-m-d H:i:s'); // for now
 
@@ -142,8 +169,6 @@ function submit() // {{{
 
 	}
 	setcookie('order', '');						// clear cart
-	//setcookie('order', '', time()-3600); // set expired
-
 	clearCookie('order', 'path=/');
 
 	alert("Thank-you for your order. 

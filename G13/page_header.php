@@ -4,6 +4,7 @@
     	<meta charset="utf-8">
     	<title>Tokyo Thyme</title>
     	<link href="/style/base.css" rel="stylesheet">
+		<link href="/scripts/jquery-ui/jquery-ui.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="/images/Icon.ico">
 		<script src="/scripts/jquery.js"></script>
 		<script src="/scripts/jquery-ui/jquery-ui.js"></script>

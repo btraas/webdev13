@@ -44,5 +44,5 @@
 					</ul>
 				</li>
 			</ul>
-
+			</div>
 			<?php include('page_footer.php'); ?>

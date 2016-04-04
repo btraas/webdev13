@@ -1,9 +1,11 @@
 <?php
 	//Start session
-	session_start();
+	@session_start();
 	
 	//Include database connection details
 	require_once('db.php');
+	require_once('log.php');
+	require_once('DOM_functions.php');
 
 	//Array to store validation errors
 	$errmsg_arr = array();
@@ -21,35 +23,36 @@
 	}
 	
 	//Sanitize the POST values
-	$fname = $_POST['fname'];
-	$lname = $_POST['lname'];
-	$phone = $_POST['phone'];
-	$email = $_POST['email'];
-	$password = $_POST['password'];
-	$password2 = $_POST['password2'];
+	$fname = @$_POST['fname'];
+	$lname = @$_POST['lname'];
+	$phone = @$_POST['phone'];
+	$email = @$_POST['email'];
+	$password = @$_POST['password'];
+	$password2 = @$_POST['password2'];
 	
+
 	//Input Validations
-	if($fname == '') {
+	if(empty($fname)) {
 		$errmsg_arr[] = 'First name missing';
 		$errflag = true;
 	}
-	if($lname == '') {
+	if(empty($lname)) {
 		$errmsg_arr[] = 'Last name missing';
 		$errflag = true;
 	}
-	if($phone == '') {
+	if(empty($phone)) {
 		$errmsg_arr[] = 'Phone number missing';
 		$errflag = true;
 	}
-	if($email == '') {
+	if(empty($email)) {
 		$errmsg_arr[] = 'Email address missing';
 		$errflag = true;
 	}
-	if($password == '') {
+	if(empty($password)) {
 		$errmsg_arr[] = 'Password missing';
 		$errflag = true;
 	}
-	if($password2 == '') {
+	if(empty($password2)) {
 		$errmsg_arr[] = 'Confirm password missing';
 		$errflag = true;
 	}
@@ -74,12 +77,22 @@
 		}
 	}*/
 	
+	include('signup_form.php');
+
 	//If there are input validations, redirect back to the registration form
 	if($errflag) {
+
 		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-		echo $errmsg_arr;
+
+		$msg = "";
+		foreach($errmsg_arr AS $err)
+		{
+			$msg .= "$err\n";
+		}
 		session_write_close();
-		header("location: signup_form.php");
+		//header("location: signup_form.php");
+		if(!empty($msg) && @$_POST['mode'] == 'submit' ) alert($msg);
+
 		exit();
 	}
 
@@ -87,9 +100,9 @@
 	$qry = "INSERT INTO users(fname, lname, phone, email, password) VALUES('$fname', '$lname', '$phone', '$email', '".md5($_POST['password'])."')";
 	
 	if(runQ($qry) === FALSE) {
-		echo "We could not sign you up. Please try again or contact us.";
+		alert("We could not sign you up. Please try again or contact us.");
 	} else {
-		echo nl2br("Thank you for signing up, " .$fname. "!\n");
-		echo "You can now log in using the email address you provided.";
+		$js = "location.href = '/login'";
+		alert("Thank you for signing up, " .$fname. "!\nYou can now log in using the email address you provided.", $js);
 	}
 ?>

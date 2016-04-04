@@ -40,8 +40,13 @@ function getUser() // {{{
 	return array(); // else
 } // }}}
 
-function getSessionKey($user, $pass) // {{{
+function getSessionKey($user, $pass) // {{{ 
 {
+	// Using current date, hour, username and password in the MD5 hash.
+	// This forces the key to change every hour, and very likely unique for all users.
+	// Including the (md5 hash of the) password, so that this user cannot be spoofed
+	// by someone else.
+
 	return md5( date('Y-m-d H') . $user . $pass );
 } // }}}
 function getPass($user) // {{{ only the MD5 hash of the password

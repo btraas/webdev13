@@ -102,7 +102,19 @@ function mySubmit(){
 	if(firstNameCheck() & lastNameCheck() & 
 	   phoneCheck() & emailCheck() &
 	   passwordCheck()){
-		window.location = "login.html";
+		
+		$.post('signup', {
+			mode		:   'submit',
+			fname		:	$('#fname').val(),
+			lname		:	$('#lname').val(),
+			phone		:	$('#phone').val(),
+			email		:	$('#email').val(),
+			password	:	$('#password').val(),
+			password2	:	$('#password2').val()
+
+		}, function( data ) { $('body').append(data); });
+
+
 		return true;
 	}
 	else{

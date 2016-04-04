@@ -4,7 +4,7 @@
 	include('order_header.php');
 ?>
 	<script language="JavaScript" type="text/javascript" src="scripts/sign_up.js"></script>
-			  	<form action='signup.php' method='post'>
+			  	<form method='post'>
 					<div class='centerCol'>
 					  	<h1 class='underline'>Sign Up</h1>
 					  	<table class='twoCol twoCol_separator'>

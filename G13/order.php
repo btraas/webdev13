@@ -3,6 +3,7 @@
 // Include DB connection script
 require_once("db.php");
 require_once("log.php");
+require_once("DOM_functions.php");
 
 //logger($_REQUEST);
 
@@ -74,7 +75,7 @@ function showCategory() // {{{
 		if($i % 2 == 0) echo "</tr>\n<tr>";
 		$i++;
 	
-		echo "<td><div class='itemBlock'>
+		echo "<td><div class='itemBlock' data-product_id=$item[product_id]>
 			  		<h3>$item[product_name]</h3>
 				  	<p class='description'>$item[description]</p>
 					<div class='itemBlock_footer'>
@@ -128,7 +129,7 @@ function submit() // {{{
 
 	foreach($order_items AS $item)
 	{
-		$product = intval($item['itemID']);
+		$product = intval($item['product_id']);
 		$quantity = intval($item['quantity']);
 		$notes = mysql_escape_string(@$item['notes']);
 		$q = "INSERT INTO order_items(order_id, product_id, quantity, notes)
@@ -140,21 +141,15 @@ function submit() // {{{
 		}
 
 	}
+	setcookie('order', '');						// clear cart
+	//setcookie('order', '', time()-3600); // set expired
 
-	alert("Thank-you for your order.");
+	clearCookie('order', 'path=/');
+
+	alert("Thank-you for your order. 
+			Your order number is $order_id");
 
 } // }}}
-
-
-
-function alert($msg) // {{{
-{
-	echo "	<script>
-				alertDialog('$msg');
-			</script>";
-} // }}}
-
-
 
 
 ?>

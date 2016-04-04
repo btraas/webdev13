@@ -9,7 +9,7 @@ function logger($input)
 
 	$msg .= "\n";
 
-	file_put_contents("g13.log", $msg, FILE_APPEND);
+	file_put_contents("/tmp/g13-rc.log", $msg, FILE_APPEND);
  
 }
 

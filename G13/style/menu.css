@@ -43,6 +43,7 @@
 	margin-top: 20px;
 	width: 225px;
 	float: left;
+	margin-right: 10px;
 	
 }
 
@@ -50,12 +51,14 @@
 	margin-top: 20px;
 	width: 225px;
 	float: left;
+	margin-right: 10px;
 }
 
 #rside{
 	margin-top: 20px;
 	width: 225px;
 	float: left;
+	margin-right: 10px;
 }
 /*#left_col {
 	-webkit-column-width: 200px;

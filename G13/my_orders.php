@@ -49,10 +49,24 @@ if(!empty(@$_REQUEST['order'])) // show this order
 		exit();
 	}
 
-	echo "<div style='text-align: center; width: 100%;'>\n";
-	echo "<h1>Order $order_no</h1><br />\n";
 
-	//echo nl2br(print_r($r, true)); // for now of course
+	$ordertotal = 0;
+	foreach($r AS $oi)
+	{
+		$ordertotal += ($oi['quantity']*$oi['price'])
+	}
+
+	echo "<div style='text-align: center; width: 100%;'>\n";
+	echo "<h1>Order $order_no</h1><br />
+	
+			<p><b>Submitted: </b>{$r[0]['sub_date']} {$r[0]['sub_time']}</p>
+			<p><b>Requested: </b>{$r[0]['req_date']} {$r[0]['req_time']}</p>
+			<p><b>Cost (before tax):</b>$ordertotal</p>
+	
+	
+	";
+
+	echo nl2br(print_r($r, true)); // for now of course
 
 	$i = 0;
 	foreach($r AS $oi)

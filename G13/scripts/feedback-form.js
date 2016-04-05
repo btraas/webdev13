@@ -26,3 +26,15 @@ function isBlur() {
 		return false;
 	}
 }
+
+function clear() {
+	var details = document.getElementById("details").value="";
+	var subject = document.getElementById("subject").value="";
+
+	if (details.value != "" || subject.value != "") {
+		details.value = "";
+		subject.value = "";
+	} else if (details.value != "" && subject.value != "")
+		details.value = "";
+		subject.value = "";
+}

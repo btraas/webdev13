@@ -40,18 +40,21 @@
 }
 
 #lside {
-	min-width: 250px;
+	margin-top: 20px;
+	max-width: 250px;
 	float: left;
 	
 }
 
 #mid {
-	min-width: 250px;
+	margin-top: 20px;
+	max-width: 250px;
 	float: left;
 }
 
 #rside{
-	min-width: 250px;
+	margin-top: 20px;
+	max-width: 250px;
 	float: left;
 }
 /*#left_col {

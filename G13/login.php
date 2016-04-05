@@ -28,9 +28,9 @@ include('page_header.php');
 
 <h1>Welcome <?php $u = getUser(); echo @$u['fname']." ".@$u['lname'] ?>!</h1>
 
-<input type='button' value='Place an Order' class='ui-button' onClick='location.href="/order/"' style='margin-top: 30px;' />
-<input type='button' value='View past orders' class='ui-button' onClick='location.href="/my_orders"' style='margin-top: 30px;' />
-<input type='button' value='Sign Out' class='ui-button' onClick='logout()' style='margin-top: 30px;' />
+<input type='image' src='/images/PlaceOrder_Button.jpg' value='Place an Order' class='' onClick='location.href="/order/"' style='margin-top: 30px;' />
+<input type='image' src='/images/PastOrders.jpg' value='View past orders' class='' onClick='location.href="/my_orders"' style='margin-top: 30px;' />
+<input type='image' src='/images/SignOut.jpg' value='Sign Out' class='' onClick='logout()' style='margin-top: 30px;' />
 
 </div>
 

@@ -80,7 +80,7 @@ function showCategory() // {{{
 			  		<h3>$item[product_name]</h3>
 				  	<p class='description'>$item[description]</p>
 					<div class='itemBlock_footer'>
-						<div class='addItem ui-button'>Add to Order</div>
+						<input type='image' src='/images/AddToOrder_Button.jpg' class='addItem' />
 						<div class='price'>$$item[price]</div>
 					</div>
 				</div></td>";

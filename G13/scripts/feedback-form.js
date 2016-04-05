@@ -26,3 +26,7 @@ function isBlur() {
 		return false;
 	}
 }
+
+function clear() {
+	document.getElementById('details').value="";
+}

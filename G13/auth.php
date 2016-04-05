@@ -47,7 +47,7 @@ function getSessionKey($user, $pass) // {{{
 	// Including the (md5 hash of the) password, so that this user cannot be spoofed
 	// by someone else.
 
-	return md5( date('Y-m-d H') . $user . $pass );
+	return md5( date('Y-m-d') . $user . $pass );
 } // }}}
 function getPass($user) // {{{ only the MD5 hash of the password
 {

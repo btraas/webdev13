@@ -377,3 +377,21 @@ div.ui-button {
 #orderDetails td {
 	padding-top: 20px;
 }
+
+.myorder {
+	text-align: center;
+	padding: 20px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.myorder:hover {
+	background: black;
+	background: rgba(0,0,0,0.5);
+}
+
+.myorder_item {
+	text-align: left;
+	padding: 20px;
+	margin: 0 auto;
+}

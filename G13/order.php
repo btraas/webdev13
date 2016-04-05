@@ -139,10 +139,13 @@ function submit() // {{{
 
 
 	$order_items = json_decode(@$_COOKIE['order'], true);
-//	$order_meta  = json_decode(@$_COOKIE['order_meta']); // for another milestone
 
-//	$requested = date('Y-m-d H:i:s', strtotime($order_meta['timestamp']));
-	$requested = date('Y-m-d H:i:s'); // for now
+	$requested = date('Y-m-d H:i:s', strtotime(substr(@$_COOKIE['ordertime'], 0, 21)));
+
+	logger(print_r($_COOKIE, true));
+	logger("Requested time: $requested");
+
+	//$requested = date('Y-m-d H:i:s'); // for now
 
 	$q = "INSERT INTO orders(user_id, requested) VALUES($user_id, '$requested')";
 	if(($r = runQ($q)) === FALSE) 
@@ -170,6 +173,9 @@ function submit() // {{{
 	}
 	setcookie('order', '');						// clear cart
 	clearCookie('order', 'path=/');
+
+	setcookie('ordertime', '');
+	clearCookie('ordertime', 'path=/');
 
 	alert("Thank-you for your order. 
 			Your order number is $order_id");

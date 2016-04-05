@@ -162,6 +162,7 @@ function getOrder() // {{{ Get JSON order
 function setOrder() // {{{ Set JSON order from cookie
 {
 	var orderCookie = getCookie("order");
+	var ordertime   = getCookie("ordertime");
 
 	// console.log("cookie: "+orderCookie);
 
@@ -196,6 +197,17 @@ function setOrder() // {{{ Set JSON order from cookie
 	});
 	
 	calculateTotal();
+	if(ordertime == "") return;
+	
+	ordertime = new Date(ordertime);
+
+	var month = ordertime.getMonth()+1;
+	if(month < 10) month = "0"+month;
+	var date = month + "/" +ordertime.getDate() + "/" + ordertime.getFullYear();
+
+	$('input.order_datetime').first().datepicker('setDate', date);
+	$('input.order_datetime').last().timepicker('setTime', ordertime);
+
 
 } // }}}
 
@@ -292,9 +304,17 @@ function calculateTotal() // {{{ AND save a cookie
 	$('#orderTotals .totals').last().find('.price').text("$"+sum);
 
 
+	var ordertime = new Date($('.order_datetime.hasDatepicker').first().val() + " " + convertTo24Hour($('.order_datetime.hasDatepicker').last().val())); 
+
+	if(empty($('.order_datetime.hasDatepicker').last().val()) || empty($('.order_datetime.hasDatepicker').first().val())) ordertime = "Invalid Date";
 
 	document.cookie="order="+JSON.stringify(getOrder())+";path=/";
-
+	if(ordertime!='Invalid Date') 
+	{
+		//alert(ordertime);
+		document.cookie="ordertime="+ordertime+";path=/";
+		//alert('set cookie: '+ordertime);
+	}
 
 } // }}}
 function calculateTax(total, pct) // {{{

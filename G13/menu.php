@@ -20,7 +20,7 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col800">
+				<div id="left_col">
 					<!-- Section 1 -->
 					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Bloody Winter</figcaption>

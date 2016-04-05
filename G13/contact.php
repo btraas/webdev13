@@ -20,7 +20,7 @@
 						<p>
 							Tel: (604) 263-3262
 						</p>
-						<h2>Hours of Operation</h2>
+						<h2>Hours of Operation </h2>
 						<table id="hours">
 	                        <tr>
 								<td>Monday - Friday</td>

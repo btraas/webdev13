@@ -149,25 +149,18 @@
 					</table>
                     
 					<!-- Section 3 -->
-                    <br><br><br><br><br><br><br><br>
-					<table class ="pricings">
-						<tr>
 							<img src="images/Photos/Edited/IndianSummer_LindaM.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Indian Summer</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
+
 							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
+
 				</div>
 			</div>
 

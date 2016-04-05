@@ -21,34 +21,27 @@
 							Tel: (604) 263-3262
 						</p>
 						<h2>Hours of Operation</h2>
-						<p>
-							Monday - Friday 11:00 AM - 8:00 PM<br>
-							Saturday 11:30 AM - 8:30 PM<br>
-							Sunday Closed<br><br>
-							Lunch Opening - 2:30 PM<br>
-							Dinner 5:00 PM - Closing
-						</p>
 						<table id="hours">
-                        <tr>
-							<td>Monday - Friday</td>
-                            <td id="time">11:00 AM - 8:00 PM</td>
-                        </tr>
-                        <tr>
-							<td>Saturday</td>
-                            <td id="time">11:30 AM - 8:30 PM</td>
-                        </tr>
-                        <tr>
-							<td>Sunday</td>
-                            <td id="time">Closed</td>
-                        </tr>
-                        <tr>
-							<td>Lunch</td>
-                            <td id="time">Opening - 2:30 PM</td>
-                        </tr>
-                        <tr>
-							<td>Dinner</td>
-                            <td id="time">5:00 PM - Closing</td>
-                        </tr>
+	                        <tr>
+								<td>Monday - Friday</td>
+	                            <td class="time">11:00 AM - 8:00 PM</td>
+	                        </tr>
+	                        <tr>
+								<td>Saturday</td>
+	                            <td class="time">11:30 AM - 8:30 PM</td>
+	                        </tr>
+	                        <tr>
+								<td>Sunday</td>
+	                            <td class="time">Closed</td>
+	                        </tr>
+	                        <tr>
+								<td>Lunch</td>
+	                            <td class="time">Opening - 2:30 PM</td>
+	                        </tr>
+	                        <tr>
+								<td>Dinner</td>
+	                            <td class="time">5:00 PM - Closing</td>
+	                        </tr>
 						</table>
 					</div>
 					<!-- google map -->

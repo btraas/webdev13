@@ -28,6 +28,10 @@ function isBlur() {
 }
 
 function clear() {
-	document.getElementById('details').value="";
-	document.getElementById('subject').value="";
+	var details = document.getElementById("details").value="";
+	var subject = document.getElementById("subject").value="";
+
+	if (details.value != "" || subject.value !="")
+		details.value = "";
+		subject.value = "";
 }

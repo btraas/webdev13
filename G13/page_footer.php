@@ -5,7 +5,7 @@
             <div id="footer">
                 <div id="footertext">
                     <div class='footercolumn' id="footermenu">
-                        <h3><a href ="#">Menu</a></h3>
+                        <h3><a href="/menu">Menu</a></h3>
                         <ul>
                             <li><a href="/order/sashimi/">Sashimi</a></li>
                             <li><a href="/order/hosomaki/">Hosomaki</a></li>

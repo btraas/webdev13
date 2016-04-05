@@ -21,6 +21,7 @@
 			<div id="menutext">
 				<!-- Body text/menu layout -->
 				<div id="left_col">
+					<div id="lside">
 					<!-- Section 1 -->
 					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Bloody Winter</figcaption>
@@ -98,7 +99,8 @@
                             Inside: Uni + ika + tobiko</td>
 						</tr>
 					</table>
-                    
+                </div>
+				<div id="mid">
 					<!-- Section 2 -->
 					<img src="images/Photos/Edited/SesameCrustedTunaSteak_Harvard.jpg" alt="Food picture" width = "250" height ="125">
                     <figcaption class="caption">Sesame Crusted Tuna Steak</figcaption>
@@ -144,10 +146,11 @@
 							<td class="menu_p">$13.50</td>
 						</tr>
 						<tr>
-							<td colspan="2" class="menu_d">Seered tuna covered in black and white sesame served w/ spicy sauce on a bed of mesclun greens</td>
+							<td colspan="2" class="menu_d">Seared tuna covered in black and white sesame served w/ spicy sauce on a bed of mesclun greens</td>
 						</tr>
 					</table>
-                    
+                </div>
+				<div id="rside">
 					<!-- Section 3 -->
 							<img src="images/Photos/Edited/IndianSummer_LindaM.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Indian Summer</figcaption>
@@ -160,7 +163,7 @@
 
 							<img src = "images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-
+				</div>
 				</div>
 			</div>
 

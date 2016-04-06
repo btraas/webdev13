@@ -28,6 +28,9 @@ function isBlur() {
 }
 
 function clear() {
+	var subject = document.getElementById("subject");
+	var details = document.getElementById("details");
+	
 		details.text = "";
 		subject.text = "";
 }

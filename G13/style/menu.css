@@ -133,10 +133,6 @@
 	margin-bottom: 20px;
 }
 
-table.pricings td {
-	padding-bottom: 5px;
-}
-
 table.pricings tr:nth-child(even){
 	font-size: 8pt;
 	font-style: italic;
@@ -154,9 +150,6 @@ table.pricings tr:nth-child(even){
 .io_roll2 {
 	margin-bottom: 108px;
 }
-/*.sashimi{
-	margin-bottom: 108px;
-}
 
 .menu_d{
 	padding-bottom: 10px;
@@ -167,8 +160,9 @@ table.pricings tr:nth-child(even){
 .smallertext{
 	font-size: 13pt;
 }
-
-
+/*.sashimi{
+	margin-bottom: 108px;
+}
 
 .IO_roll2{
 	margin-bottom: 99px;

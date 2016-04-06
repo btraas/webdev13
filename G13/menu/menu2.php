@@ -156,8 +156,8 @@
 					</div>
 					<!-- Section 3 -->
 					<div id="rside">
-					<img src="../images/Photos/Edited/Red&WhiteTunaStack_Harvard.jpg" alt="Food Picture" width = "225" height ="115">
-                    <figcaption class="caption">Red & White Tuna Stack</figcaption>
+					<img src="../images/Photos/Edited/TunaTataki_TJP.jpg" alt="Tuna Tataki" width = "225" height ="115">
+                    <figcaption class="caption">Tuna Tataki</figcaption>
 					<div class="hosomaki2"></div>
 					<table class="pricings">	
 						<tr>

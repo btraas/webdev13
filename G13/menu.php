@@ -23,7 +23,7 @@
 				<div id="left_col">
 					<div id="lside">
 					<!-- Section 1 -->
-					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Food Picture" width = "225" height ="115">
+					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Bloody Winter" width = "225" height ="115">
                     <figcaption class="caption">Bloody Winter</figcaption>
 					<h1>Seasonals</h1>
 					<table class ="pricings">
@@ -74,6 +74,14 @@
 							<td colspan="2" class="menu_d">On top: Ikura + black sesame<br>
                             Inside: Spicy salmon tempura + avo + shiso</td>
 						</tr>
+					</table>
+                </div>
+				<div id="mid">
+					<!-- Section 2 -->
+					<img src="images/Photos/Edited/Image1_DoubleBites.jpg" alt="Indian Summer" width = "225" height ="115">
+                    <figcaption class="caption">Indian Summer</figcaption>
+					<div id="seasonals2"></div>
+						<table class="pricings">
 						<tr>
 							<td class="menu_n">Autumn Field
 							<td class="menu_p">$11.50</td>
@@ -100,8 +108,8 @@
 						</tr>
 					</table>
                 </div>
-				<div id="mid">
-					<!-- Section 2 -->
+				<div id="rside">
+					<!-- Section 3 -->
 					<img src="images/Photos/Edited/SesameCrustedTunaSteak_Harvard.jpg" alt="Food picture" width = "225" height ="115">
                     <figcaption class="caption">Sesame Crusted Tuna Steak</figcaption>
 					<h1>Salads</h1>
@@ -149,10 +157,6 @@
 							<td colspan="2" class="menu_d">Seared tuna covered in black and white sesame served w/ spicy sauce on a bed of mesclun greens</td>
 						</tr>
 					</table>
-                </div>
-				<div id="rside">
-					<!-- Section 3 -->
-
 				</div>
 				</div>
 			</div>

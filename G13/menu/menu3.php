@@ -22,7 +22,7 @@
 					<!-- Section 1 -->
 					<div id="lside">
 					<img src="../images/Photos/Edited/Image5_DoubleBites.jpg" alt="Peppered Tuna Roll" width="225" height="115">
-                    <figcaption class="caption">Peppered Tuna</figcaption>
+                    <figcaption class="caption">Peppered Tuna Roll</figcaption>
 					<h1>Inside-Out R</h1>
 					<table class ="pricings">
 						<tr>
@@ -113,8 +113,8 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src="../images/Photos/Edited/P2060074_Harvard.jpg" alt="California Roll" width="225" height="115">
-                    <figcaption class="caption">California Roll</figcaption>
+					<img src="../images/Photos/Edited/Image1_NomNomYVR.jpg" alt="Spider Roll" width="225" height="115">
+                    <figcaption class="caption">Spider Roll</figcaption>
 					<div class="io_roll2"></div>
 						<table class="pricings">
 						<tr>

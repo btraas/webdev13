@@ -53,6 +53,12 @@
 						<tr>
 							<td colspan="2" class="menu_d">Tuna sashimi over sushi rice</td>
 						</tr>
+					</div>
+					<!-- Section 2 -->
+					<div id="mid">
+					<img src="../images/Photos/Edited/IMAG0351.jpg" alt="Zuke Don" width="225" height="115">
+                    <figcaption class="caption">Zuke Don</figcaption>
+					<table class="pricings">	
 						<tr>
 							<td class="menu_n">Chirashi Don
 							<td class="menu_p">$16.50</td>
@@ -77,8 +83,9 @@
 					</table>
 					<p class="miso">- Miso soup with in-house dining only -</p>
 					</div>
-					<!-- Section 2 -->
-					<div id="mid">
+                    
+					<!-- Section 3 -->
+					<div id="rside">
 					<img src = "../images/Photos/Edited/IMAG2195.jpg" alt="Nabeyaki Udon" width = "225" height ="115">
                     <figcaption class="caption">Nabeyaki Udon</figcaption>
 					<h1>Noodles</h1>
@@ -119,11 +126,6 @@
 							<td colspan="2" class="menu_d">Prawn & vegetable tempura, chicken, egg, veggies in hotpot</td>
 						</tr>
 					</table>
-					</div>
-                    
-					<!-- Section 3 -->
-					<div id="rside">
-
 					</div>
 				</div>
 			</div>

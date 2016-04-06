@@ -23,7 +23,7 @@
 				<div id="left_col">
 					<div id="lside">
 					<!-- Section 1 -->
-					<img src="images/Photos/BloodyWinter_LindaM.jpg" alt="Bloody Winter" width = "225" height ="115">
+					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Bloody Winter" width = "225" height ="115">
                     <figcaption class="caption">Bloody Winter</figcaption>
 					<h1>Seasonals</h1>
 					<table class ="pricings">
@@ -78,7 +78,7 @@
                 </div>
 				<div id="mid">
 					<!-- Section 2 -->
-					<img src="images/Photos/Edited/Image1_DoubleBites.jpg" alt="Indian Summer" width = "225" height ="115">
+					<img src="images/Photos/Image1_DoubleBites.jpg" alt="Indian Summer" width = "225" height ="115">
                     <figcaption class="caption">Indian Summer</figcaption>
 					<div id="seasonals2"></div>
 						<table class="pricings">

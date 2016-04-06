@@ -152,17 +152,7 @@
                 </div>
 				<div id="rside">
 					<!-- Section 3 -->
-							<img src="images/Photos/Edited/IndianSummer_LindaM.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Indian Summer</figcaption>
 
-							<img src = "images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
 				</div>
 				</div>
 			</div>

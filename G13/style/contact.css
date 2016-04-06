@@ -48,6 +48,10 @@
 	margin-top: 20px;
 }
 
+#Reset_Button {
+	cursor: pointer;
+}
+
 .time {
 	text-align: right;
 	

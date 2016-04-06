@@ -23,7 +23,7 @@
 					<div id="lside">
 					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Peppered Tuna</figcaption>
-					<h1>Inside-Out Roll</h1>
+					<h1>Inside-Out R</h1>
 					<table class ="pricings">
 						<tr>
 							<td class="menu_n">California
@@ -200,7 +200,7 @@
 					<div id="rside">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
-					<h1>Vegetarian Roll</h1>
+					<h1>Vegetarian R</h1>
 					<table class ="pricings">
 						<tr>
 							<td class="menu_n">Shitake Tama Q

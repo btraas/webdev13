@@ -61,6 +61,14 @@
 						<tr>
 							<td colspan="2" class="menu_d">House special sunomono <br>Agedashi tofu <br>1/2 Sesame crusted tuna steak <br>Dynamite roll 1/2, tuna, salmon, unagi nigiri</td>
 						</tr>
+					</table>
+					</div>
+					<!-- Section 3 -->
+					<div id="rside">
+					<img src = "../images/Photos/Edited/P2060028.JPG" alt="House Special Sunomono" width = "225" height ="115">
+                    <figcaption class="caption">House Special Sunomono</figcaption>
+					<div class="omakase2"></div>
+					<table class="pricings">
 						<tr>
 							<td class="menu_n">Omakase Take
 							<td class="menu_p">$35.00/person</td>
@@ -76,10 +84,6 @@
 							<td colspan="2" class="menu_d">House special sunomono <br>Spicy chicken tofu <br>Sashimi morawase <br>Home-made ebi gyoza <br>Red &amp; white tuna stack <br>Dynamite roll 1/2 + indian summer 1/4, tuna, salmon, hamachi nigiri <br>Ice cream</td>
 						</tr>
 					</table>
-					</div>
-					<!-- Section 3 -->
-					<div id="rside">
-
 					</div>
 				</div>
 			</div>

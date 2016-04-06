@@ -16,10 +16,12 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col700">
+				<div id="left_col">
+				<!-- Section 1 -->
+					<div id="lside">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
                     <figcaption class="caption">Chirashi</figcaption>
-					<!-- Section 1 -->
+
 					<h1>Specials</h1>
 					<table class ="pricings">
 						<tr>
@@ -45,8 +47,9 @@
 						</tr>
 					</table>
 					<p class="miso"> - Miso soup with in-house dining only - </p>
-					<div class="specials"></div>
+					</div>
 					<!-- Section 2 -->
+					<div id="mid">
 					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Omakase</h1>
@@ -73,27 +76,23 @@
 						<tr>
 							<td colspan="2" class="menu_d">House special sunomono <br>Spicy chicken tofu <br>Sashimi morawase <br>Home-made ebi gyoza <br>Red &amp; white tuna stack <br>Dynamite roll 1/2 + indian summer 1/4, tuna, salmon, hamachi nigiri <br>Ice cream</td>
 						</tr>
-
 					</table>
+					</div>
 					<!-- Section 3 -->
-					<table class ="pricings">
-						<tr>
+					<div id="rside">
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
+					</div>
 				</div>
 			</div>
 			<?php include('../page_footer.php'); ?>

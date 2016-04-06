@@ -18,8 +18,9 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col1100">
+				<div id="left_col">
 					<!-- Section 1 -->
+					<div id="lside">
 					<img src="../images/Photos/Edited/Red&WhiteTunaStack_Harvard.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Red & White Tuna Stack</figcaption>
 					<h1>Hosomaki</h1>
@@ -151,7 +152,9 @@
 							<td colspan="2" class="menu_d">Yellow &amp; green onion</td>
 						</tr>
 					</table>
+					</div>
                     <!-- Section 2 -->
+					<div id="mid">
 					<img src="../images/Photos/Edited/AgedashiTofu_TJP.jpg" alt="Food picture" width="250" height="125">
                     <figcaption class="caption">Agedashi Tofu</figcaption>
 					<h1>Appetizer</h1>
@@ -213,26 +216,22 @@
 							<td colspan="2" class="menu_d">Tower of red and white tuna, yamaimo, avocado, served w/ sushi rice and seaweed for wrapping. <br>[add quail egg for 50&#162;]</td>
 						</tr>
 					</table>
-					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</div>
 					<!-- Section 3 -->
-					<table class ="pricings">
-						<tr>
+					<div id="rside">
+
 							<img src="../images/Photos/Edited/TunaTataki_TJP.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Tuna Tataki</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
+
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
+					</div>
 				</div>
 			</div>
 

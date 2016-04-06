@@ -18,8 +18,9 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col1500">
+				<div id="left_col">
 					<!-- Section 1 -->
+					<div id="lside">
 					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="250" height="125">
                     <figcaption class="caption">Peppered Tuna</figcaption>
 					<h1>Inside-Out Roll</h1>
@@ -186,7 +187,9 @@
 							<td colspan="2" class="menu_d">Deep fried soft shell crab, avocado, green onion, kaiware, japanese mint, flying fish roe</td>
 						</tr>
 					</table>
+					</div>
 					<!-- Section 2 -->
+					<div id="mid">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Vegetarian Roll</h1>
@@ -220,27 +223,23 @@
 							<td colspan="2" class="menu_d">Tamago, kampyo, shitake, avocado, cucumber</td>
 						</tr>
 					</table>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-					<!-- Section 3 -->
-					<table class ="pricings">
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
 					</div>
+					<!-- Section 3 -->
+					<div id="rside">
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+                            <figcaption class="caption">Chirashi</figcaption>
+					</div>
+				</div>
 			</div>
 			<?php
 			include('../page_footer.php');

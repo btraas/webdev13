@@ -18,9 +18,10 @@
             <!-- Body content -->
 			<div id="menutext">
             	<!-- Body content/menu layout -->
-				<div id="left_col1500">
+				<div id="left_col">
 					<!-- Section 1 -->
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+					<div id="lside">
+					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Nigiri</h1>
 					<table class ="pricings">
@@ -202,8 +203,10 @@
 							<td colspan="2" class="menu_d">Sea Urchin</td>
 						</tr>
 						</table>
+					</div>
                         <!-- Section 2 -->
-					<img src="../images/Photos/Edited/HamachiSashimi_JohnS.jpg" alt="Food picture" width="250" height="125">
+					<div id="mid">
+					<img src="../images/Photos/Edited/HamachiSashimi_JohnS.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Hamachi Sashimi</figcaption>
 					<h1>Sashimi</h1>
 					<table class ="pricings">
@@ -257,26 +260,23 @@
 							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
 						</tr>
 					</table>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</div>
+                    
 					<!-- Section 3 -->
-					<table class ="pricings">
-						<tr>
-							<img src="../images/Photos/Edited/SalmonSashimi_LindaM.jpg" alt="Food picture" width = "250" height ="125">
+					<div id="rside">
+
+							<img src="../images/Photos/Edited/SalmonSashimi_LindaM.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Salmon Sashimi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
+					</div>
 				</div>
 			</div>
 		<?php

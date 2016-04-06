@@ -18,8 +18,9 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col700">
+				<div id="left_col">
 					<!-- Section 1 -->
+					<div id="lside">
 					<img src="../images/Photos/Edited/Chirashi_Harvard.jpg" alt="Food picture" width="250" height="125">
                     <figcaption class="caption">Chirashi Don</figcaption>
 					<h1>Donburi</h1>
@@ -75,7 +76,9 @@
 						</tr>
 					</table>
 					<p class="miso">- Miso soup with in-house dining only -</p>
+					</div>
 					<!-- Section 2 -->
+					<div id="mid">
 					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Noodles</h1>
@@ -116,9 +119,10 @@
 							<td colspan="2" class="menu_d">Prawn & vegetable tempura, chicken, egg, veggies in hotpot</td>
 						</tr>
 					</table>
-					<div class="noodle"></div>
+					</div>
                     
 					<!-- Section 3 -->
+					<div id="rside">
 					<table class ="pricings">
 						<tr>
 							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
@@ -137,6 +141,7 @@
                             <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 					</table>
+					</div>
 				</div>
 			</div>
 			<?php 

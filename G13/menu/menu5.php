@@ -17,8 +17,9 @@
 			<!-- Body content -->
 			<div id="menutext">
 				<!-- Body text/menu layout -->
-				<div id="left_col700">
+				<div id="left_col">
 					<!-- Section 1 -->
+					<div id="lside">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Sushi &amp; Noodle Combination</h1>
@@ -66,7 +67,9 @@
 							<td colspan="2" class="menu_d">Chicken or gobo ten udon, assorted sashimi over rice</td>
 						</tr>
 					</table>
+					</div>
 					<!-- Section 2 -->
+					<div id="mid">
 					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Sushi Combination<br><br></h1>
@@ -94,9 +97,9 @@
 						</tr>
 					</table>
 					<p class="miso"> - Miso soup with in-house dining only -</p>
-					<div class="combo2"></div>
-                    <br>
+					</div>
 					<!-- Section 3 -->
+					<div id ="rside">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Party Tray<br><br></h1>
@@ -131,6 +134,7 @@
 							<td colspan="2" class="menu_d">Tuna, salmon, ebi, unagi nigiri[4pc each], california roll, chopped scallop roll, dynamite roll, philadelphia roll, peppered tuna roll</td>
 						</tr>			
 					</table>
+					</div>
 				</div>
 			</div>
 

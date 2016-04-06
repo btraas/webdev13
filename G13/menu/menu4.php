@@ -79,8 +79,8 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/IMAG2195.jpg" alt="Nabeyaki Udon" width = "225" height ="115">
+                    <figcaption class="caption">Nabeyaki Udon</figcaption>
 					<h1>Noodles</h1>
 					<table class ="pricings">
 						<tr>

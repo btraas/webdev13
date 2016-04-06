@@ -109,6 +109,14 @@
 						<tr>
 							<td colspan="2" class="menu_d">Chopped scallop w/ smelt roe, cucumber</td>
 						</tr>
+					</table>
+					</div>
+					<!-- Section 2 -->
+					<div id="mid">
+					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="225" height="115">
+                    <figcaption class="caption">Peppered Tuna</figcaption>
+					<div class="io_roll2"></div>
+						<table class="pricings">
 						<tr>
 							<td class="menu_n">Chicken Teriyaki
 							<td class="menu_p">$5.50</td>
@@ -188,8 +196,8 @@
 						</tr>
 					</table>
 					</div>
-					<!-- Section 2 -->
-					<div id="mid">
+					<!-- Section 3 -->
+					<div id="rside">
 					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Vegetarian Roll</h1>
@@ -222,22 +230,7 @@
 						<tr>
 							<td colspan="2" class="menu_d">Tamago, kampyo, shitake, avocado, cucumber</td>
 						</tr>
-					</table>
-					</div>
-					<!-- Section 3 -->
-					<div id="rside">
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
+					</table>					
 					</div>
 				</div>
 			</div>

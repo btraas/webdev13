@@ -79,7 +79,7 @@
 					</div>
                         <!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
+					<img src = "../images/Photos/Edited/Image6_DoubleBites.jpg" alt="Nigiri" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Nigiri</h1>
 					<table class ="pricings">

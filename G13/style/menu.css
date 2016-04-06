@@ -133,6 +133,10 @@
 	margin-bottom: 20px;
 }
 
+table.pricings td {
+	padding-bottom: 5px;
+}
+
 table.pricings tr:nth-child(even){
 	font-size: 8pt;
 	font-style: italic;

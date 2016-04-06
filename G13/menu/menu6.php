@@ -19,9 +19,8 @@
 				<div id="left_col">
 				<!-- Section 1 -->
 					<div id="lside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width="225" height="115">
-                    <figcaption class="caption">Chirashi</figcaption>
-
+					<img src = "../images/Photos/Edited/Nigiris_LindaM.jpg" alt="Sushi" width="225" height="115">
+                    <figcaption class="caption">Sushi</figcaption>
 					<h1>Specials</h1>
 					<table class ="pricings">
 						<tr>
@@ -50,8 +49,8 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/P2060028.JPG" alt="House Special Sunomono" width = "225" height ="115">
+                    <figcaption class="caption">House Special Sunomono</figcaption>
 					<h1>Omakase</h1>
 					<p class="omakase">Omakase is only available in-house to parties of two or more. <b>Parties of 10 or more must order from the omakase menu from Thurs-Sat.</b> Thank you!
 					<table class ="pricings">

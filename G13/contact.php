@@ -77,7 +77,7 @@
 							</tr>
 							<tr>
 								<td></td><td colspan=2 id="buttons">
-									<input type=reset value=Clear id='clear' onclick="clear()"><img src="images/Clear_Button.jpg"></input>
+									<input type=reset value=Clear id="clear"><img onclick="document.getElementById('clear').click()" src="images/Clear_Button.jpg"></input>
                 					<input type=image src="images/Submit_Button.jpg" id='submit1' value=Submit />
 								</td>
 							</tr>

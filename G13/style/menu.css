@@ -138,6 +138,10 @@ table.pricings tr:nth-child(even){
 	font-style: italic;
 	color: #FFB808;
 }
+
+.nigiri2 {
+	margin-bottom: 99px;
+}
 .menu_d{
 	padding-bottom: 10px;
 }
@@ -150,9 +154,7 @@ table.pricings tr:nth-child(even){
 .sashimi{
 	margin-bottom: 200px;
 }
-.nigiri2{
-	margin-bottom: 99px;
-}
+
 .hosomaki2{
 	margin-bottom: 99px;
 }
@@ -193,9 +195,7 @@ figcaption{
 .sashimi{
 	margin-bottom: 0px;
 }
-.nigiri2{
-	margin-bottom: 0px;
-}
+
 .hosomaki2{
 	margin-bottom: 0px;
 }

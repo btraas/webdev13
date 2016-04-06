@@ -183,6 +183,7 @@
 					<div id="rside">
 <img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
 						<figcaption class="caption">Chirashi</figcaption>
+						<div class="nigiri2"></div>
 						<table>
 							<tr>
 								<td class="menu_n">Chopped Scallop</td>

@@ -20,8 +20,8 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width="225" height="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/IMAG2201.jpg" alt="Zuke Combo" width="225" height="115">
+                    <figcaption class="caption">Zuke Combo</figcaption>
 					<h1>Sushi &amp; Noodle Combination</h1>
 					<table class ="pricings">
 						<tr>
@@ -70,8 +70,8 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/P2060071_Harvard.jpg" alt="Futomaki Roll" width = "225" height ="115">
+                    <figcaption class="caption">Futomaki Roll</figcaption>
 					<h1>Sushi Combination<br><br></h1>
 					<table class ="pricings">
 						<tr>
@@ -100,8 +100,8 @@
 					</div>
 					<!-- Section 3 -->
 					<div id ="rside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/IMG_2199.JPG" alt="Sushi Rolls" width = "225" height ="115">
+                    <figcaption class="caption">Assorted Rolls</figcaption>
 					<h1>Party Tray<br><br></h1>
 					<div class="party_tray"></div>
 					<table class ="pricings">

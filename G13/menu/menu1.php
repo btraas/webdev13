@@ -118,94 +118,102 @@
 						<tr>
 							<td colspan="2" class="menu_d">Surf Clam</td>
 						</tr>
-						<tr>
-							<td class="menu_n">Chopped Scallop</td>
-							<td class="menu_p">$2.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Spicy Tuna</td>
-							<td class="menu_p">$2.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Spicy Salmon</td>
-							<td class="menu_p">$2.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Toro</td>
-							<td class="menu_p">$3.25</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Tuna Belly</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Negitoro</td>
-							<td class="menu_p">$3.25</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Tuna Belly &amp; Green Onion</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Red Tuna</td>
-							<td class="menu_p">$3.25</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Wild Sockeye Salmon</td>
-							<td class="menu_p">$3.25</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Hamachi</td>
-							<td class="menu_p">$3.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Yellowtail</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Amaebi</td>
-							<td class="menu_p">$3.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Spot Prawn</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Ikura</td>
-							<td class="menu_p">$3.50</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Salmon Roe</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Unagi</td>
-							<td class="menu_p">$3.95</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">BBQ Eel</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Uni</td>
-							<td class="menu_p">$3.95</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Sea Urchin</td>
-						</tr>
-						</table>
+					</table>
 					</div>
                         <!-- Section 2 -->
 					<div id="mid">
+						<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
+						<figcaption class="caption">Chirashi</figcaption>
+						<table>
+							<tr>
+								<td class="menu_n">Chopped Scallop</td>
+								<td class="menu_p">$2.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Spicy Tuna</td>
+								<td class="menu_p">$2.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Spicy Salmon</td>
+								<td class="menu_p">$2.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Toro</td>
+								<td class="menu_p">$3.25</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Tuna Belly</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Negitoro</td>
+								<td class="menu_p">$3.25</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Tuna Belly &amp; Green Onion</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Red Tuna</td>
+								<td class="menu_p">$3.25</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Wild Sockeye Salmon</td>
+								<td class="menu_p">$3.25</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Hamachi</td>
+								<td class="menu_p">$3.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Yellowtail</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Amaebi</td>
+								<td class="menu_p">$3.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Spot Prawn</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Ikura</td>
+								<td class="menu_p">$3.50</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Salmon Roe</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Unagi</td>
+								<td class="menu_p">$3.95</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">BBQ Eel</td>
+							</tr>
+							<tr>
+								<td class="menu_n">Uni</td>
+								<td class="menu_p">$3.95</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="menu_d">Sea Urchin</td>
+							</tr>
+						</table>
+					</div>
+                    
+					<!-- Section 3 -->
+					<div id="rside">
 					<img src="../images/Photos/Edited/HamachiSashimi_JohnS.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Hamachi Sashimi</figcaption>
 					<h1>Sashimi</h1>
@@ -260,22 +268,6 @@
 							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
 						</tr>
 					</table>
-					</div>
-                    
-					<!-- Section 3 -->
-					<div id="rside">
-
-							<img src="../images/Photos/Edited/SalmonSashimi_LindaM.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Salmon Sashimi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
 					</div>
 				</div>
 			</div>

@@ -21,7 +21,65 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
+					<img src="../images/Photos/Edited/HamachiSashimi_JohnS.jpg" alt="Food picture" width="225" height="115">
+                    <figcaption class="caption">Hamachi Sashimi</figcaption>
+					<h1>Sashimi</h1>
+					<table class ="pricings">
+						<tr>
+							<td class="menu_n">Tuna Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Salmon Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n smallertext">Tuna & Salmon Sashimi</td>
+							<td class="menu_p">$13.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n smallertext">Sockeye Salmon Sashimi</td>
+							<td class="menu_p">$16.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Red Tuna Sashimi</td>
+							<td class="menu_p">$18.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Hamachi Sashimi</td>
+							<td class="menu_p">$18.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">&nbsp;</td>
+						</tr>
+						<tr>
+							<td class="menu_n">Assorted Sashimi</td>
+							<td class="menu_p">$21.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
+						</tr>
+					</table>
+					
+					</div>
+                        <!-- Section 2 -->
+					<div id="mid">
+<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Nigiri</h1>
 					<table class ="pricings">
@@ -120,9 +178,10 @@
 						</tr>
 					</table>
 					</div>
-                        <!-- Section 2 -->
-					<div id="mid">
-						<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
+                    
+					<!-- Section 3 -->
+					<div id="rside">
+<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
 						<figcaption class="caption">Chirashi</figcaption>
 						<table>
 							<tr>
@@ -210,64 +269,6 @@
 								<td colspan="2" class="menu_d">Sea Urchin</td>
 							</tr>
 						</table>
-					</div>
-                    
-					<!-- Section 3 -->
-					<div id="rside">
-					<img src="../images/Photos/Edited/HamachiSashimi_JohnS.jpg" alt="Food picture" width="225" height="115">
-                    <figcaption class="caption">Hamachi Sashimi</figcaption>
-					<h1>Sashimi</h1>
-					<table class ="pricings">
-						<tr>
-							<td class="menu_n">Tuna Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Salmon Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n smallertext">Tuna & Salmon Sashimi</td>
-							<td class="menu_p">$13.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n smallertext">Sockeye Salmon Sashimi</td>
-							<td class="menu_p">$16.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Red Tuna Sashimi</td>
-							<td class="menu_p">$18.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Hamachi Sashimi</td>
-							<td class="menu_p">$18.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">&nbsp;</td>
-						</tr>
-						<tr>
-							<td class="menu_n">Assorted Sashimi</td>
-							<td class="menu_p">$21.75</td>
-						</tr>
-						<tr>
-							<td colspan="2" class="menu_d">Chef's selection of the day's freshest fish</td>
-						</tr>
-					</table>
 					</div>
 				</div>
 			</div>

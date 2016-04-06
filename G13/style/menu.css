@@ -142,6 +142,15 @@ table.pricings tr:nth-child(even){
 .nigiri2 {
 	margin-bottom: 108px;
 }
+
+.hosomaki2{
+	margin-bottom: 99px;
+}
+
+/*.sashimi{
+	margin-bottom: 108px;
+}
+
 .menu_d{
 	padding-bottom: 10px;
 }
@@ -151,13 +160,9 @@ table.pricings tr:nth-child(even){
 .smallertext{
 	font-size: 13pt;
 }
-.sashimi{
-	margin-bottom: 200px;
-}
 
-.hosomaki2{
-	margin-bottom: 99px;
-}
+
+
 .IO_roll2{
 	margin-bottom: 99px;
 }
@@ -190,7 +195,7 @@ table.pricings tr:nth-child(even){
 figcaption{
 	margin-bottom: 14px;
 }
-
+*/
 @media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
 .sashimi{
 	margin-bottom: 0px;

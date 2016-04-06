@@ -224,12 +224,19 @@
 							<td colspan="2" class="menu_d">On Top: Yam tempura <br>Inside: Green bean temp, avocado, cucumber</td>
 						</tr>
 						<tr>
-							<td class="menu_n">Futomaki
-							<td class="menu_p">6PC $5.75</td>
+							<td class="menu_n">Futomaki (6PC)
+							<td class="menu_p">$5.75</td>
 						</tr>
 						<tr>
 							<td colspan="2" class="menu_d">Tamago, kampyo, shitake, avocado, cucumber</td>
 						</tr>
+						<tr>
+							<td class="menu_n">Futomaki (12PC)
+							<td class="menu_p">$9.75</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="menu_d">Tamago, kampyo, shitake, avocado, cucumber</td>
+						</tr>				
 					</table>					
 					</div>
 				</div>

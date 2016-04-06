@@ -78,7 +78,7 @@
                 </div>
 				<div id="mid">
 					<!-- Section 2 -->
-					<img src="images/Photos/Image1_DoubleBites.jpg" alt="Indian Summer" width = "225" height ="115">
+					<img src="images/Photos/Edited/IndianSummer_LindaM.jpg" alt="Indian Summer" width = "225" height ="115">
                     <figcaption class="caption">Indian Summer</figcaption>
 					<div id="seasonals2"></div>
 						<table class="pricings">

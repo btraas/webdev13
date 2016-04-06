@@ -120,9 +120,10 @@ figcaption{
 
 @media screen and (max-width: 750px), handheld, mobile, screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 300dpi) {
 #menutext {
-	float: none !important;
 	margin-left: auto !important;
 	margin-right: auto !important;
+	min-width: 400px;
+	max-width: 1000px;
 }
 
 .sashimi{

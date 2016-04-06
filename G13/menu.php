@@ -51,7 +51,7 @@
                             Inside: Unagi tempura + cucumber + shiso + avo</td>
 						</tr>
 						<tr>
-							<td class="menu_n">Futormaki
+							<td class="menu_n">Red Storm
 							<td class="menu_p">$15.50</td>
 						</tr>
 						<tr>

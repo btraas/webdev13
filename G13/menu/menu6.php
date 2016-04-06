@@ -49,7 +49,7 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/Photos/Edited/P2060028.JPG" alt="House Special Sunomono" width = "225" height ="115">
+					<img src = "../images/Photos/Edited/P2060029.JPG" alt="House Special Sunomono" width = "225" height ="115">
                     <figcaption class="caption">House Special Sunomono</figcaption>
 					<h1>Omakase</h1>
 					<p class="omakase">Omakase is only available in-house to parties of two or more. <b>Parties of 10 or more must order from the omakase menu from Thurs-Sat.</b> Thank you!

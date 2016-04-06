@@ -123,24 +123,7 @@
                     
 					<!-- Section 3 -->
 					<div id="rside">
-					<table class ="pricings">
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-                        <tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-						</tr>
-					</table>
+
 					</div>
 				</div>
 			</div>

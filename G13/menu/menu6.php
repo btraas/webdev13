@@ -80,17 +80,6 @@
 					<!-- Section 3 -->
 					<div id="rside">
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
-
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                            <figcaption class="caption">Chirashi</figcaption>
 					</div>
 				</div>
 			</div>

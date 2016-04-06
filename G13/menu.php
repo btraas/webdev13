@@ -23,7 +23,7 @@
 				<div id="left_col">
 					<div id="lside">
 					<!-- Section 1 -->
-					<img src="images/Photos/Edited/BloodyWinter_LindaM.jpg" alt="Bloody Winter" width = "225" height ="115">
+					<img src="images/Photos/BloodyWinter_LindaM.jpg" alt="Bloody Winter" width = "225" height ="115">
                     <figcaption class="caption">Bloody Winter</figcaption>
 					<h1>Seasonals</h1>
 					<table class ="pricings">

@@ -58,6 +58,10 @@ if(!empty(@$_REQUEST['order'])) // show this order
 
 	$ordertotal = number_format($ordertotal, 2);
 
+	echo "<div style='position: absolute; left: 0; top: 0; margin: 50px;'>
+			<input type='image' src='/images/Back_Button.jpg' onClick='window.history.back();'>
+		  </div>\n";
+
 	echo "<div id='order_details' data-order_no='$order_no' style='text-align: center; width: 100%;'>\n";
 	echo "<h1>Order #$order_no</h1><br />
 	

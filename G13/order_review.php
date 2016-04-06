@@ -18,8 +18,8 @@
 			</tbody>
 		</table>
 			<br /><br />
-			<input type=button class='ui-button medium' value='Back' onClick="window.history.back();"/>
-			<input type=button class='ui-button medium' value='Confirm' onClick='submit2();' />
+			<input type='image' src='/images/Back_Button.jpg' class='medium' value='Back' onClick="window.history.back();"/>
+			<input type='image' src='/images/Confirm_Button.jpg' class='medium' value='Confirm' onClick='submit2();' />
 			<br /><br />
 	</div>
 </div>

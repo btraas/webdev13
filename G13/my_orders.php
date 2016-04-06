@@ -76,7 +76,7 @@ if(!empty(@$_REQUEST['order'])) // show this order
 		$i++;
 		echo "
 				<div class='itemBlock myorder_item' style='width: 400px; float: none;'
-				data-product_id='$oi[product_id]'
+				data-product_id='$oi[product_id]'>
 
              		<div style='float: left;'>$i: $oi[category] - <span class='name'>$oi[name]</span> x<span class='quantity'>$oi[quantity]</span></div>
 					<div class='price' style='text-align: right; float: right;'>$$oi[price]</div>

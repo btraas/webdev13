@@ -79,8 +79,8 @@
 					</div>
                         <!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/Photos/Edited/Image6_DoubleBites.jpg" alt="Nigiri" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/Image6_DoubleBites.jpg" alt="Assorted Nigiri" width = "225" height ="115">
+                    <figcaption class="caption">Assorted Nigiri</figcaption>
 					<h1>Nigiri</h1>
 					<table class ="pricings">
 						<tr>
@@ -181,8 +181,8 @@
                     
 					<!-- Section 3 -->
 					<div id="rside">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
-						<figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/P2060033_Harvard.JPG" alt="Toro Nigiri" width = "225" height ="115">
+						<figcaption class="caption">Toro Nigiri</figcaption>
 						<div class="nigiri2"></div>
 						<table class="pricings">
 							<tr>

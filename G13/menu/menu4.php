@@ -59,6 +59,7 @@
 					<div id="mid">
 					<img src="../images/Photos/Edited/IMAG0351.jpg" alt="Zuke Don" width="225" height="115">
                     <figcaption class="caption">Zuke Don</figcaption>
+					<div class="donburi2"></div>
 					<table class="pricings">	
 						<tr>
 							<td class="menu_n">Chirashi Don

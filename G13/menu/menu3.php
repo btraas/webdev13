@@ -21,7 +21,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="225" height="115">
+					<img src="../images/Photos/Edited/Image5_DoubleBites.jpg" alt="Peppered Tuna Roll" width="225" height="115">
                     <figcaption class="caption">Peppered Tuna</figcaption>
 					<h1>Inside-Out R</h1>
 					<table class ="pricings">
@@ -113,8 +113,8 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="225" height="115">
-                    <figcaption class="caption">Peppered Tuna</figcaption>
+					<img src="../images/Photos/Edited/P2060074_Harvard.jpg" alt="California Roll" width="225" height="115">
+                    <figcaption class="caption">California Roll</figcaption>
 					<div class="io_roll2"></div>
 						<table class="pricings">
 						<tr>
@@ -198,8 +198,8 @@
 					</div>
 					<!-- Section 3 -->
 					<div id="rside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
-                    <figcaption class="caption">Chirashi</figcaption>
+					<img src = "../images/Photos/Edited/P2060069_Harvard.jpg" alt="DX Yam Yam Roll" width = "225" height ="115">
+                    <figcaption class="caption">DX Yam Yam Roll</figcaption>
 					<h1>Vegetarian R</h1>
 					<table class ="pricings">
 						<tr>

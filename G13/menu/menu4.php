@@ -53,6 +53,7 @@
 						<tr>
 							<td colspan="2" class="menu_d">Tuna sashimi over sushi rice</td>
 						</tr>
+					</table>
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">

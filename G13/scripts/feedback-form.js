@@ -34,7 +34,8 @@ function clear() {
 	if (details.value != "" || subject.value != "") {
 		details.value = "";
 		subject.value = "";
-	} else if (details.value != "" && subject.value != "")
+	} else if (details.value != "" && subject.value != "") {
 		details.value = "";
 		subject.value = "";
+	}
 }

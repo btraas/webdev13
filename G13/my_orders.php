@@ -49,8 +49,24 @@ if(!empty(@$_REQUEST['order'])) // show this order
 		exit();
 	}
 
-	echo "<div style='text-align: center; width: 100%;'>\n";
-	echo "<h1>Order $order_no</h1><br />\n";
+
+	$ordertotal = 0;
+	foreach($r AS $oi)
+	{
+		$ordertotal += ($oi['quantity']*$oi['price']);
+	}
+
+	$ordertotal = number_format($ordertotal, 2);
+
+	echo "<div id='order_details' data-order_no='$order_no' style='text-align: center; width: 100%;'>\n";
+	echo "<h1>Order #$order_no</h1><br />
+	
+			<p><b>Submitted: </b>{$r[0]['sub_date']} {$r[0]['sub_time']}</p>
+			<p><b>Requested: </b>{$r[0]['req_date']} {$r[0]['req_time']}</p>
+			<p><b>Cost (before tax): </b>$$ordertotal</p>
+	
+	
+	";
 
 	//echo nl2br(print_r($r, true)); // for now of course
 
@@ -59,15 +75,23 @@ if(!empty(@$_REQUEST['order'])) // show this order
 	{
 		$i++;
 		echo "
-				<div class='itemBlock myorder_item' style='width: 400px; float: none; '>
+				<div class='itemBlock myorder_item' style='width: 400px; float: none;'
+				data-product_id='$oi[product_id]'
 
-             		$i: $oi[category] - $oi[name] x$oi[quantity]
+             		<div style='float: left;'>$i: $oi[category] - <span class='name'>$oi[name]</span> x<span class='quantity'>$oi[quantity]</span></div>
+					<div class='price' style='text-align: right; float: right;'>$$oi[price]</div>
+					<br />";
+		if(!empty($oi['notes'])) echo "<br />Notes: ".$oi['notes'];
 
-                </div>
+
+        echo       "
+					</div>
                 <br />
 			";
 
 	}
+
+	echo "<input type='image' src='/images/Reorder_Button.jpg' onclick='reorder()'/>";
 
 	echo "</div>\n";
 	include('page_footer.php');

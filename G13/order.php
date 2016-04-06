@@ -9,6 +9,10 @@ require_once("auth.php");
 //logger($_REQUEST);
 
 
+$redirect = array();
+$redirect['appetizer'] = 'appetizers';
+$redirect['inside out roll'] = 'inside-out roll';
+
 // Overrie regular order pages with review / submit options
 switch(@$_REQUEST['mode'])
 {
@@ -20,11 +24,14 @@ switch(@$_REQUEST['mode'])
 
 function showCategory() // {{{
 {
+	Global $redirect;
+
 	// getCategory in db.php
 	$category = getCategory(@$_REQUEST['category']);
 	if(empty($category)) $category = 'appetizers';
 	
-
+	if(array_key_exists($category, $redirect))
+	$category = $redirect[$category];
 
 
 	// function to run a query (from db.php)

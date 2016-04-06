@@ -132,14 +132,16 @@ function setMinDateTime() // {{{
 
 } // }}}
 
-function getOrder() // {{{ Get JSON order 
+function getOrder(selector) // {{{ Get JSON order from DOM
 {
+	if(empty(selector)) selector = '#orderItems .lineitem';
+
 	var now = new Date();
     var minTime = new Date(now.getTime() + minMinutes*60000);
     var maxTime = new Date(now.getTime() + maxDays*86400000);
 
     var items = [];
-    $('#orderItems .lineitem').each(function()
+    $(selector).each(function()
     {
         if(parseInt($(this).find('.quantity').text()) <= 0)
         {
@@ -323,4 +325,9 @@ function calculateTax(total, pct) // {{{
 
 } // }}}
 
-
+function reorder() // {{{ Reorder from my_order order details page
+{
+	var order = getOrder('.myorder_item');
+	document.cookie="order="+JSON.stringify(order)+";path=/";
+	location.href='/order';
+} // }}}

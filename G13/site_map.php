@@ -8,12 +8,12 @@
 					<ul>
 						<li class="level2"><a href="menu.html">Menu main page</a>
 							<ul>
-								<li class="level3"><a href="menu/menu1.html">Seasonals/Salad</a></li>
-								<li class="level3"><a href="menu/menu2.html">Sashimi/Nigiri</a></li>
-								<li class="level3"><a href="menu/menu3.html">Appetizer/Hosomaki</a></li>
-								<li class="level3"><a href="menu/menu4.html">Inside-out Roll/Vegetarian Roll</a></li>
-								<li class="level3"><a href="menu/menu5.html">Combinations/Party Tray</a></li>
-								<li class="level3"><a href="menu/menu6.html">Specials/Omakase</a></li>
+								<li class="level3"><a href="menu.html">Seasonals/Salad</a></li>
+								<li class="level3"><a href="menu/menu1.html">Sashimi/Nigiri</a></li>
+								<li class="level3"><a href="menu/menu2.html">Appetizer/Hosomaki</a></li>
+								<li class="level3"><a href="menu/menu3.html">Inside-out Roll/Vegetarian Roll</a></li>
+								<li class="level3"><a href="menu/menu4.html">Combinations/Party Tray</a></li>
+								<li class="level3"><a href="menu/menu5.html">Specials/Omakase</a></li>
 							</ul>
 						</li>
 						<li class="level2"><a href="order.html">Online ordering</a>
@@ -31,7 +31,6 @@
 								<li class="level3"><a href="order/combo.html">Combinations</a></li>
 								<li class="level3"><a href="order/party_tray.html">Party Tray</a></li>
 								<li class="level3"><a href="order/specials.html">Seasonal Specials</a></li>
-								<li class="level3"><a href="order/omakase.html">Omakase</a>
 									<ul>
 										<li class="level4"><a href="login.html">Account Sign-in</a></li>
 										<li class="level4"><a href="signup.html">Create an account</a></li>

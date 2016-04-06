@@ -21,7 +21,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src="../images/Photos/Edited/Chirashi_Harvard.jpg" alt="Food picture" width="250" height="125">
+					<img src="../images/Photos/Edited/Chirashi_Harvard.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Chirashi Don</figcaption>
 					<h1>Donburi</h1>
 					<table class ="pricings">
@@ -79,7 +79,7 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Noodles</h1>
 					<table class ="pricings">
@@ -125,19 +125,19 @@
 					<div id="rside">
 					<table class ="pricings">
 						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 						</tr>
                         <tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 						<tr>
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 						</tr>
 					</table>

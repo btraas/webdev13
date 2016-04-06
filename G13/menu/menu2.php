@@ -21,7 +21,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src="../images/Photos/Edited/Red&WhiteTunaStack_Harvard.jpg" alt="Food Picture" width = "250" height ="125">
+					<img src="../images/Photos/Edited/Red&WhiteTunaStack_Harvard.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Red & White Tuna Stack</figcaption>
 					<h1>Hosomaki</h1>
 					<table class ="pricings">
@@ -155,7 +155,7 @@
 					</div>
                     <!-- Section 2 -->
 					<div id="mid">
-					<img src="../images/Photos/Edited/AgedashiTofu_TJP.jpg" alt="Food picture" width="250" height="125">
+					<img src="../images/Photos/Edited/AgedashiTofu_TJP.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Agedashi Tofu</figcaption>
 					<h1>Appetizer</h1>
 					<table class ="pricings">
@@ -220,16 +220,16 @@
 					<!-- Section 3 -->
 					<div id="rside">
 
-							<img src="../images/Photos/Edited/TunaTataki_TJP.jpg" alt="Food picture" width = "250" height ="125">
+							<img src="../images/Photos/Edited/TunaTataki_TJP.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Tuna Tataki</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 					</div>
 				</div>

@@ -21,7 +21,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="250" height="125">
+					<img src="../images/Photos/Edited/Image3_DoubleBites.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Peppered Tuna</figcaption>
 					<h1>Inside-Out Roll</h1>
 					<table class ="pricings">
@@ -190,7 +190,7 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Vegetarian Roll</h1>
 					<table class ="pricings">
@@ -227,16 +227,16 @@
 					<!-- Section 3 -->
 					<div id="rside">
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 					</div>
 				</div>

@@ -19,7 +19,7 @@
 				<div id="left_col">
 				<!-- Section 1 -->
 					<div id="lside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
+					<img src = "../images/chirashi.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Chirashi</figcaption>
 
 					<h1>Specials</h1>
@@ -50,7 +50,7 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Omakase</h1>
 					<p class="omakase">Omakase is only available in-house to parties of two or more. <b>Parties of 10 or more must order from the omakase menu from Thurs-Sat.</b> Thank you!
@@ -81,16 +81,16 @@
 					<!-- Section 3 -->
 					<div id="rside">
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 
-							<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+							<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                             <figcaption class="caption">Chirashi</figcaption>
 					</div>
 				</div>

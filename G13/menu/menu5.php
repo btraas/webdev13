@@ -20,7 +20,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width="250" height="125">
+					<img src = "../images/chirashi.jpg" alt="Food picture" width="225" height="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Sushi &amp; Noodle Combination</h1>
 					<table class ="pricings">
@@ -70,7 +70,7 @@
 					</div>
 					<!-- Section 2 -->
 					<div id="mid">
-					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "250" height ="125">
+					<img src = "../images/chirashi.jpg" alt="Food Picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Sushi Combination<br><br></h1>
 					<table class ="pricings">
@@ -100,7 +100,7 @@
 					</div>
 					<!-- Section 3 -->
 					<div id ="rside">
-					<img src = "../images/chirashi.jpg" alt="Food picture" width = "250" height ="125">
+					<img src = "../images/chirashi.jpg" alt="Food picture" width = "225" height ="115">
                     <figcaption class="caption">Chirashi</figcaption>
 					<h1>Party Tray<br><br></h1>
 					<div class="party_tray"></div>

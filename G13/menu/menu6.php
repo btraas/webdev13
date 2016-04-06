@@ -65,8 +65,8 @@
 					</div>
 					<!-- Section 3 -->
 					<div id="rside">
-					<img src = "../images/Photos/Edited/P2060028.JPG" alt="House Special Sunomono" width = "225" height ="115">
-                    <figcaption class="caption">House Special Sunomono</figcaption>
+					<img src = "../images/Photos/Edited/Image7_DoubleBites.jpg" alt="Assorted Sushi" width = "225" height ="115">
+                    <figcaption class="caption">Assorted Sushi</figcaption>
 					<div class="omakase2"></div>
 					<table class="pricings">
 						<tr>

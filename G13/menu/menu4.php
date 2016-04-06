@@ -21,7 +21,7 @@
 				<div id="left_col">
 					<!-- Section 1 -->
 					<div id="lside">
-					<img src="../images/Photos/Edited/Chirashi_Harvard.jpg" alt="Food picture" width="225" height="115">
+					<img src="../images/Photos/Edited/Chirashi_Harvard.jpg" alt="Chirashi Don" width="225" height="115">
                     <figcaption class="caption">Chirashi Don</figcaption>
 					<h1>Donburi</h1>
 					<table class ="pricings">

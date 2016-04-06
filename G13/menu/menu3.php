@@ -225,7 +225,7 @@
 						</tr>
 						<tr>
 							<td class="menu_n">Futomaki
-							<td class="menu_p">6PC $5.75<br> 12PC $9.75</td>
+							<td class="menu_p"><!--6/12PC $5.75/<br>$9.75-->$2.00</td>
 						</tr>
 						<tr>
 							<td colspan="2" class="menu_d">Tamago, kampyo, shitake, avocado, cucumber</td>
